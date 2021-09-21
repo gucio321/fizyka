@@ -1,2 +1,3 @@
 sphinx
 groundwork-sphinx-theme
+myst-parser
