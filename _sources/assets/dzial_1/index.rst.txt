@@ -18,15 +18,19 @@ Dane:
 
 *Te wartości mamy podane w treści zadania*
 
-r :sub:`p` = 29.6 au
+|rp| = 29.6 au
 
-r :sub:`a` = 48.8 au
+|ra| = 48.8 au
 
 *parametry dla Ziemii*
 
-a :sub:`z` = 1 au *(średnia odległość Ziemii od słońca)*
+|az| = 1 au *(średnia odległość Ziemii od słońca)*
 
-T :sub:`z` = 1 rok *(okres obrotu ziemii wokół słońca)*
+|tz| = 1 rok *(okres obrotu ziemii wokół słońca)*
+
+Szukane:
+
+|tp| = ?
 
 Wzory:
 
@@ -37,4 +41,29 @@ Wzory:
 
 Obliczenia:
 
-(WIP)
+zauważ, że nie znamy średniej odległości Plutona od Słońca (a :sub:`p`).
+Długość ta jest właściwie długością wielkiej półosi jego orbity.
+Długość wielkiej osi tej elipsy możemy łątwo wyliczyć dodając
+do siebie wartości peryhelium i apohelium (|rp| + |ra|).
+Teraz, aby otrzymać długość wielkiej półosi dzielimy otrzyany wynik na dwa.
+
+.. math::
+   a_p = \frac{r_p+r_a}{2}
+
+kiedy mamy już wszystkie potrzebne wielkości, możemy zająć się obliczeniami:
+
+.. apropo LateX'a:
+   \frac{licznik}{mianownik} oznacza ułamek.
+   \\ to tak jakby \n
+.. math::
+   \frac{a_z^3}{T_z^2} = \frac{a_p^3}{T_p^2} \\
+   \frac{a_z^3}{T_z^2} = \frac{\frac{r_p+r_a}{2}}{T_p^2}
+
+.. przypisy / deklaracje (niewidoczne na stronie)
+.. |ra| replace:: r :sub:`a`
+.. |rp| replace:: r :sub:`p`
+
+.. |ap| replace:: a :sub:`p`
+.. |az| replace:: a :sub:`z`
+.. |tp| replace:: T :sub:`p`
+.. |tz| replace:: T :sub:`z`

@@ -10,3 +10,8 @@ Zadania z Fizyki
    :maxdepth: 4
 
    assets/intro
+
+.. toctree::
+   :maxdepth: 4
+
+   assets/dzial_1/index.rst
