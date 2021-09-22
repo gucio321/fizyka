@@ -1,0 +1,40 @@
+Dział 1
+*******
+
+III prawo Kepplera
+==================
+zadanie 1
+---------
+
+**zadanie**
+
+Pluton obiega Słońce z apohelium r :sub:`a` = 48.8 au i
+apohelium r :sub:`p` = 29.6 au. Oblicz okres obrotu Plutona
+wokół Słońca.
+
+**rozwiązanie**
+
+Dane:
+
+*Te wartości mamy podane w treści zadania*
+
+r :sub:`p` = 29.6 au
+
+r :sub:`a` = 48.8 au
+
+*parametry dla Ziemii*
+
+a :sub:`z` = 1 au *(średnia odległość Ziemii od słońca)*
+
+T :sub:`z` = 1 rok *(okres obrotu ziemii wokół słońca)*
+
+Wzory:
+
+*Wzór na III Zasadę Kepplera*
+
+.. math::
+   \frac{R_1^3}{T_1^2} = \frac{R_2^3}{T_2^2} = \frac{G * M}{4 \pi^2}
+
+Obliczenia:
+
+(WIP)
