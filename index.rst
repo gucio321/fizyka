@@ -1,10 +1,12 @@
-.. Zadania z Fizyki documentation master file, created by
-   sphinx-quickstart on Tue Sep 21 18:18:09 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. math::
+   \LARGE{M = \frac{m_0}{\sqrt{1 - \frac{v^2}{c^2}}}}
 
 Zadania z Fizyki
 ================
+
+Zapraszamy do nowej strony zawierająćej rozwiązania zadań fizycznych
+przerabianych w III klasie liceum ogulnokształconcego na poziomie
+rozszerzonym.
 
 .. toctree::
    :maxdepth: 4
@@ -15,3 +17,5 @@ Zadania z Fizyki
    :maxdepth: 4
 
    assets/dzial_1/index.rst
+
+`Przejdź do źródeł! <https://github.com/gucio321/fizyka>`_
