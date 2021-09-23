@@ -12,3 +12,9 @@ zadanie 1
 
 .. include::
    temat_1/zadanie1.rst
+
+zadanie 2
+---------
+
+.. include::
+   temat_1/zadanie2.rst
