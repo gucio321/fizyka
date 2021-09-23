@@ -105,7 +105,7 @@ Teraz możemy zabrać się do podstawiania konkretynych wartości
    } \approx \color{yellow}{\underline{\underline{250 lat}}}
 
 Po wyliczeniu wyniku za pomocą kalkulatora otrzymamy
-mniej więcej 245.381 lat, więc nasze przybliżenie nie jest najgorsze.
+mniej więcej 245.381 lat, więc otrzymane przybliżenie nie jest najgorsze.
 
 Odpowiedź:
 
