@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>&lt;no title&gt; &#8212; Zadania z Fizyki  - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/groundwork.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <link rel="index" title="Indeks" href="../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Indeks ogólny"
+             accesskey="I">indeks</a></li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Zadania z Fizyki  - dokumentacja</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p><strong>zadanie</strong></p>
+<p>Pluton obiega Słońce z apohelium r <sub>a</sub> = 48.8 au i
+apohelium r <sub>p</sub> = 29.6 au. Oblicz okres obrotu Plutona
+wokół Słońca.</p>
+<p><strong>rozwiązanie</strong></p>
+<p>Dane:</p>
+<p><em>Te wartości mamy podane w treści zadania</em></p>
+<p>r <sub>p</sub> = 29.6 au</p>
+<p>r <sub>a</sub> = 48.8 au</p>
+<p><em>parametry dla Ziemii</em></p>
+<p>a <sub>z</sub> = 1 au <em>(średnia odległość Ziemii od słońca)</em></p>
+<p>T <sub>z</sub> = 1 rok <em>(okres obrotu ziemii wokół słońca)</em></p>
+<p>Szukane:</p>
+<p>T <sub>p</sub> = ?</p>
+<p>Wzory:</p>
+<p><em>Wzór na III Zasadę Kepplera</em></p>
+<div class="math notranslate nohighlight">
+\[\frac{R_1^3}{T_1^2} = \frac{R_2^3}{T_2^2} = \frac{G * M}{4 \pi^2}\]</div>
+<p>Obliczenia:</p>
+<p>zauważ, że nie znamy średniej odległości Plutona od Słońca (a <sub>p</sub>).
+Długość ta jest właściwie długością wielkiej półosi jego orbity.
+Długość wielkiej osi tej elipsy możemy łątwo wyliczyć dodając
+do siebie wartości peryhelium i apohelium (r <sub>p</sub> + r <sub>a</sub>).
+Teraz, aby otrzymać długość wielkiej półosi dzielimy otrzyany wynik na dwa.</p>
+<div class="math notranslate nohighlight">
+\[a_p = \frac{r_p+r_a}{2}\]</div>
+<p>kiedy mamy już wszystkie potrzebne wielkości, możemy zająć się obliczeniami:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}\frac{a_z^3}{T_z^2} = \frac{a_p^3}{T_p^2} \\
+\frac{a_z^3}{T_z^2} = \frac{\left(\frac{r_p+r_a}{2}\right)^3}{T_p^2} \\
+T_p^2 * a_z^3 = T_z^2 * \left(\frac{r_p+r_a}{2}\right)^3 \\
+T_p^2 = \frac{T_z^2 * \left(\frac{r_p+r_a}{2}\right)^3}{a_z^3} \\\end{split}\\\begin{split}T_p = \sqrt{
+     T_z^2 * \frac
+             {\left(
+                     \frac{r_p+r_a}{2}
+             \right)^3}
+             {a_z^3}
+} \\\end{split}\\\begin{split}T_p = T_z * \sqrt{\frac{\left(\frac{r_p+r_a}{2}\right)^3}{a_z^3}} \\\end{split}\\\begin{split}T_p = T_z * \sqrt{
+     \left(
+             \frac
+             {\frac{r_p+r_a}{2}}
+             {a_z}
+     \right)^3
+} \\\end{split}\end{aligned}\end{align} \]</div>
+<p>Teraz możemy zabrać się do podstawiania konkretynych wartości</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}T_p = 1 rok * \sqrt{
+     \left(
+             \frac
+                     {\frac{29.6 \cancel{au} + 48.8 \cancel{au}}{2}}
+                     {1 \cancel{au}}
+     \right)^3
+} \approx \\\end{split}\\\approx 1 rok * \sqrt{
+     \left(
+                     \frac{80}{2}
+     \right)^3
+} =\\\begin{split}= 1 rok * \sqrt{
+     6.4 * 10^4
+} = \\\end{split}\\10^2 lat * \sqrt{
+     6.4
+} \approx \color{yellow}{\underline{\underline{250 lat}}}\end{aligned}\end{align} \]</div>
+<p>Po wyliczeniu wyniku za pomocą kalkulatora otrzymamy
+mniej więcej 245.381 lat, więc otrzymane przybliżenie nie jest najgorsze.</p>
+<p>Odpowiedź:</p>
+<p>Czas z jakim Pluton obiega Słońce wynosi 250 lat.</p>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>Ta strona</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/assets/dzial_1/zadanie1.rst.txt"
+            rel="nofollow">Pokaż źródło</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Indeks ogólny"
+             >indeks</a></li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Zadania z Fizyki  - dokumentacja</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, 3Bp.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>
