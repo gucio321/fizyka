@@ -5,10 +5,10 @@ III prawo Kepplera
 ==================
 
 .. include::
-   IIIPrawoKepplera.rst
+   temat_1/intro.rst
 
 zadanie 1
 ---------
 
 .. include::
-   zadanie1.rst
+   temat_1/zadanie1.rst
