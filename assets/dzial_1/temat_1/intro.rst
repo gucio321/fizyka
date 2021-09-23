@@ -44,3 +44,31 @@ można zapisać następujący wzór:
    = \frac
         {r_2^3}
         {T_2^2}
+
+wzór ten można łątwo wyprowadzić ze wzoru na siłę grawitacji:
+
+.. math::
+   F_g = F_b
+
+   G * \frac
+        {M * \cancel{m}}
+        {R^{\cancel{2}}}
+   = \frac
+        {\cancel{m} * v^2}
+        {\cancel{R}}
+
+   v^2 = G * \frac{M}{R}
+
+   \left(
+        \frac{2 * \pi * R}{T}
+   \right)^2
+   = G * \frac{M}{R}
+
+   \frac
+        {4 * \pi^2 * R^2}
+        {T^2}
+   = G * \frac{M}{R}
+
+   M * T^2 = 4 * \pi^2 * R^3
+
+   \frac{R^3}{T^2} = \frac{G * M}{4 \pi^2}
