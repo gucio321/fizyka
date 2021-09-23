@@ -73,8 +73,43 @@ Teraz, aby otrzymać długość wielkiej półosi dzielimy otrzyany wynik na dwa
 \[a_p = \frac{r_p+r_a}{2}\]</div>
 <p>kiedy mamy już wszystkie potrzebne wielkości, możemy zająć się obliczeniami:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\frac{a_z^3}{T_z^2} = \frac{a_p^3}{T_p^2} \\
-\frac{a_z^3}{T_z^2} = \frac{\frac{r_p+r_a}{2}}{T_p^2}\end{split}\]</div>
+\[ \begin{align}\begin{aligned}\begin{split}\frac{a_z^3}{T_z^2} = \frac{a_p^3}{T_p^2} \\
+\frac{a_z^3}{T_z^2} = \frac{\left(\frac{r_p+r_a}{2}\right)^3}{T_p^2} \\
+T_p^2 * a_z^3 = T_z^2 * \left(\frac{r_p+r_a}{2}\right)^3 \\
+T_p^2 = \frac{T_z^2 * \left(\frac{r_p+r_a}{2}\right)^3}{a_z^3} \\\end{split}\\\begin{split}T_p = \sqrt{
+     T_z^2 * \frac
+             {\left(
+                     \frac{r_p+r_a}{2}
+             \right)^3}
+             {a_z^3}
+} \\\end{split}\\\begin{split}T_p = T_z * \sqrt{\frac{\left(\frac{r_p+r_a}{2}\right)^3}{a_z^3}} \\\end{split}\\\begin{split}T_p = T_z * \sqrt{
+     \left(
+             \frac
+             {\frac{r_p+r_a}{2}}
+             {a_z}
+     \right)^3
+} \\\end{split}\end{aligned}\end{align} \]</div>
+<p>Teraz możemy zabrać się do podstawiania konkretynych wartości</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}T_p = 1 rok * \sqrt{
+     \left(
+             \frac
+                     {\frac{29.6 \cancel{au} + 48.8 \cancel{au}}{2}}
+                     {1 \cancel{au}}
+     \right)^3
+} \approx \\\end{split}\\\approx 1 rok * \sqrt{
+     \left(
+                     \frac{80}{2}
+     \right)^3
+} =\\\begin{split}= 1 rok * \sqrt{
+     6.4 * 10^4
+} = \\\end{split}\\10^2 lat * \sqrt{
+     6.4
+} \approx \color{yellow}{\underline{\underline{250 lat}}}\end{aligned}\end{align} \]</div>
+<p>Po wyliczeniu wyniku za pomocą kalkulatora otrzymamy
+mniej więcej 245.381 lat, więc nasze przybliżenie nie jest najgorsze.</p>
+<p>Odpowiedź:</p>
+<p>Czas z jakim Pluton obiega Słońce wynosi 250 lat.</p>
 </section>
 </section>
 </section>

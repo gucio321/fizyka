@@ -57,7 +57,59 @@ kiedy mamy już wszystkie potrzebne wielkości, możemy zająć się obliczeniam
    \\ to tak jakby \n
 .. math::
    \frac{a_z^3}{T_z^2} = \frac{a_p^3}{T_p^2} \\
-   \frac{a_z^3}{T_z^2} = \frac{\frac{r_p+r_a}{2}}{T_p^2}
+   \frac{a_z^3}{T_z^2} = \frac{\left(\frac{r_p+r_a}{2}\right)^3}{T_p^2} \\
+   T_p^2 * a_z^3 = T_z^2 * \left(\frac{r_p+r_a}{2}\right)^3 \\
+   T_p^2 = \frac{T_z^2 * \left(\frac{r_p+r_a}{2}\right)^3}{a_z^3} \\
+
+   T_p = \sqrt{
+        T_z^2 * \frac
+                {\left(
+                        \frac{r_p+r_a}{2}
+                \right)^3}
+                {a_z^3}
+   } \\
+
+   T_p = T_z * \sqrt{\frac{\left(\frac{r_p+r_a}{2}\right)^3}{a_z^3}} \\
+
+   T_p = T_z * \sqrt{
+        \left(
+                \frac
+                {\frac{r_p+r_a}{2}}
+                {a_z}
+        \right)^3
+   } \\
+
+Teraz możemy zabrać się do podstawiania konkretynych wartości
+
+.. math::
+   T_p = 1 rok * \sqrt{
+        \left(
+                \frac
+                        {\frac{29.6 \cancel{au} + 48.8 \cancel{au}}{2}}
+                        {1 \cancel{au}}
+        \right)^3
+   } \approx \\
+   
+   \approx 1 rok * \sqrt{
+        \left(
+                        \frac{80}{2}
+        \right)^3
+   } =
+
+   = 1 rok * \sqrt{
+        6.4 * 10^4
+   } = \\
+
+   10^2 lat * \sqrt{
+        6.4
+   } \approx \color{yellow}{\underline{\underline{250 lat}}}
+
+Po wyliczeniu wyniku za pomocą kalkulatora otrzymamy
+mniej więcej 245.381 lat, więc nasze przybliżenie nie jest najgorsze.
+
+Odpowiedź:
+
+Czas z jakim Pluton obiega Słońce wynosi 250 lat.
 
 .. przypisy / deklaracje (niewidoczne na stronie)
 .. |ra| replace:: r :sub:`a`
