@@ -94,7 +94,7 @@ Teraz możemy zabrać się do podstawiania konkretynych wartości
 
    10^2 lat * \sqrt{
         6.4
-   } \approx \color{yellow}{\underline{\underline{250 lat}}}
+   } \approx \color{red}{\underline{\underline{250 lat}}}
 
 Po wyliczeniu wyniku za pomocą kalkulatora otrzymamy
 mniej więcej 245.381 lat, więc otrzymane przybliżenie nie jest najgorsze.
