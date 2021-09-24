@@ -54,7 +54,7 @@ exclude_patterns = ['docs', 'Thumbs.db', '.DS_Store', '_build', 'venv', "README.
 # a list of builtin themes.
 #
 # more themes: https://sphinx-themes.org/#theme-groundwork-sphinx-theme
-html_theme = 'groundwork'
+html_theme = 'cloud'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
