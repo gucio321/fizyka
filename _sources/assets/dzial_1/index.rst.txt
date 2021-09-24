@@ -18,3 +18,9 @@ zadanie 2
 
 .. include::
    temat_1/zadanie2.rst
+
+Praca w polu grawitacyjnym
+==========================
+
+.. include::
+   temat_2/intro.rst
