@@ -47,7 +47,7 @@ Po prostu musimy przekstałcić i podstawić do wzoru:
         {23485^3 * 4 * 3.14^2}
         {1.08864^2 * 6.67} * 10^{10} kg
    
-   M \approx \color{yellow}{6.5 * 10^{23} kg}
+   M \approx \color{red}{6.5 * 10^{23} kg}
 
 
 .. |rd| replace:: r :sub:`d`
