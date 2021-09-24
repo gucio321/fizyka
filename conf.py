@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Zadania z Fizyki'
-copyright = '2021, 3Bp'
-author = '3Bp'
+copyright = '2021, @gcio321 (https://github.com/gucio321)'
+author = 'gucio321'
 
 
 # -- General configuration ---------------------------------------------------
