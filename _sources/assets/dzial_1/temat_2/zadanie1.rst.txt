@@ -60,9 +60,9 @@ znajdują się już dwie masy tworzące różne pola grawitacyjne.
 Dlatego musimy obliczyć pracę dla każdego znich:
 
 .. math::
-   W_{C_B} = -G * m^2 * \frac{1}{a}
-   W_{C_A} = -G * m^2 * \frac{1}{a * \sart{2}}
-   W_C = W_{C_B}+W_{C_A}
+   W_{C_B} = -G * m^2 * \frac{1}{a} \\
+   W_{C_A} = -G * m^2 * \frac{1}{a * \sart{2}} \\
+   W_C = W_{C_B}+W_{C_A} \\
    W_C = - G * m^2 * \left(
    \frac{1}{a} + \frac{1}{a * \sqrt{2}}
    \right)
