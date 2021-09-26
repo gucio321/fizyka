@@ -24,3 +24,9 @@ Praca w polu grawitacyjnym
 
 .. include::
    temat_2/intro.rst
+
+zadanie 1
+---------
+
+.. include::
+   temat_2/zadanie1.rst
