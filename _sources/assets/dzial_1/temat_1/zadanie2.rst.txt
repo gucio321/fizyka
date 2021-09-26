@@ -7,9 +7,8 @@ Oblicz masę Marsa.
 
 Dane:
 
-|rd| = 23485 km = 23485 * 10 :sup:`3` m
-
-|td| = 1.26 dnia = 1.26 * 24 * 3600 s = 1.08864 * 10 :sup:`5` s
+| |rd| = 23485 km = 23485 * 10 :sup:`3` m
+| |td| = 1.26 dnia = 1.26 * 24 * 3600 s = 1.08864 * 10 :sup:`5` s
 
 Szukane:
 
