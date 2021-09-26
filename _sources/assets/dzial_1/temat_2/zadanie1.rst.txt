@@ -66,6 +66,7 @@ Dlatego musimy obliczyć pracę dla każdego znich:
    W_C = - G * m^2 * \left(
    \frac{1}{a} + \frac{1}{a * \sqrt{2}}
    \right)
+   W_C = - G * m^2 * \frac{2 + \sqrt{2}}{2a}
 
 
 
