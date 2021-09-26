@@ -258,6 +258,62 @@ Dlatego wyprowadza się nastęþujący wzór:</p>
 </ul>
 <p>Warto zauważyć, że w powyższym wzorze przebyta droga nie jest istotna.
 Liczą się tylko odległości od masy M (źródła pola grawitacyjnego).</p>
+<section id="id1">
+<h3>zadanie 1<a class="headerlink" href="#id1" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<p><strong>zadanie</strong></p>
+<p>Jaką pracę należy wykonać aby przenieść z nieszkończoności
+4 jednakowe masy <em>m</em> do wierzchołków kwadratu o boku <em>a</em>?
+Jaką pracę wykonamy przesuwając nastęþnie jedną z nich do
+środka tego kwadratu?</p>
+<p><strong>Dane</strong></p>
+<div class="line-block">
+<div class="line">m - masa</div>
+<div class="line">a - bok kwadratu</div>
+</div>
+<p><strong>Szukane</strong></p>
+<div class="line-block">
+<div class="line">W <sub>c</sub> = ? (praca wymagana do przeniesienia mas)</div>
+<div class="line">W <sub>s</sub> = ? (praca wymagana do przeniesienia jednej z mas do środka kwadratu)</div>
+</div>
+<p><strong>Rozwiązanie</strong></p>
+<p>Wyobraźmy sobie kwadrat (ABCD) o boku <code class="docutils literal notranslate"><span class="pre">a</span></code>, do którego wierzchołków bęziemy
+kolejno przenosić masy. Środek kwadratu oznaczmy literą S.</p>
+<p>Rozpatrzmy teraz przypadek, w którym masę przenosimy do narożnika <code class="docutils literal notranslate"><span class="pre">A</span></code>:</p>
+<p>Najpierw jednak przypomnijmy wzór na pracę:</p>
+<div class="math notranslate nohighlight">
+\[W = - G * m * M * \left(
+     \frac{1}{r_b}-\frac{1}{r_a}
+\right)\]</div>
+<p>za <code class="docutils literal notranslate"><span class="pre">m</span></code> podstawimy masę z zadania, ale
+<code class="docutils literal notranslate"><span class="pre">M</span></code> - masa tworząca pole grawitacyjne wynosi na razie 0, ponieważ
+w naszym kwadracie nie mamy na razie żadnej masy.
+Więc:</p>
+<div class="math notranslate nohighlight">
+\[W_A = 0\]</div>
+<p>rozpatrzmy przypadek masy, którą przyniesiemy do punktu B:</p>
+<p>Warto zaznaczyć, że wyrażenie <code class="docutils literal notranslate"><span class="pre">przynosimy</span> <span class="pre">z</span> <span class="pre">nieskończoności</span></code> oznacza,
+że za początkowa odległość musimy przyjąć nieskończoność.
+w tym przypadku za masę tworzącą pole grawitacyjne podstawimy masę
+znajdującą się w wierzchołku <code class="docutils literal notranslate"><span class="pre">A</span></code>:</p>
+<div class="math notranslate nohighlight">
+\[W_B = - G * m * m * \left(
+     \frac{1}{a} - \frac{1}{\infty}
+\right)\]</div>
+<p>ułąmek 1/nieskończoność jest jednak tak mały, że możemy przybliżyć
+go do 0.</p>
+<div class="math notranslate nohighlight">
+\[W_B = -G * m^2 * \frac{1}{a}\]</div>
+<p>rozpatrzmy teraz przypadek narożnika <code class="docutils literal notranslate"><span class="pre">C</span></code>. Tutaj
+znajdują się już dwie masy tworzące różne pola grawitacyjne.
+Dlatego musimy obliczyć pracę dla każdego znich:</p>
+<div class="math notranslate nohighlight">
+\[W_{C_B} = -G * m^2 * \frac{1}{a}
+W_{C_A} = -G * m^2 * \frac{1}{a * \sart{2}}
+W_C = W_{C_B}+W_{C_A}
+W_C = - G * m^2 * \left(
+\frac{1}{a} + \frac{1}{a * \sqrt{2}}
+\right)\]</div>
+</section>
 </section>
 </section>
 
@@ -276,7 +332,10 @@ Liczą się tylko odległości od masy M (źródła pola grawitacyjnego).</p>
 <li><a class="reference internal" href="#zadanie-2">zadanie 2</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#praca-w-polu-grawitacyjnym">Praca w polu grawitacyjnym</a></li>
+<li><a class="reference internal" href="#praca-w-polu-grawitacyjnym">Praca w polu grawitacyjnym</a><ul>
+<li><a class="reference internal" href="#id1">zadanie 1</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

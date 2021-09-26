@@ -1,0 +1,185 @@
+
+
+
+<!DOCTYPE html>
+
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>&lt;no title&gt; &#8212; Zadania z Fizyki  - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+
+    
+    
+     
+        <script src="../../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.js"></script>
+    
+
+    <link rel="index" title="Indeks" href="../../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../../search.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             accesskey="I">indeks</a></li>
+    <li><a href="../../../index.html">Zadania z Fizyki  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p><strong>zadanie</strong></p>
+<p>Jaką pracę należy wykonać aby przenieść z nieszkończoności
+4 jednakowe masy <em>m</em> do wierzchołków kwadratu o boku <em>a</em>?
+Jaką pracę wykonamy przesuwając nastęþnie jedną z nich do
+środka tego kwadratu?</p>
+<p><strong>Dane</strong></p>
+<div class="line-block">
+<div class="line">m - masa</div>
+<div class="line">a - bok kwadratu</div>
+</div>
+<p><strong>Szukane</strong></p>
+<div class="line-block">
+<div class="line">W <sub>c</sub> = ? (praca wymagana do przeniesienia mas)</div>
+<div class="line">W <sub>s</sub> = ? (praca wymagana do przeniesienia jednej z mas do środka kwadratu)</div>
+</div>
+<p><strong>Rozwiązanie</strong></p>
+<p>Wyobraźmy sobie kwadrat (ABCD) o boku <code class="docutils literal notranslate"><span class="pre">a</span></code>, do którego wierzchołków bęziemy
+kolejno przenosić masy. Środek kwadratu oznaczmy literą S.</p>
+<p>Rozpatrzmy teraz przypadek, w którym masę przenosimy do narożnika <code class="docutils literal notranslate"><span class="pre">A</span></code>:</p>
+<p>Najpierw jednak przypomnijmy wzór na pracę:</p>
+<div class="math notranslate nohighlight">
+\[W = - G * m * M * \left(
+     \frac{1}{r_b}-\frac{1}{r_a}
+\right)\]</div>
+<p>za <code class="docutils literal notranslate"><span class="pre">m</span></code> podstawimy masę z zadania, ale
+<code class="docutils literal notranslate"><span class="pre">M</span></code> - masa tworząca pole grawitacyjne wynosi na razie 0, ponieważ
+w naszym kwadracie nie mamy na razie żadnej masy.
+Więc:</p>
+<div class="math notranslate nohighlight">
+\[W_A = 0\]</div>
+<p>rozpatrzmy przypadek masy, którą przyniesiemy do punktu B:</p>
+<p>Warto zaznaczyć, że wyrażenie <code class="docutils literal notranslate"><span class="pre">przynosimy</span> <span class="pre">z</span> <span class="pre">nieskończoności</span></code> oznacza,
+że za początkowa odległość musimy przyjąć nieskończoność.
+w tym przypadku za masę tworzącą pole grawitacyjne podstawimy masę
+znajdującą się w wierzchołku <code class="docutils literal notranslate"><span class="pre">A</span></code>:</p>
+<div class="math notranslate nohighlight">
+\[W_B = - G * m * m * \left(
+     \frac{1}{a} - \frac{1}{\infty}
+\right)\]</div>
+<p>ułąmek 1/nieskończoność jest jednak tak mały, że możemy przybliżyć
+go do 0.</p>
+<div class="math notranslate nohighlight">
+\[W_B = -G * m^2 * \frac{1}{a}\]</div>
+<p>rozpatrzmy teraz przypadek narożnika <code class="docutils literal notranslate"><span class="pre">C</span></code>. Tutaj
+znajdują się już dwie masy tworzące różne pola grawitacyjne.
+Dlatego musimy obliczyć pracę dla każdego znich:</p>
+<div class="math notranslate nohighlight">
+\[W_{C_B} = -G * m^2 * \frac{1}{a}
+W_{C_A} = -G * m^2 * \frac{1}{a * \sart{2}}
+W_C = W_{C_B}+W_{C_A}
+W_C = - G * m^2 * \left(
+\frac{1}{a} + \frac{1}{a * \sqrt{2}}
+\right)\]</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>Ta strona</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/assets/dzial_1/temat_2/zadanie1.rst.txt"
+            rel="nofollow">Pokaż źródło</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             >indeks</a></li>
+    <li><a href="../../../index.html">Zadania z Fizyki  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, @gcio321 (https://github.com/gucio321).
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>
