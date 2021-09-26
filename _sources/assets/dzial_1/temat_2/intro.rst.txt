@@ -16,7 +16,7 @@ pracę - pokonujemy drogę - ta odległość ciągle się zmienia...
 Dlatego wyprowadza się nastęþujący wzór:
 
 .. math::
-   W_{z ~~ a \rightarrow b} = m * M * \left( \frac{1}{r_b} - \frac{1}{r_a} \right)
+   W_{z ~~ a \rightarrow b} = - G * m * M * \left( \frac{1}{r_b} - \frac{1}{r_a} \right)
 
 gdzie:
 
