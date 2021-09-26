@@ -10,15 +10,13 @@ Dane:
 
 *Te wartości mamy podane w treści zadania*
 
-|rp| = 29.6 au
-
-|ra| = 48.8 au
+| |rp| = 29.6 au
+| |ra| = 48.8 au
 
 *parametry dla Ziemii*
 
-|az| = 1 au *(średnia odległość Ziemii od słońca)*
-
-|tz| = 1 rok *(okres obrotu ziemii wokół słońca)*
+| |az| = 1 au *(średnia odległość Ziemii od słońca)*
+| |tz| = 1 rok *(okres obrotu ziemii wokół słońca)*
 
 Szukane:
 
