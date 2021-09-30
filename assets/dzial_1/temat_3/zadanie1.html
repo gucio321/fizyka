@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Energia Potencjalna &#8212; Zadania z Fizyki  - dokumentacja</title>
+    <title>&lt;no title&gt; &#8212; Zadania z Fizyki  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
@@ -51,7 +51,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Zadania z Fizyki  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Energia Potencjalna</a></li> 
+        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
       </ul>
     </div>
     </div>
@@ -62,38 +62,41 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="energia-potencjalna">
-<h1>Energia Potencjalna<a class="headerlink" href="#energia-potencjalna" title="Stały odnośnik do tego nagłówka">¶</a></h1>
-<p>Dla każdego ciałą znajdująćego się w polu grawitacyjnym możemy
-wyznaczyć energię potencjalną.
-Liczbowo, można ją obliczyć z następującego wzoru:</p>
-<div class="math notranslate nohighlight">
-\[E_p = \frac{-G * M * m}{r}\]</div>
-<p>gdzie <cite>m</cite> to masa próbna, <cite>M</cite> to masa wytwarzająća pole grawitacyjne
-(masa ciała centralnego) a <cite>r</cite> - odległość od środka masy <cite>M</cite>.</p>
-<div class="admonition note">
-<p class="admonition-title">Informacja</p>
-<p>w zadaniach z tego tematu przydatna może się okazać tzw.
-<strong>Zasada Zachowania Energji</strong>.</p>
+  <p><strong>zadanie</strong> <em>potencjał grawitacyjny</em></p>
+<p>średnia odległość pomiędzy dwiema planetami wynosi d = 5 * 10 <sup>7</sup> km
+ich masy są odpowiednio równe m <sub>1</sub> = 4 * 10 <sup>21</sup> kg i m <sub>2</sub> = 6 * 10 <sup>21</sup> kg.
+W jakiej odległości od planety o mniejszej masie (na odcinku łączącym
+środki tych mas) znajduje się punkt w którym potencjały grawitacyjne
+obu tych mas są równe?</p>
+<p><strong>dane</strong></p>
+<div class="line-block">
+<div class="line">d = 5 * 10 <sup>7</sup> km</div>
+<div class="line">m <sub>1</sub> = 4 * 10 <sup>21</sup> kg</div>
+<div class="line">m <sub>2</sub> = 6 * 10 <sup>21</sup> kg</div>
 </div>
-</section>
-<section id="praca-a-energia">
-<h1>Praca a energia<a class="headerlink" href="#praca-a-energia" title="Stały odnośnik do tego nagłówka">¶</a></h1>
-<p>Dla pracy w polu grawitacyjnym (jak i dla pracy w ogule) prawdziwy
-jest następująćy wzór:</p>
+<p><strong>szukane</strong></p>
+<div class="line-block">
+<div class="line">r - poszukiwana odległość</div>
+<div class="line"><span class="math notranslate nohighlight">\(d-r\)</span> - odległość od drógiej planety</div>
+</div>
+<p><strong>wzory</strong></p>
+<p>jest to klasyczne zadanie „na potencjał grawitacyjny”, czyli potrzebujemy jedynie
+tego wzoru <a class="reference internal" href="intro.html#equation-v">(1)</a></p>
+<p><strong>rozwiązanie</strong></p>
 <div class="math notranslate nohighlight">
-\[W = \Delta E\]</div>
-</section>
-<section id="potencjal-grawitacyjny">
-<h1>Potencjał grawitacyjny<a class="headerlink" href="#potencjal-grawitacyjny" title="Stały odnośnik do tego nagłówka">¶</a></h1>
-<p><em>W danym punkcie pola Potencjał Grawitacyjny równy jest liczbowo
-stosunkowi energji potencjalnej masy próbnej w tym punkcie do
-jej wartości</em>. Niniejszą definicję wizualizuje wzór:</p>
-<div class="math notranslate nohighlight" id="equation-v">
-<span class="eqno">(1)<a class="headerlink" href="#equation-v" title="Stały odnośnik do tego równania">¶</a></span>\[\begin{split}V = \frac{E_p}{m}\\
-V = \frac{\frac{-G * M * m}{r}}{m}\\
-V = \frac{-G * M}{r}\\\end{split}\]</div>
-</section>
+\[\begin{split}V_1 = V_2 \\
+\frac{\cancel{-G} * m_1}{r} = \frac{\cancel{-G}*m_2}{d-r}\\
+m_1 * \left( d-r \right) = m_2 * r \\
+m_1 * d - m_1 * r = m_2 * r \\
+m_2 * r + m_2 * r = m_1 * d \\
+r * (m_1 + m_2) = m_1 * d \\
+r = \frac{m_1 * d}{m_1 + m_2} \\
+\\
+r = \frac{4 * \cancel{10^21} * 5 * 10^7}
+     {4 * \cancel{10^21} + 6 * \cancel{10^21}} km \\
+r = \frac{20*10^7}{24} km \\
+r = \frac{2 * 10^8}{24} km \\
+r = \color{red}{\frac{1}{12} * 10^8 km}\end{split}\]</div>
 
 
             <div class="clearer"></div>
@@ -101,19 +104,11 @@ V = \frac{-G * M}{r}\\\end{split}\]</div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
-    <h3><a href="../../../index.html">Page contents</a></h3>
-    <ul>
-<li><a class="reference internal" href="#">Energia Potencjalna</a></li>
-<li><a class="reference internal" href="#praca-a-energia">Praca a energia</a></li>
-<li><a class="reference internal" href="#potencjal-grawitacyjny">Potencjał grawitacyjny</a></li>
-</ul>
-
-  </div>
+        <div class="sphinxsidebarwrapper">
   <div role="note" aria-label="source link">
     <h3>Ta strona</h3>
     <ul class="this-page-menu">
-      <li><a href="../../../_sources/assets/dzial_1/temat_3/intro.rst.txt"
+      <li><a href="../../../_sources/assets/dzial_1/temat_3/zadanie1.rst.txt"
             rel="nofollow">Pokaż źródło</a></li>
     </ul>
    </div>
@@ -158,7 +153,7 @@ V = \frac{-G * M}{r}\\\end{split}\]</div>
              >indeks</a></li>
     <li><a href="../../../index.html">Zadania z Fizyki  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Energia Potencjalna</a></li> 
+        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
       </ul>
     </div>
     </div>

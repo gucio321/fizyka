@@ -348,10 +348,48 @@ jest następująćy wzór:</p>
 <p><em>W danym punkcie pola Potencjał Grawitacyjny równy jest liczbowo
 stosunkowi energji potencjalnej masy próbnej w tym punkcie do
 jej wartości</em>. Niniejszą definicję wizualizuje wzór:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}V = \frac{E_p}{m}\\
+<div class="math notranslate nohighlight" id="equation-v">
+<span class="eqno">(1)<a class="headerlink" href="#equation-v" title="Stały odnośnik do tego równania">¶</a></span>\[\begin{split}V = \frac{E_p}{m}\\
 V = \frac{\frac{-G * M * m}{r}}{m}\\
 V = \frac{-G * M}{r}\\\end{split}\]</div>
+</section>
+<section id="id2">
+<h3>zadanie 1<a class="headerlink" href="#id2" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<p><strong>zadanie</strong> <em>potencjał grawitacyjny</em></p>
+<p>średnia odległość pomiędzy dwiema planetami wynosi d = 5 * 10 <sup>7</sup> km
+ich masy są odpowiednio równe m <sub>1</sub> = 4 * 10 <sup>21</sup> kg i m <sub>2</sub> = 6 * 10 <sup>21</sup> kg.
+W jakiej odległości od planety o mniejszej masie (na odcinku łączącym
+środki tych mas) znajduje się punkt w którym potencjały grawitacyjne
+obu tych mas są równe?</p>
+<p><strong>dane</strong></p>
+<div class="line-block">
+<div class="line">d = 5 * 10 <sup>7</sup> km</div>
+<div class="line">m <sub>1</sub> = 4 * 10 <sup>21</sup> kg</div>
+<div class="line">m <sub>2</sub> = 6 * 10 <sup>21</sup> kg</div>
+</div>
+<p><strong>szukane</strong></p>
+<div class="line-block">
+<div class="line">r - poszukiwana odległość</div>
+<div class="line"><span class="math notranslate nohighlight">\(d-r\)</span> - odległość od drógiej planety</div>
+</div>
+<p><strong>wzory</strong></p>
+<p>jest to klasyczne zadanie „na potencjał grawitacyjny”, czyli potrzebujemy jedynie
+tego wzoru <a class="reference internal" href="temat_3/intro.html#equation-v">(1)</a></p>
+<p><strong>rozwiązanie</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}V_1 = V_2 \\
+\frac{\cancel{-G} * m_1}{r} = \frac{\cancel{-G}*m_2}{d-r}\\
+m_1 * \left( d-r \right) = m_2 * r \\
+m_1 * d - m_1 * r = m_2 * r \\
+m_2 * r + m_2 * r = m_1 * d \\
+r * (m_1 + m_2) = m_1 * d \\
+r = \frac{m_1 * d}{m_1 + m_2} \\
+\\
+r = \frac{4 * \cancel{10^21} * 5 * 10^7}
+     {4 * \cancel{10^21} + 6 * \cancel{10^21}} km \\
+r = \frac{20*10^7}{24} km \\
+r = \frac{2 * 10^8}{24} km \\
+r = \color{red}{\frac{1}{12} * 10^8 km}\end{split}\]</div>
 </section>
 </section>
 </section>
@@ -379,6 +417,7 @@ V = \frac{-G * M}{r}\\\end{split}\]</div>
 <li><a class="reference internal" href="#energia-potencjalna">Energia Potencjalna</a></li>
 <li><a class="reference internal" href="#praca-a-energia">Praca a energia</a></li>
 <li><a class="reference internal" href="#potencjal-grawitacyjny">Potencjał grawitacyjny</a></li>
+<li><a class="reference internal" href="#id2">zadanie 1</a></li>
 </ul>
 </li>
 </ul>
