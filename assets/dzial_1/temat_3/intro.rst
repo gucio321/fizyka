@@ -32,6 +32,8 @@ stosunkowi energji potencjalnej masy próbnej w tym punkcie do
 jej wartości*. Niniejszą definicję wizualizuje wzór:
 
 .. math::
+   :label: V
+
    V = \frac{E_p}{m}\\
    V = \frac{\frac{-G * M * m}{r}}{m}\\
    V = \frac{-G * M}{r}\\
