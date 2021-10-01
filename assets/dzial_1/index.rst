@@ -48,3 +48,9 @@ Prędkości kosmiczne
 
 .. include::
    temat_4/intro.rst
+
+Ruch ciał w polu grawitacyjnym
+******************************
+
+.. include::
+   temat_5/intro.rst
