@@ -62,3 +62,4 @@ html_theme = 'cloud'
 html_static_path = ['_static']
 
 html_logo = "./assets/logo.png"
+html_favicon = "./assets/icon.ico"
