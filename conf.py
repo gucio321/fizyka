@@ -63,3 +63,6 @@ html_static_path = ['_static']
 
 html_logo = "./assets/logo.png"
 html_favicon = "./assets/icon.ico"
+#TODO: add something better
+#html_permalinks_icon=
+html_copy_source=False
