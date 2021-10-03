@@ -29,7 +29,7 @@ to :math:`G=6.67 * 10^{11} \frac{km^3}{kg * s^2}`. Oblicz masę tej gwiazdy.
 Patrząc na dane, musimy dojść do sytuacji, w której nasz wzór (nielicząc liczby pi i stałych - liczb)
 będzie zawierać tylko okres, odległość dwóch ciał i **stałą grawitacji**.
 
-najpierw wyznaczmy odległości od środka masy poszczegulnych ciał:
+najpierw wyznaczmy odległości od środka masy poszczególnych ciał:
 
 .. math::
    r_1 = \frac{d * m_2}{M}
@@ -37,17 +37,17 @@ najpierw wyznaczmy odległości od środka masy poszczegulnych ciał:
 
 .. tip:: :math:`r_1 + r_2 = d`
 
-skoro obserwujemy zaćmienia, oznacza to, że oba skłądniki gwiazdy poruszają się.
+skoro obserwujemy zaćmienia, oznacza to, że oba składniki gwiazdy poruszają się.
 możemy więc zapisać następujące równanie
 
 .. math::
    v_1 = \frac{2 * \pi * r_1}{T}
    v_2 = \frac{2 * \pi * r_2}{T}
 
-.. important:: częstotliwości obrotu obu tych skłądników są równe, ale prędkości nie!!
+.. important:: częstotliwości obrotu obu tych składników są równe, ale prędkości nie!!
 
 przyda nam się to później.
-Przypomnijmy teraz sobie o siłąch, które muszą działać na te obiekty.
+Przypomnijmy teraz sobie o siłach, które muszą działać na te obiekty.
 Pierwszą z nich jest Siła Grawitacji wyrażona wzorem :math:`F=G*\frac{M * m}{R^2}`.
 Ta siła określa oddziaływania obu składników gwiazdy i jest dla obu identyczna.
 
@@ -55,7 +55,7 @@ Ta siła określa oddziaływania obu składników gwiazdy i jest dla obu identyc
    za R możemy tu podstawić nasze `d`
 
 Jednak jest jeszcze jedna siła - Siła Odśrodkowa działająca względem
-środka masy tego ukłądu.
+środka masy tego układu.
 
 .. note:: w ruchu po okręgu siłę odśrodkową wyrażamy wzorem
    :math:`F=\frac{2 * \pi * r}{T}`

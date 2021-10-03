@@ -3,9 +3,9 @@
    danych pochodzących ze stron trzecich i może zawierać błędy!
 
 Dotychczas rozpatrywaliśmy przypadki, w których masa ciał była
-masą punktową (lub miałą kształt sferyczny) lub masę
-mniejszego ciałą mogliśmy zaniedbać (np. Ziemia & Słońce). Jeżeli
-jednak masy dwuch ciał są porównywalne, mniejsze ciało nie porusza
+masą punktową (lub miała kształt sferyczny) lub masę
+mniejszego ciała mogliśmy zaniedbać (np. Ziemia & Słońce). Jeżeli
+jednak masy dwóch ciał są porównywalne, mniejsze ciało nie porusza
 się wokół większego, lecz względem **Środka Masy**.
 Dla szczegółowej definicji i opisu, zobacz `tutaj <http://home.agh.edu.pl/~kakol/efizyka/w09/main09a.html>`_.
 W zadaniach z tego działu nie będziemy jednak korzystać z tak
@@ -15,7 +15,7 @@ założymy, że pierwsza nasza masa znajduje się w punkcie (0, 0) da
 nam następujący wzór:
 
 .. math::
-   :label: rśrm
+   :label: równanie-środka-masy
 
    r_{śr m} = \frac{m_2 * d}{m_1 + m_2}
 

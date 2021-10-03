@@ -19,7 +19,7 @@ Wzory z Działu 1:
    \gamma = \frac{F_g}{m} = G * \frac{M}{r^2}
 
 .. tip::
-   wartość natężenia pola grawitacyjnego jest równa wartości przyspieszenia grawitacyjnego (na Ziemii :math:`g = 10 \frac{m}{s^2}`)
+   wartość natężenia pola grawitacyjnego jest równa wartości przyspieszenia grawitacyjnego (na Ziemi :math:`g = 10 \frac{m}{s^2}`)
 
 - III Prawo Kepplera
 
@@ -61,7 +61,7 @@ Wzory z Działu 1:
 
 .. important:: szersza definicja (dla układu wielu ciał) mówi, że środek
    Masy należy wyliczyć korzystając ze **średniej ważonej** mas i odległości.
-   Niniejszy wzór odnosi się do układu dwuch ciał.
+   Niniejszy wzór odnosi się do układu dwóch ciał.
 
 .. math::
    r_{śr m} = \frac{r * M}{m + M}

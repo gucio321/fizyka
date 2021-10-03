@@ -5,12 +5,21 @@ right
 rightarrow
 frac
 infty
-note
-important
-warning
 approx
 rst
 include
+cancel
+color
+
+note
+important
+warning
+
+https
+viewtopic
+php
+
+pl
 
 Keppler
 Kepplera
