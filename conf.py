@@ -29,6 +29,7 @@ author = 'gucio321'
 # ones.
 extensions = [
         "sphinx.ext.githubpages",
+        "sphinxcontrib.images", # https://github.com/sphinx-contrib/images
         "myst_parser"
 ]
 
