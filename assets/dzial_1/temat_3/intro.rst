@@ -37,3 +37,4 @@ jej wartości*. Niniejszą definicję wizualizuje wzór:
    V = \frac{E_p}{m}\\
    V = \frac{\frac{-G * M * m}{r}}{m}\\
    V = \frac{-G * M}{r}\\
+

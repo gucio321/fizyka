@@ -5,4 +5,9 @@ matrix:
     d: pl
   sources:
   - assets/**/*rst
+  dictionary:
+    wordlists:
+    - assets/custom-wordlist.txt
+    output: _build/dictionary/python.dic
+    encoding: utf-8
 

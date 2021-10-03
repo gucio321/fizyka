@@ -61,7 +61,7 @@ Wzory z Działu 1:
 
 .. important:: szersza definicja (dla układu wielu ciał) mówi, że środek
    Masy należy wyliczyć korzystając ze **średniej ważonej** mas i odległości.
-   Niniejszy wzór odnosi się do ukłądu dwuch ciał.
+   Niniejszy wzór odnosi się do układu dwuch ciał.
 
 .. math::
    r_{śr m} = \frac{r * M}{m + M}
