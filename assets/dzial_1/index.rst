@@ -60,3 +60,9 @@ zadanie 1
 
 .. include::
    temat_5/zadanie.rst
+
+PODSUMOWANIE
+************
+
+.. include::
+   sum.rst
