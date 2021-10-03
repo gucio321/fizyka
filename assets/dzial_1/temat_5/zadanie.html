@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>I Prędkość Kosmiczna &#8212; Zadania z Fizyki  - dokumentacja</title>
+    <title>zadanie &#8212; Zadania z Fizyki  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
@@ -55,7 +55,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Zadania z Fizyki  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">I Prędkość Kosmiczna</a></li> 
+        <li class="nav-item nav-item-this"><a href=""><strong>zadanie</strong></a></li> 
       </ul>
     </div>
     </div>
@@ -66,28 +66,60 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="i-predkosc-kosmiczna">
-<span id="id1"></span><h1>I Prędkość Kosmiczna<a class="headerlink" href="#i-predkosc-kosmiczna" title="Stały odnośnik do tego nagłówka">¶</a></h1>
-<p><em>Pierwsza prędkość kosmiczna (tzw. prędkość kołowa) jest najmniejszą prędkością,
-jaką należy nadać ciału względem środka masy przyciągającego je ciała niebieskiego
-w kierunku równoległym do jego powierzchni, aby dane ciało stało się sztucznym
-satelitą tego ciała niebieskiego.</em></p>
-<p>Prędkość tą ilustrujemy wzorem <span class="math notranslate nohighlight">\(v = \sqrt{\frac{G * M * m}{r}}\)</span>.</p>
+  <div class="admonition warning">
+<p class="admonition-title">Ostrzeżenie</p>
+<p>proszę odnieść się z dystansem do rozwiązania tego zadanie,
+gdyż może być błędne!</p>
+</div>
+<section id="zadanie">
+<h1><strong>zadanie</strong><a class="headerlink" href="#zadanie" title="Stały odnośnik do tego nagłówka">¶</a></h1>
+<p>przy obserwacji pewnej gwiazdy podwójnej zaćmieniowej
+okres zmian jasności wynosił <span class="math notranslate nohighlight">\(T=10^5 s\)</span> średnia odległość
+pomiędzy składnikami gwiazdy wynosi <span class="math notranslate nohighlight">\(d=10^6 km\)</span>. Stała grawitacji
+to <span class="math notranslate nohighlight">\(G=6.67 * 10^{11} \frac{km^3}{kg * s^2}\)</span>. Oblicz masę tej gwiazdy.</p>
 </section>
-<section id="ii-predkosc-kosmiczna">
-<h1>II Prędkość Kosmiczna<a class="headerlink" href="#ii-predkosc-kosmiczna" title="Stały odnośnik do tego nagłówka">¶</a></h1>
-<p><em>Znalezione obrazy dla zapytania druga prędkość kosmiczna
-Druga prędkość kosmiczna jest to najmniejsza z możliwych prędkości,
-jaką należy nadać ciału przy powierzchni Ziemi, aby mogło oddalić się do
-nieskończoności. Jest to tak zwana prędkość ucieczki.</em></p>
-<p>Prędkość Ucieczki możemy obliczyć, korzystając ze wzoru <span class="math notranslate nohighlight">\(v = \sqrt{2 * \frac{G * M * m}{r}}\)</span>.</p>
+<section id="dane">
+<h1><strong>dane</strong><a class="headerlink" href="#dane" title="Stały odnośnik do tego nagłówka">¶</a></h1>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(T = 10^5 s\)</span></div>
+<div class="line"><span class="math notranslate nohighlight">\(d = 10^6 km = 10^9 m\)</span></div>
+<div class="line"><span class="math notranslate nohighlight">\(G=6.67 * 10^11 \frac{km^3}{kg * s^2}\)</span></div>
+</div>
+</section>
+<section id="szukane">
+<h1><strong>szukane</strong><a class="headerlink" href="#szukane" title="Stały odnośnik do tego nagłówka">¶</a></h1>
+<p><span class="math notranslate nohighlight">\(M = m_1 + m_2 = ?\)</span></p>
+</section>
+<section id="rozwiazanie">
+<h1><strong>rozwiązanie</strong><a class="headerlink" href="#rozwiazanie" title="Stały odnośnik do tego nagłówka">¶</a></h1>
+<p>Patrząc na dane, musimy dojść do sytuacji, w której nasz wzór (nielicząc liczby pi i stałych - liczb)
+będzie zawierać tylko okres, odległość dwóch ciał i <strong>stałą grawitacji</strong>.</p>
+<p>najpierw wyznaczmy odległości od środka masy poszczegulnych ciał:</p>
+<div class="math notranslate nohighlight">
+\[r_1 = \frac{d * m_2}{M}
+r_2 = \frac{d * m_1}{M}\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p><span class="math notranslate nohighlight">\(r_1 + r_2 = d\)</span></p>
+</div>
+<p>skoro obserwujemy zaćmienia, oznacza to, że oba skłądniki gwiazdy poruszają się.
+możemy więc zapisać następujące równanie</p>
+<div class="math notranslate nohighlight">
+\[v_1 = \frac{2 * \pi * r_1}{T}
+v_2 = \frac{2 * \pi * r_2}{T}\]</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>częstotliwości obrotu obu tych skłądników są równe, ale prędkości nie!!</p>
+</div>
+<p>Składniki tej gwiazdy muszą poruszać się z I Prędkością Kosmiczną
+(zobacz <a class="reference internal" href="../temat_4/intro.html#i-predkosc-kosmiczna"><span class="std std-ref">I Prędkość Kosmiczna</span></a> )
+więc możemy również zapisać następujące równania</p>
+<div class="math notranslate nohighlight">
+\[v_1 = \sqrt{\frac{G * m_2 * m_1}{r_1}}
+v_2 = \sqrt{\frac{G * m_1 * m_2}{r_2}}\]</div>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>istnieją także kolejne prędkości kosmiczne.
-Na przykłąd III prędkością kosmiczną nazywamy prędkość koniecną
-do opuszczenia pola grawitacyjnego słońca.</p>
-<p>IV Prędkość kosmiczna to prędkość z jaką ciało może opuścić
-naszą galaktykę i.t.d…</p>
+<p>WIP. to na razie wszystko</p>
 </div>
 </section>
 
@@ -103,8 +135,10 @@ naszą galaktykę i.t.d…</p>
         </a></p><div class="sphinx-toc sphinxlocaltoc">
     <h3><a href="../../../index.html">Page contents</a></h3>
     <ul>
-<li><a class="reference internal" href="#">I Prędkość Kosmiczna</a></li>
-<li><a class="reference internal" href="#ii-predkosc-kosmiczna">II Prędkość Kosmiczna</a></li>
+<li><a class="reference internal" href="#"><strong>zadanie</strong></a></li>
+<li><a class="reference internal" href="#dane"><strong>dane</strong></a></li>
+<li><a class="reference internal" href="#szukane"><strong>szukane</strong></a></li>
+<li><a class="reference internal" href="#rozwiazanie"><strong>rozwiązanie</strong></a></li>
 </ul>
 
   </div>
@@ -149,7 +183,7 @@ naszą galaktykę i.t.d…</p>
              >indeks</a></li>
     <li><a href="../../../index.html">Zadania z Fizyki  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">I Prędkość Kosmiczna</a></li> 
+        <li class="nav-item nav-item-this"><a href=""><strong>zadanie</strong></a></li> 
       </ul>
     </div>
     </div>

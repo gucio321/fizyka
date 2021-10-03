@@ -399,7 +399,7 @@ r = \color{red}{\frac{1}{12} * 10^{11} km}\end{split}\]</div>
 <section id="predkosci-kosmiczne">
 <h2>Prędkości kosmiczne<a class="headerlink" href="#predkosci-kosmiczne" title="Stały odnośnik do tego nagłówka">¶</a></h2>
 <section id="i-predkosc-kosmiczna">
-<h3>I Prędkość Kosmiczna<a class="headerlink" href="#i-predkosc-kosmiczna" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<span id="id3"></span><h3>I Prędkość Kosmiczna<a class="headerlink" href="#i-predkosc-kosmiczna" title="Stały odnośnik do tego nagłówka">¶</a></h3>
 <p><em>Pierwsza prędkość kosmiczna (tzw. prędkość kołowa) jest najmniejszą prędkością,
 jaką należy nadać ciału względem środka masy przyciągającego je ciała niebieskiego
 w kierunku równoległym do jego powierzchni, aby dane ciało stało się sztucznym
@@ -447,6 +447,65 @@ nam następujący wzór:</p>
 <div class="line">gdzie <cite>d</cite> to odległość pomiędzy dwoma ciałami.</div>
 <div class="line"><span class="math notranslate nohighlight">\(r_{śr m}\)</span> to odległość od masy <span class="math notranslate nohighlight">\(m_1\)</span> do środka  masy</div>
 </div>
+<section id="id4">
+<h3>zadanie 1<a class="headerlink" href="#id4" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Ostrzeżenie</p>
+<p>proszę odnieść się z dystansem do rozwiązania tego zadanie,
+gdyż może być błędne!</p>
+</div>
+<section id="zadanie">
+<h4><strong>zadanie</strong><a class="headerlink" href="#zadanie" title="Stały odnośnik do tego nagłówka">¶</a></h4>
+<p>przy obserwacji pewnej gwiazdy podwójnej zaćmieniowej
+okres zmian jasności wynosił <span class="math notranslate nohighlight">\(T=10^5 s\)</span> średnia odległość
+pomiędzy składnikami gwiazdy wynosi <span class="math notranslate nohighlight">\(d=10^6 km\)</span>. Stała grawitacji
+to <span class="math notranslate nohighlight">\(G=6.67 * 10^{11} \frac{km^3}{kg * s^2}\)</span>. Oblicz masę tej gwiazdy.</p>
+</section>
+<section id="dane">
+<h4><strong>dane</strong><a class="headerlink" href="#dane" title="Stały odnośnik do tego nagłówka">¶</a></h4>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(T = 10^5 s\)</span></div>
+<div class="line"><span class="math notranslate nohighlight">\(d = 10^6 km = 10^9 m\)</span></div>
+<div class="line"><span class="math notranslate nohighlight">\(G=6.67 * 10^11 \frac{km^3}{kg * s^2}\)</span></div>
+</div>
+</section>
+<section id="szukane">
+<h4><strong>szukane</strong><a class="headerlink" href="#szukane" title="Stały odnośnik do tego nagłówka">¶</a></h4>
+<p><span class="math notranslate nohighlight">\(M = m_1 + m_2 = ?\)</span></p>
+</section>
+<section id="rozwiazanie">
+<h4><strong>rozwiązanie</strong><a class="headerlink" href="#rozwiazanie" title="Stały odnośnik do tego nagłówka">¶</a></h4>
+<p>Patrząc na dane, musimy dojść do sytuacji, w której nasz wzór (nielicząc liczby pi i stałych - liczb)
+będzie zawierać tylko okres, odległość dwóch ciał i <strong>stałą grawitacji</strong>.</p>
+<p>najpierw wyznaczmy odległości od środka masy poszczegulnych ciał:</p>
+<div class="math notranslate nohighlight">
+\[r_1 = \frac{d * m_2}{M}
+r_2 = \frac{d * m_1}{M}\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p><span class="math notranslate nohighlight">\(r_1 + r_2 = d\)</span></p>
+</div>
+<p>skoro obserwujemy zaćmienia, oznacza to, że oba skłądniki gwiazdy poruszają się.
+możemy więc zapisać następujące równanie</p>
+<div class="math notranslate nohighlight">
+\[v_1 = \frac{2 * \pi * r_1}{T}
+v_2 = \frac{2 * \pi * r_2}{T}\]</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>częstotliwości obrotu obu tych skłądników są równe, ale prędkości nie!!</p>
+</div>
+<p>Składniki tej gwiazdy muszą poruszać się z I Prędkością Kosmiczną
+(zobacz <a class="reference internal" href="temat_4/intro.html#i-predkosc-kosmiczna"><span class="std std-ref">I Prędkość Kosmiczna</span></a> )
+więc możemy również zapisać następujące równania</p>
+<div class="math notranslate nohighlight">
+\[v_1 = \sqrt{\frac{G * m_2 * m_1}{r_1}}
+v_2 = \sqrt{\frac{G * m_1 * m_2}{r_2}}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>WIP. to na razie wszystko</p>
+</div>
+</section>
+</section>
 </section>
 </section>
 
@@ -484,7 +543,16 @@ nam następujący wzór:</p>
 <li><a class="reference internal" href="#ii-predkosc-kosmiczna">II Prędkość Kosmiczna</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#ruch-cial-w-polu-grawitacyjnym">Ruch ciał w polu grawitacyjnym</a></li>
+<li><a class="reference internal" href="#ruch-cial-w-polu-grawitacyjnym">Ruch ciał w polu grawitacyjnym</a><ul>
+<li><a class="reference internal" href="#id4">zadanie 1</a><ul>
+<li><a class="reference internal" href="#zadanie"><strong>zadanie</strong></a></li>
+<li><a class="reference internal" href="#dane"><strong>dane</strong></a></li>
+<li><a class="reference internal" href="#szukane"><strong>szukane</strong></a></li>
+<li><a class="reference internal" href="#rozwiazanie"><strong>rozwiązanie</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
