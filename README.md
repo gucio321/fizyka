@@ -16,3 +16,8 @@ python3 -m pip install -r requirements.txt
 ```
 
 now you can use `make html` to build page locally in `_build`
+
+## Spell checking
+
+the project is using PySpelling (aspell / huspell) so ensure that
+you have polish dictionary installed
