@@ -1,5 +1,5 @@
-Dział 1
-#######
+Grawitacja i elementy astronomii
+################################
 
 III prawo Kepplera
 ******************
