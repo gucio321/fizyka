@@ -1,3 +1,5 @@
+.. _I-predkosc-kosmiczna:
+
 I Prędkość Kosmiczna
 ====================
 

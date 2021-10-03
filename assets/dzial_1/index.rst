@@ -54,3 +54,9 @@ Ruch ciał w polu grawitacyjnym
 
 .. include::
    temat_5/intro.rst
+
+zadanie 1
+=========
+
+.. include::
+   temat_5/zadanie.rst
