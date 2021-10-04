@@ -19,7 +19,7 @@ Wzory z Działu 1:
    \gamma = \frac{F_g}{m} = G * \frac{M}{r^2}
 
 .. tip::
-   wartość natężenia pola grawitacyjnego jest równa wartości przyspieszenia grawitacyjnego (na Ziemii :math:`g = 10 \frac{m}{s^2}`)
+   wartość natężenia pola grawitacyjnego jest równa wartości przyspieszenia grawitacyjnego (na Ziemii :math:`g \approx 9.81 \frac{m}{s^2}`)
 
 - III Prawo Kepplera
 
