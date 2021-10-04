@@ -6,14 +6,14 @@
 przy obserwacji pewnej gwiazdy podwójnej zaćmieniowej
 okres zmian jasności wynosił :math:`T=10^5 s` średnia odległość
 pomiędzy składnikami gwiazdy wynosi :math:`d=10^6 km`. Stała grawitacji
-to :math:`G=6.67 * 10^{11} \frac{km^3}{kg * s^2}`. Oblicz masę tej gwiazdy.
+to :math:`G=6.67 * 10^{-11} \frac{km^3}{kg * s^2}`. Oblicz masę tej gwiazdy.
 
 **dane**
 --------
 
 | :math:`T = 10^5 s`
 | :math:`d = 10^6 km = 10^9 m`
-| :math:`G=6.67 * 10^11 \frac{km^3}{kg * s^2}`
+| :math:`G=6.67 * 10^{-11} \frac{km^3}{kg * s^2}`
 
 **szukane**
 -----------
@@ -72,9 +72,9 @@ Jednak jest jeszcze jedna siła - Siła Odśrodkowa działająca względem
    M = \frac{4 * \pi^2 * d^3}{G * T^2} \\
    \\
    M = \frac{4 * \pi^2 * \left(10^9 m \right)^3}
-        {6.67 * 10^{11} \frac{m^3}{kg * s^2} * \left(10^5 s \right)^2} \\
+        {6.67 * 10^{-11} \frac{m^3}{kg * s^2} * \left(10^5 s \right)^2} \\
    M = \frac{4 * \pi^2 * 10^{27} \cancel{m^3}}
-        {6.67 * 10^{11} \frac{\cancel{m^3}}{kg * \cancel{s^2}} * 10^{10} \cancel{s^2}} \\
-   M = \frac{4 * \pi^2}{6.67} * \frac{10^{27}}{10^{21}} kg \\
-   M = \frac{4 * \pi^2}{6.67} * 10^6 kg \\
-   \color{red}{M \approx 6 * 10^6 kg}
+        {6.67 * 10^{-11} \frac{\cancel{m^3}}{kg * \cancel{s^2}} * 10^{10} \cancel{s^2}} \\
+   M = \frac{4 * \pi^2}{6.67} * \frac{10^{27}}{10^{-1}} kg \\
+   M = \frac{4 * \pi^2}{6.67} * 10^{28} kg \\
+   \color{red}{M \approx 6 * 10^{28} kg}
