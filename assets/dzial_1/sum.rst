@@ -13,7 +13,7 @@ Siłą Grawitacji
    | r - odległość pomiędzy środkami mas
 
 .. important::
-   :math:`G = 6.67 * 10^{11} \frac{m^3}{kg * s^2}`
+   :math:`G = 6.67 * 10^{-11} \frac{m^3}{kg * s^2}`
 
 Natężenie pola Grawitacyjnego
 =============================
