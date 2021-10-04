@@ -1,7 +1,3 @@
-.. warning::
-   Niniejszy temat bazuje na moich domysłach oraz
-   danych pochodzących ze stron trzecich i może zawierać błędy!
-
 Dotychczas rozpatrywaliśmy przypadki, w których masa ciał była
 masą punktową (lub miała kształt sferyczny) lub masę
 mniejszego ciała mogliśmy zaniedbać (np. Ziemia & Słońce). Jeżeli

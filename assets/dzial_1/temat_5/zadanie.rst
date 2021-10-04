@@ -1,7 +1,4 @@
-.. warning::
-   proszę odnieść się z dystansem do rozwiązania tego zadanie,
-   gdyż może być błędne!
-   `szablon rozwiązania <https://matematyka.pl/viewtopic.php?t=407893>`_
+`szablon rozwiązania <https://matematyka.pl/viewtopic.php?t=407893>`_
 
 **zadanie**
 -----------
