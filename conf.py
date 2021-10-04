@@ -30,7 +30,8 @@ author = 'gucio321'
 extensions = [
         "sphinx.ext.githubpages",
         "sphinxcontrib.images", # https://github.com/sphinx-contrib/images
-        "myst_parser"
+        "myst_parser",
+        "cloud_sptheme.ext.issue_tracker"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -67,3 +68,6 @@ html_favicon = "./assets/icon.ico"
 #TODO: add something better
 #html_permalinks_icon=
 html_copy_source=False
+
+# for cloud_sptheme.ext.issue_tracker
+issue_tracker_url="gh:gucio321/fizyka"
