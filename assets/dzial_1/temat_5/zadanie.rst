@@ -23,7 +23,7 @@ to :math:`G=6.67 * 10^{-11} \frac{km^3}{kg * s^2}`. Oblicz masę tej gwiazdy.
 **rozwiązanie**
 ---------------
 
-Patrząc na dane, musimy dojść do sytuacji, w której nasz wzór (nielicząc liczby pi i stałych - liczb)
+Patrząc na dane, musimy dojść do sytuacji, w której nasz wzór (nie licząc liczby pi i stałych - liczb)
 będzie zawierać tylko okres, odległość dwóch ciał i **stałą grawitacji**.
 
 najpierw wyznaczmy odległości od środka masy poszczególnych ciał:
