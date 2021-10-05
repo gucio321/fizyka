@@ -10,10 +10,17 @@ rst
 include
 cancel
 color
+underline
 
 note
 important
 warning
+sup
+sub
+replace
+iclude
+eq
+ref
 
 https
 viewtopic
@@ -23,3 +30,8 @@ pl
 
 Keppler
 Kepplera
+LateX
+apropo
+apohelium
+alpha
+cos

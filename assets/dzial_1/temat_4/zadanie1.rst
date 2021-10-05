@@ -1,9 +1,9 @@
 **zadanie**
 -----------
 
-Oblicz prędkość liniową Księżyca. Srednia odległość księżyca od
-ziemii wynosi :math:`d = 3.84 * 10^8 m`. Przyspieszenie grawitacyjne
-przy powierzchni Ziemii przyjmi za :math:`g = 9.8 \frac{m}{s^2}`.
+Oblicz prędkość liniową Księżyca. Średnia odległość księżyca od
+Ziemi wynosi :math:`d = 3.84 * 10^8 m`. Przyspieszenie grawitacyjne
+przy powierzchni Ziemi przyjmij za :math:`g = 9.8 \frac{m}{s^2}`.
 Promień Ziemi wynosi :math:`R = 6.37 * 10^6 m`.
 
 **dane**
@@ -16,14 +16,14 @@ Promień Ziemi wynosi :math:`R = 6.37 * 10^6 m`.
 **rozwiązanie**
 ---------------
 
-Ogulnie zadanie polega nw podstawieniu danych do wzoru na I Prędkość Kosmiczną 
-(zobacz: :ref:`I-predkosc-kosmiczna`).
+Ogólnie zadanie polega na podstawieniu danych do wzoru na I Prędkość Kosmiczną 
+(zobacz: :ref:`I-prędkość-kosmiczna`).
 
 .. math::
    v_k = \sqrt{\frac{G * M}{d}}
 
-jedyną trudnością jest, że w danych nie ma masy Ziemii.
-Jest zato jej promień (`R`) i wartość przyspieszenia grawitacyjnego
+jedyną trudnością jest, że w danych nie ma masy Ziemi.
+Jest za to jej promień (`R`) i wartość przyspieszenia grawitacyjnego
 przy jej powierzchni, co pozwala przypuścić, że należy zastąpić
 iloczyn :math:`G * M` wartością :math:`g * R^2`
 

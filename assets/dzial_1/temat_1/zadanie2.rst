@@ -22,7 +22,7 @@ Wzory:
 Obliczenia:
 
 w tym zadaniu nie ma żadnej wyższej filozofii.
-Po prostu musimy przekstałcić i podstawić do wzoru:
+Po prostu musimy przekształcić i podstawić do wzoru:
 
 .. math::
    M = \frac

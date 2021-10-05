@@ -15,7 +15,7 @@ obu tych mas są równe?
 **szukane**
 
 | r - poszukiwana odległość
-| :math:`d-r` - odległość od drógiej planety
+| :math:`d-r` - odległość od drugiej planety
 
 **wzory**
 

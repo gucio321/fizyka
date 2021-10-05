@@ -1,4 +1,4 @@
-.. _I-predkosc-kosmiczna:
+.. _I-prędkość-kosmiczna:
 
 I Prędkość Kosmiczna
 ====================
@@ -22,7 +22,7 @@ Prędkość Ucieczki możemy obliczyć, korzystając ze wzoru :math:`v = \sqrt{2
 
 .. note::
    istnieją także kolejne prędkości kosmiczne.
-   Na przykłąd III prędkością kosmiczną nazywamy prędkość koniecną
+   Na przykład III prędkością kosmiczną nazywamy prędkość konieczną
    do opuszczenia pola grawitacyjnego słońca.
 
    IV Prędkość kosmiczna to prędkość z jaką ciało może opuścić

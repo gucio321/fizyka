@@ -34,7 +34,7 @@ M :sub:`s` + m → M :sub:`s`, więc:
         {4 * \pi^2}
 
 Należy również wspomnieć, że dla obiektów krążących wokół
-jednego ciałą, prawa strona powyższego równania jest stałą, więc
+jednego ciała, prawa strona powyższego równania jest stałą, więc
 można zapisać następujący wzór:
 
 .. math::
@@ -45,7 +45,7 @@ można zapisać następujący wzór:
         {r_2^3}
         {T_2^2}
 
-wzór ten można łątwo wyprowadzić ze wzoru na siłę grawitacji:
+wzór ten można łatwo wyprowadzić ze wzoru na siłę grawitacji:
 
 .. math::
    F_g = F_b

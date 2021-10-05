@@ -9,6 +9,7 @@ matrix:
     wordlists:
     - assets/custom-wordlist.txt
     - assets/excluding.txt
+    - assets/roma_numbers.txt
     output: _build/dictionary/python.dic
     encoding: utf-8
 

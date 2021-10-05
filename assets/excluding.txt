@@ -4,3 +4,13 @@ html
 kakol
 label
 main
+td
+rd
+tz
+tp
+rz
+rp
+ra
+az
+wc
+ws

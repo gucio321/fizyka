@@ -1,8 +1,8 @@
 **zadanie**
 
-Jaką pracę należy wykonać aby przenieść z nieszkończoności
+Jaką pracę należy wykonać aby przenieść z nieskończoności
 4 jednakowe masy *m* do wierzchołków kwadratu o boku *a*?
-Jaką pracę wykonamy przesuwając nastęþnie jedną z nich do
+Jaką pracę wykonamy przesuwając następnie jedną z nich do
 środka tego kwadratu?
 
 **Dane**
@@ -17,7 +17,7 @@ Jaką pracę wykonamy przesuwając nastęþnie jedną z nich do
 
 **Rozwiązanie**
 
-Wyobraźmy sobie kwadrat (ABCD) o boku ``a``, do którego wierzchołków bęziemy
+Wyobraźmy sobie kwadrat (A, B, C, D) o boku ``a``, do którego wierzchołków będziemy
 kolejno przenosić masy. Środek kwadratu oznaczmy literą S.
 
 Rozpatrzmy teraz przypadek, w którym masę przenosimy do narożnika ``A``:
@@ -49,7 +49,7 @@ znajdującą się w wierzchołku ``A``:
         \frac{1}{a} - \frac{1}{\infty}
    \right)
 
-ułąmek 1/nieskończoność jest jednak tak mały, że możemy przybliżyć
+ułamek 1/nieskończoność jest jednak tak mały, że możemy przybliżyć
 go do 0.
 
 .. math::
@@ -57,7 +57,7 @@ go do 0.
 
 rozpatrzmy teraz przypadek narożnika ``C``. Tutaj
 znajdują się już dwie masy tworzące różne pola grawitacyjne.
-Dlatego musimy obliczyć pracę dla każdego znich:
+Dlatego musimy obliczyć pracę dla każdego z nich:
 
 .. math::
    W_{C_B} = -G * m^2 * \frac{1}{a} \\

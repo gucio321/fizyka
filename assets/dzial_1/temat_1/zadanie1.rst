@@ -13,10 +13,10 @@ Dane:
 | |rp| = 29.6 au
 | |ra| = 48.8 au
 
-*parametry dla Ziemii*
+*parametry dla Ziemi*
 
-| |az| = 1 au *(średnia odległość Ziemii od słońca)*
-| |tz| = 1 rok *(okres obrotu ziemii wokół słońca)*
+| |az| = 1 au *(średnia odległość Ziemi od słońca)*
+| |tz| = 1 rok *(okres obrotu Ziemi wokół słońca)*
 
 Szukane:
 
@@ -33,9 +33,9 @@ Obliczenia:
 
 zauważ, że nie znamy średniej odległości Plutona od Słońca (a :sub:`p`).
 Długość ta jest właściwie długością wielkiej półosi jego orbity.
-Długość wielkiej osi tej elipsy możemy łątwo wyliczyć dodając
+Długość wielkiej osi tej elipsy możemy łatwo wyliczyć dodając
 do siebie wartości peryhelium i apohelium (|rp| + |ra|).
-Teraz, aby otrzymać długość wielkiej półosi dzielimy otrzyany wynik na dwa.
+Teraz, aby otrzymać długość wielkiej półosi dzielimy otrzymany wynik na dwa.
 
 .. math::
    a_p = \frac{r_p+r_a}{2}
@@ -69,7 +69,7 @@ kiedy mamy już wszystkie potrzebne wielkości, możemy zająć się obliczeniam
         \right)^3
    } \\
 
-Teraz możemy zabrać się do podstawiania konkretynych wartości
+Teraz możemy zabrać się do podstawiania konkretnych wartości
 
 .. math::
    T_p = 1 rok * \sqrt{
