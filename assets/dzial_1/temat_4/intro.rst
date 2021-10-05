@@ -8,7 +8,7 @@ jaką należy nadać ciału względem środka masy przyciągającego je ciała n
 w kierunku równoległym do jego powierzchni, aby dane ciało stało się sztucznym
 satelitą tego ciała niebieskiego.*
 
-Prędkość tą ilustrujemy wzorem :math:`v = \sqrt{\frac{G * M * m}{r}}`.
+Prędkość tą ilustrujemy wzorem :math:`v = \sqrt{\frac{G * M}{r}}`.
 
 II Prędkość Kosmiczna
 =====================
@@ -18,7 +18,7 @@ Druga prędkość kosmiczna jest to najmniejsza z możliwych prędkości,
 jaką należy nadać ciału przy powierzchni Ziemi, aby mogło oddalić się do
 nieskończoności. Jest to tak zwana prędkość ucieczki.*
 
-Prędkość Ucieczki możemy obliczyć, korzystając ze wzoru :math:`v = \sqrt{2 * \frac{G * M * m}{r}}`.
+Prędkość Ucieczki możemy obliczyć, korzystając ze wzoru :math:`v = \sqrt{2 * \frac{G * M}{r}}`.
 
 .. note::
    istnieją także kolejne prędkości kosmiczne.
