@@ -5,8 +5,13 @@ body {
      color: #ffffff;
 }
 
-body a {
-        color: #ffffff;
+div.footer, div.footer a{
+        color: #7c7c7c;
+}
+
+div.footer a:hover {
+        background: #7c7c7c;
+        color: #000000;
 }
 
 div.related {
