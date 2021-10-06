@@ -21,3 +21,12 @@ div.body h2.highlighted {
 	border-color: #3a0606;
 	color: #ffffff;
 }
+
+div.sphinxsidebarwrapper, div.documentwrapper {
+	background-color: #1e1e1e;
+}
+
+div.body {
+	background-color: #2d2d2d;
+	color: #ffffff;
+}
