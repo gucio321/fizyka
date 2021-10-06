@@ -58,13 +58,13 @@ I Prędkość kosmiczna
 ====================
 
 .. math::
-   v_1 = sqrt{\frac{G * M}{r}}
+   v_1 = \sqrt{\frac{G * M}{r}}
 
 II Prędkość kosmiczna
 ======================
 
 .. math::
-   v_2 = sqrt{2 * \frac{G * M}{r}}
+   v_2 = \sqrt{2 * \frac{G * M}{r}}
 
 środek masy
 ============
