@@ -1,4 +1,5 @@
 **zadanie**
+-----------
 
 Jaką pracę należy wykonać aby przenieść z nieskończoności
 4 jednakowe masy *m* do wierzchołków kwadratu o boku *a*?
@@ -6,16 +7,19 @@ Jaką pracę wykonamy przesuwając następnie jedną z nich do
 środka tego kwadratu?
 
 **Dane**
+--------
 
 | m - masa
 | a - bok kwadratu
 
 **Szukane**
+-----------
 
 | |wc| = ? (praca wymagana do przeniesienia mas)
 | |ws| = ? (praca wymagana do przeniesienia jednej z mas do środka kwadratu)
 
 **Rozwiązanie**
+---------------
 
 Wyobraźmy sobie kwadrat (A, B, C, D) o boku ``a``, do którego wierzchołków będziemy
 kolejno przenosić masy. Środek kwadratu oznaczmy literą S.

@@ -1,10 +1,12 @@
 **zadanie**
+-----------
 
 Pluton obiega Słońce z apohelium r :sub:`a` = 48.8 au i
 apohelium r :sub:`p` = 29.6 au. Oblicz okres obrotu Plutona
 wokół Słońca.
 
 **rozwiązanie**
+---------------
 
 Dane:
 

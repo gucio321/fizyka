@@ -1,4 +1,5 @@
 **zadanie** *potencjał grawitacyjny*
+------------------------------------
 
 średnia odległość pomiędzy dwiema planetami wynosi d = 5 \* 10 :sup:`7` km
 ich masy są odpowiednio równe |m1| = 4 \* 10 :sup:`21` kg i |m2| = 6 \* 10 :sup:`21` kg.
@@ -7,22 +8,26 @@ W jakiej odległości od planety o mniejszej masie (na odcinku łączącym
 obu tych mas są równe?
 
 **dane**
+--------
 
 | d = 5 \* 10 :sup:`10` m
 | |m1| = 4 \* 10 :sup:`21` kg
 | |m2| = 6 \* 10 :sup:`21` kg
 
 **szukane**
+-----------
 
 | r - poszukiwana odległość
 | :math:`d-r` - odległość od drugiej planety
 
 **wzory**
+---------
 
 jest to klasyczne zadanie "na potencjał grawitacyjny", czyli potrzebujemy jedynie
 tego wzoru :eq:`V`
 
 **rozwiązanie**
+---------------
 
 .. math::
    V_1 = V_2 \\

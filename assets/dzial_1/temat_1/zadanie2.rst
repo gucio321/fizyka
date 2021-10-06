@@ -1,9 +1,12 @@
 **zadanie**
+-----------
+
 Dejmos - jeden z naturalnych satelitów Marsa krąży w średniej
 odległości 23485 km od planety, a obiega ją w ciągu 1.26 dnia.
 Oblicz masę Marsa.
 
 **rozwiązanie**
+---------------
 
 Dane:
 
