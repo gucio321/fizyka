@@ -35,7 +35,10 @@ div.sphinxsidebarwrapper, div.documentwrapper {
 	background-color: #1e1e1e;
 }
 
-div.sphinxsidebar a {
+div.sphinxsidebar a,
+a.reference,
+div.related a code.literal,
+code.literal.xref {
 	color: #f49500;
 }
 
