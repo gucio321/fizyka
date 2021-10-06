@@ -1,3 +1,23 @@
 body {
      background-color: #000000;
 }
+
+div.related {
+	background: #212121;
+}
+
+div.related a:hover,
+div.related li.right a:hover {
+	background: #ffffff;
+	color: #000000;
+}
+
+div.body h2 {
+	background: #000000;
+}
+
+div.body h2.highlighted {
+	background-color: #3a0606;
+	border-color: #3a0606;
+	color: #ffffff;
+}
