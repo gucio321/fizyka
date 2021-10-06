@@ -13,6 +13,11 @@ rozszerzonym.
 
    assets/dzial_1/index.rst
 
+.. toctree::
+   :maxdepth: 4
+
+   assets/dzial_2/index.rst
+
 `Przejdź do źródeł! <https://github.com/gucio321/fizyka>`_
 
 Wszelkie błędy lub propozycje ulepszeć zgłaszajcie `tutaj <https://github.com/gucio321/fizyka/issues>`_
