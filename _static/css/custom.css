@@ -24,6 +24,12 @@ div.related li.right a:hover {
 	color: #000000;
 }
 
+h1#search-documentation ~ form > input[type="submit"] {
+	background: black;
+        color: white;
+}
+
+h1#search-documentation ,
 div.body h2 {
 	background: #000000;
 }
