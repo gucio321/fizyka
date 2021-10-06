@@ -24,8 +24,12 @@ div.related li.right a:hover {
 	color: #000000;
 }
 
-h1#search-documentation ~ form > input[type="submit"] {
-	background: black;
+div.sphinxsidebar input[type="text"],
+h1#search-documentation ~ form input[type="text"],
+div#searchbox input[type="submit"],
+h1#search-documentation ~ form > input[type="submit"]
+{
+	background: #929292;
         color: white;
 }
 
