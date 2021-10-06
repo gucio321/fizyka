@@ -16,6 +16,15 @@ div.body h2 {
 	background: #000000;
 }
 
+div.body h1,
+div.body h2,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6 {
+	color: #ffffff;
+}
+
 div.body h2.highlighted {
 	background-color: #3a0606;
 	border-color: #3a0606;
@@ -26,7 +35,31 @@ div.sphinxsidebarwrapper, div.documentwrapper {
 	background-color: #1e1e1e;
 }
 
+div.sphinxsidebar a {
+	color: #f49500;
+}
+
+div.sphinxsidebar a:active {
+	color: #ff0000;
+}
+
 div.body {
 	background-color: #2d2d2d;
 	color: #ffffff;
+}
+
+div.important {
+	background-color: #7c2020;
+}
+
+div.warning {
+	background-color: #ff0000;
+}
+
+div.note {
+	background-color: #1a517c;
+}
+
+div.tip {
+	background-color: #276a3c;
 }
