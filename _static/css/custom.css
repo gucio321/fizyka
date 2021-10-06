@@ -25,10 +25,15 @@ div.body h6 {
 	color: #ffffff;
 }
 
-div.body h2.highlighted {
-	background-color: #3a0606;
-	border-color: #3a0606;
-	color: #ffffff;
+div.body h1.highlighted,
+div.body h2.highlighted,
+div.body h3.highlighted,
+div.body h4.highlighted,
+div.body h5.highlighted,
+div.body h6.highlighted {
+	background-color: #f49500;;
+	border-color: #f49500;;
+	color: #000000;
 }
 
 div.sphinxsidebarwrapper, div.documentwrapper {
@@ -38,6 +43,7 @@ div.sphinxsidebarwrapper, div.documentwrapper {
 div.sphinxsidebar a,
 a.reference,
 div.related a code.literal,
+a.headerlink,
 code.literal.xref {
 	color: #f49500;
 }
@@ -65,4 +71,8 @@ div.note {
 
 div.tip {
 	background-color: #276a3c;
+}
+
+form.searchformwrapper{
+	background-color: #000000;
 }
