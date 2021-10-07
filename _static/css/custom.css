@@ -1,3 +1,4 @@
+/* page background */
 body {
      background-color: #000000;
      background-image: url("https://acegif.com/wp-content/gif/outerspace-44.gif"), url("background.jpg");
@@ -5,6 +6,7 @@ body {
      color: #ffffff;
 }
 
+/* page footer (also _tamplate/layout.html) */
 div.footer, div.footer a{
         color: #7c7c7c;
 }
@@ -14,6 +16,7 @@ div.footer a:hover {
         color: #000000;
 }
 
+/* top and bottom bar */
 div.related {
 	background: #212121;
 }
@@ -24,6 +27,7 @@ div.related li.right a:hover {
 	color: #000000;
 }
 
+/* search boxes on sidebar and search box */
 div.sphinxsidebar input[type="text"],
 h1#search-documentation ~ form input[type="text"],
 div#searchbox input[type="submit"],
@@ -33,11 +37,30 @@ h1#search-documentation ~ form > input[type="submit"]
         color: white;
 }
 
-h1#search-documentation ,
-div.body h2 {
-	background: #000000;
+/* sidebar */
+div.sphinxsidebarwrapper, div.documentwrapper {
+	background-color: #1e1e1e;
 }
 
+div.sphinxsidebar a,
+a.reference,
+div.related a code.literal,
+a.headerlink,
+code.literal.xref {
+	color: #f49500;
+}
+
+div.sphinxsidebar a:active {
+	color: #ff0000;
+}
+
+/* page body */
+div.body {
+	background-color: #2d2d2d;
+	color: #ffffff;
+}
+
+/* headers */
 div.body h1,
 div.body h2,
 div.body h3,
@@ -58,29 +81,15 @@ div.body h6.highlighted {
 	color: #000000;
 }
 
-div.sphinxsidebarwrapper, div.documentwrapper {
-	background-color: #1e1e1e;
+h1#search-documentation ,
+div.body h2 {
+	background: #000000;
 }
 
-div.sphinxsidebar a,
-a.reference,
-div.related a code.literal,
-a.headerlink,
-code.literal.xref {
-	color: #f49500;
-}
 
-div.sphinxsidebar a:active {
-	color: #ff0000;
-}
-
-div.body {
-	background-color: #2d2d2d;
-	color: #ffffff;
-}
-
+/* note, important, tip warning, background */
 div.important {
-	background-color: #7c2020;
+	background-color: #391a1a;
 }
 
 div.warning {
@@ -88,13 +97,9 @@ div.warning {
 }
 
 div.note {
-	background-color: #1a517c;
+	background-color: #223c50;
 }
 
 div.tip {
-	background-color: #276a3c;
-}
-
-form.searchformwrapper{
-	background-color: #000000;
+	background-color: #265022;
 }
