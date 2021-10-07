@@ -89,7 +89,7 @@ div.body h2 {
 
 /* note, important, tip warning, background */
 div.important {
-	background-color: #7c2020;
+	background-color: #391a1a;
 }
 
 div.warning {
@@ -97,9 +97,9 @@ div.warning {
 }
 
 div.note {
-	background-color: #1a517c;
+	background-color: #223c50;
 }
 
 div.tip {
-	background-color: #276a3c;
+	background-color: #265022;
 }
