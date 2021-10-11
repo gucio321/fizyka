@@ -3,9 +3,29 @@ czy ujemnie. Determinuje to następujący schemat:
 
 **+**
 
+- powietrze
+- ludzka skóra
+- sierść królika
 - szkło
-- tkanina
-- tworzywa sztuczne
+- ludzkie włosy
+- nylon
+- wełna
+- jedwab
+- aluminium
+- papier
+- bawełna
+- stal
+- drewno
+- twarda guma
+- nikiel i miedź
+- mosiądz i srebro
+- złoto i platyna
+- sztuczny jedwab
+- poliester i folia przyczepna
+- polietylen
+- PCW
+- silikon
+- teflon
 
 **-**
 
