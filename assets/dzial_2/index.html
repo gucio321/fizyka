@@ -22,6 +22,8 @@
     <script src="../../_static/translations.js"></script>
     <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
     <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
 
     
     
@@ -71,6 +73,82 @@
             
   <section id="pole-elektryczne">
 <h1>Pole Elektryczne<a class="headerlink" href="#pole-elektryczne" title="Stały odnośnik do tego nagłówka">¶</a></h1>
+<section id="ladunek-elektryczny">
+<h2>Ładunek Elektryczny<a class="headerlink" href="#ladunek-elektryczny" title="Stały odnośnik do tego nagłówka">¶</a></h2>
+<section id="ladunek">
+<h3>Ładunek<a class="headerlink" href="#ladunek" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<p>Każde ciało posiada łądunek dodatniu, ujemny lub obojętny.
+Ładunek ten możemy zapisać jako <span class="math notranslate nohighlight">\(q = n * e ~~~ n \in \mathbb{N}\)</span>.
+Najmniejszy ładunek elementarny <span class="math notranslate nohighlight">\(e = 1.6 * 10^{-19} C\)</span>.</p>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Suma algebraiczna ładunków ukłądu izolowanego jest stała.</p>
+</div>
+</section>
+<section id="sila-elektrostatyczna">
+<h3>Siła Elektrostatyczna<a class="headerlink" href="#sila-elektrostatyczna" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<p>Pomiędzy dwoma ciałami oddziaływuje siłą elektrostatyczna, którą
+możemy wyrazić wzorem</p>
+<div class="math notranslate nohighlight" id="equation-sila-elektrostatyczna">
+<span class="eqno">(1)<a class="headerlink" href="#equation-sila-elektrostatyczna" title="Stały odnośnik do tego równania">¶</a></span>\[F =\frac{k * q_1 * q_2}{r^2}\]</div>
+<p>gdzie:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(q_1\)</span> - ładunek pierwszego ciałą</p></li>
+<li><p><span class="math notranslate nohighlight">\(q_1\)</span> - ładunek drugiego ciałą</p></li>
+<li><p><cite>r</cite> to odległość między dwoma ciałąmi</p></li>
+<li><p><cite>k</cite> jest stałą zależną od ośrodka tj.:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[k_0 = 8.9 * 10^{9} \frac{N * m^2}{C^2}
+k_{powietrza} \approx k_0\]</div>
+<p>ogulnie stałą <cite>k</cite> możemy wyliczyć ze wzoru <span class="math notranslate nohighlight">\(k = \frac{1}{4 * \pi * \epsilon_0 * \epsilon_r}\)</span></p>
+<p>gdzie <span class="math notranslate nohighlight">\(\epsilon_0 = 8.85 * 10^{-12}\)</span>, a <span class="math notranslate nohighlight">\(\epsilon_r\)</span> to względna przenikalność elektryczna
+ośrodka</p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p><span class="math notranslate nohighlight">\(\epsilon_{powietrza} \approx \epsilon_0\)</span></p>
+</div>
+</section>
+</section>
+<section id="elektryzowanie-sie-cial">
+<h2>Elektryzowanie się ciał<a class="headerlink" href="#elektryzowanie-sie-cial" title="Stały odnośnik do tego nagłówka">¶</a></h2>
+<p>Nie jest zdefiniowane czy dany materiał nałąduje się dodatnio
+czy ujemnie. Determinuje to następujący schemat:</p>
+<p><strong>+</strong></p>
+<ul class="simple">
+<li><p>szkło</p></li>
+<li><p>tkanina</p></li>
+<li><p>tworzywa sztuczne</p></li>
+</ul>
+<p><strong>-</strong></p>
+<p>przy elektryzowaniu dwuch ciał, to znajdująće się wyżej nałąduje się dodatnio,
+to niżej - ujemnie</p>
+<section id="sposoby-elektryzowania-cial">
+<h3>Sposoby elektryzowania ciał<a class="headerlink" href="#sposoby-elektryzowania-cial" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<p>Naelsektryzowanie może nastąpić poprzez:</p>
+<ul class="simple">
+<li><p>pocieranie (wykonanie pracy)</p></li>
+<li><p>zbliżenie ciała obojętnego do naelektryzowanego</p></li>
+<li><p>indukcję</p></li>
+</ul>
+</section>
+<section id="przewodniki-i-izolatory">
+<h3>Przewodniki i izolatory<a class="headerlink" href="#przewodniki-i-izolatory" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<p>w przewodnikach znajdują się swoboddne cząsteczki naelektyrzowane,
+któ©e mogą się poruszać.</p>
+<p>Takimi materiałąmi są na przykłąd:
+- metale
+- elektrolity
+- zjonizowane gazy
+- grafit</p>
+</section>
+<section id="elektryzowanie-przez-zblizenie-cial">
+<h3>Elektryzowanie przez zbliżenie ciał<a class="headerlink" href="#elektryzowanie-przez-zblizenie-cial" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<p>Jeżeli ciało będąće izolatorem zbliżymy do ciałą naelektryzowanego,
+ładunki pozostaną w miejscu styczności, Jeżeli ciało obojęßne jest
+przewodnikiem, łądunki te rozproszą się po całym ciele</p>
+</section>
+</section>
 </section>
 
 
@@ -82,7 +160,26 @@
         <div class="sphinxsidebarwrapper">
         <p class="logo"><a href="../../index.html" title="index">
           <img class="logo" src="../../_static/logo.png" alt="Logo"/>
-        </a></p>
+        </a></p><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Pole Elektryczne</a><ul>
+<li><a class="reference internal" href="#ladunek-elektryczny">Ładunek Elektryczny</a><ul>
+<li><a class="reference internal" href="#ladunek">Ładunek</a></li>
+<li><a class="reference internal" href="#sila-elektrostatyczna">Siła Elektrostatyczna</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#elektryzowanie-sie-cial">Elektryzowanie się ciał</a><ul>
+<li><a class="reference internal" href="#sposoby-elektryzowania-cial">Sposoby elektryzowania ciał</a></li>
+<li><a class="reference internal" href="#przewodniki-i-izolatory">Przewodniki i izolatory</a></li>
+<li><a class="reference internal" href="#elektryzowanie-przez-zblizenie-cial">Elektryzowanie przez zbliżenie ciał</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
   <div class="sphinxprev">
     <h4>Previous page</h4>
     <p class="topless"><a href="../dzial_1/index.html"
