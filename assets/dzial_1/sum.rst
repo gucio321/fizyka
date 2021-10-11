@@ -1,7 +1,7 @@
 Wzory z Działu 1:
 
 
-Siłą Grawitacji
+Siła Grawitacji
 ================
 
 .. math::
