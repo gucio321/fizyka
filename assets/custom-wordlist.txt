@@ -11,6 +11,7 @@ include
 cancel
 color
 underline
+mathbb
 
 note
 important
