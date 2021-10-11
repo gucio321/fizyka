@@ -1,4 +1,4 @@
-Nie jest zdefiniowane czy dany materiał nałąduje się dodatnio
+Nie jest zdefiniowane czy dany materiał naładuje się dodatnio
 czy ujemnie. Determinuje to następujący schemat:
 
 **+**
@@ -29,13 +29,13 @@ czy ujemnie. Determinuje to następujący schemat:
 
 **-**
 
-przy elektryzowaniu dwuch ciał, to znajdująće się wyżej nałąduje się dodatnio,
+przy elektryzowaniu dwóch ciał, to znajdujące się wyżej naładuje się dodatnio,
 to niżej - ujemnie
 
 Sposoby elektryzowania ciał
 ---------------------------
 
-Naelsektryzowanie może nastąpić poprzez:
+Naelektryzowanie może nastąpić poprzez:
 
 - pocieranie (wykonanie pracy)
 - zbliżenie ciała obojętnego do naelektryzowanego
@@ -44,10 +44,10 @@ Naelsektryzowanie może nastąpić poprzez:
 Przewodniki i izolatory
 -----------------------
 
-w przewodnikach znajdują się swoboddne cząsteczki naelektyrzowane,
-któ©e mogą się poruszać.
+w przewodnikach znajdują się swobodne cząsteczki naelektryzowane,
+które mogą się poruszać.
 
-Takimi materiałąmi są na przykłąd:
+Takimi materiałami są na przykład:
 - metale
 - elektrolity
 - zjonizowane gazy
@@ -57,6 +57,6 @@ Takimi materiałąmi są na przykłąd:
 Elektryzowanie przez zbliżenie ciał
 -----------------------------------
 
-Jeżeli ciało będąće izolatorem zbliżymy do ciałą naelektryzowanego,
-ładunki pozostaną w miejscu styczności, Jeżeli ciało obojęßne jest
-przewodnikiem, łądunki te rozproszą się po całym ciele
+Jeżeli ciało będące izolatorem zbliżymy do ciała naelektryzowanego,
+ładunki pozostaną w miejscu styczności, Jeżeli ciało obojętne jest
+przewodnikiem, ładunki te rozproszą się po całym ciele
