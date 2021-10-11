@@ -34,7 +34,7 @@ tego wzoru :eq:`V`
    \frac{\cancel{-G} * m_1}{r} = \frac{\cancel{-G}*m_2}{d-r}\\
    m_1 * \left( d-r \right) = m_2 * r \\
    m_1 * d - m_1 * r = m_2 * r \\
-   m_2 * r + m_2 * r = m_1 * d \\
+   m_2 * r + m_1 * r = m_1 * d \\
    r * (m_1 + m_2) = m_1 * d \\
    r = \frac{m_1 * d}{m_1 + m_2} \\
    \\
