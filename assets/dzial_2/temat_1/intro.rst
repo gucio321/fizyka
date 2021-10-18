@@ -11,6 +11,8 @@ Najmniejszy ładunek elementarny :math:`e = 1.6 * 10^{-19} C`.
 Siła Elektrostatyczna
 ---------------------
 
+Zależność sformuowana przez francuskiego fizyka charles'a Culomba zwana
+Prawem Culomba.
 Pomiędzy dwoma ciałami oddziałuje siłą elektrostatyczna, którą
 możemy wyrazić wzorem
 
