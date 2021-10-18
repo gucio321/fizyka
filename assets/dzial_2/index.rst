@@ -12,3 +12,9 @@ Elektryzowanie się ciał
 
 .. include::
    temat_2/intro.rst
+
+Natężenie pola elektrycznego
+****************************
+
+.. include::
+   temat_3/intro.rst
