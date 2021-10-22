@@ -18,3 +18,9 @@ Natężenie pola elektrycznego
 
 .. include::
    temat_3/intro.rst
+
+Praca i Energia w polu elektrycznym
+***********************************
+
+.. include::
+   temat_4/intro.rst
