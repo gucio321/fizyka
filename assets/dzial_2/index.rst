@@ -24,3 +24,9 @@ Praca i Energia w polu elektrycznym
 
 .. include::
    temat_4/intro.rst
+
+Zadanie 1
+---------
+
+.. include::
+   temat_4/zadanie1.rst
