@@ -12,6 +12,7 @@ cancel
 color
 underline
 mathbb
+vec
 
 note
 important
@@ -30,6 +31,9 @@ php
 pl
 
 Keppler
+Charles
+Culomb
+Culomba
 Kepplera
 LateX
 apropo
