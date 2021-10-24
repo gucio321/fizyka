@@ -29,7 +29,7 @@ gdzie:
 - `k` jest stałą zależną od ośrodka tj.:
 
 .. math::
-   k_0 = 8.9 * 10^{9} \frac{N * m^2}{C^2}
+   k_0 = 8.9 * 10^{9} \frac{N * m^2}{C^2} \\
    k_{powietrza} \approx k_0
 
 ogólnie stałą `k` możemy wyliczyć ze wzoru :math:`k = \frac{1}{4 * \pi * \epsilon_0 * \epsilon_r}`
