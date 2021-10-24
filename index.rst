@@ -1,3 +1,6 @@
+.. meta::
+   :keywords: zadania z fizyki, fizyka dla liceum, fizyka dla klasa 3 liceum
+
 .. math::
    \LARGE{M = \frac{m_0}{\sqrt{1 - \frac{v^2}{c^2}}}}
 
