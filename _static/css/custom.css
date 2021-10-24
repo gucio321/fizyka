@@ -1,7 +1,9 @@
 /* page background */
 body {
      background-color: #000000;
-     background-image: url("https://acegif.com/wp-content/gif/outerspace-44.gif"), url("background.jpg");
+     /* there are some PRO gifs, but they are tooooo resource-consuming
+      * url("https://acegif.com/wp-content/gif/outerspace-44.gif"),*/
+     background-image: url("background.jpg");
      background-size: 100% 100%;
      color: #ffffff;
 }
