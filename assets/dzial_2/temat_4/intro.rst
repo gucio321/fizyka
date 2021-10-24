@@ -4,7 +4,7 @@ Potencjał elektryczny
 **Potencjał pola elektrycznego** określa energię, którą posiada ciało
 w danym punkcie pola.
 
-Analogicznie jak w przypadku potencjału elektrostatycznego
+Analogicznie jak w przypadku potencjału grawitacyjnego
 równy jest w danym punkcie pola stosunkowi energii potencjalnej ładunku próbnego
 (**dodatniego**) umieszczonego w tym punkcie do jego wartości.
 Tą zależność wyraża wzór:
@@ -20,7 +20,7 @@ Jednostka potencjału elektrostatycznego to `Volt`
 Praca w polu elektrycznym
 -------------------------
 
-Pracę w polu elektrycznym określa (analogicznie jak w polu elektrycznym) następujący wzór:
+Pracę w polu elektrycznym określa (analogicznie jak w polu grawitacyjnym) następujący wzór:
 
 .. math::
    :label: praca-w-polu-elektrycznym
