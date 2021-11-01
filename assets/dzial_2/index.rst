@@ -7,6 +7,12 @@ Pole Elektryczne
 .. include::
    temat_1/intro.rst
 
+Zadanie 1
+---------
+
+.. include::
+   temat_1/zadanie.rst
+
 Elektryzowanie się ciał
 ***********************
 
