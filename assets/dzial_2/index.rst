@@ -36,3 +36,9 @@ Zadanie 1
 
 .. include::
    temat_4/zadanie1.rst
+
+Prawo Gaussa
+************
+
+.. include::
+   temat_5/intro.rst
