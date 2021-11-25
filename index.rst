@@ -1,5 +1,5 @@
 .. attention::
-   Z powodu niskiego zainteresowanie niniejszą dokumentacją, a także
+   Z powodu niskiego zainteresowania niniejszą dokumentacją, a także
    braku czasu na jej dalszy rozwój, redakcja niniejszej strony ogłasza
    zaprzestanie jej aktualizacji.
 
