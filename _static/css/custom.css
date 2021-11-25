@@ -94,7 +94,7 @@ div.important {
 	background-color: #391a1a;
 }
 
-div.warning {
+div.warning, div.attention {
 	background-color: #ff0000;
 }
 
