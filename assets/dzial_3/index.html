@@ -117,6 +117,13 @@ v^2 &amp;= G \frac{M}{r} \\
 v &amp;= \sqrt{G * \frac{M}{r}}
 \end{split}\]</div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Definicja: I Prędkość Kosmiczna to <strong>minimalna</strong> prędkość konieczna, aby ciało
+stało się sztucznym satelitom ciała centralnego.
+Innymi słowy, jeżeli zadanie określa prędkość kosmiczną, oznacza to, że
+<span class="math notranslate nohighlight">\(v = \sqrt{G * \frac{M_z}{R_z}}\)</span>, gdzie <span class="math notranslate nohighlight">\(R_z\)</span> to promień ziemii</p>
+</div>
 <p>Oznaczenia:</p>
 <ul class="simple">
 <li><p>G - stała grawitacyjna</p></li>
@@ -124,46 +131,47 @@ v &amp;= \sqrt{G * \frac{M}{r}}
 <li><p>m - masa obiektu/satelity</p></li>
 <li><p>r - odległość <em>środków masy</em> m i M</p></li>
 </ul>
-<!--
-.. include::
-   temat_1/intro.rst
-
-Zadanie 1
----------
-
-.. include::
-   temat_1/zadanie.rst
-
-Elektryzowanie się ciał
-***********************
-
-.. include::
-   temat_2/intro.rst
-
-Natężenie pola elektrycznego
-****************************
-
-.. include::
-   temat_3/intro.rst
-
-Praca i Energia w polu elektrycznym
-***********************************
-
-.. include::
-   temat_4/intro.rst
-
-Zadanie 1
----------
-
-.. include::
-   temat_4/zadanie1.rst
-
-Prawo Gaussa
-************
-
-.. include::
-   temat_5/intro.rst
--->
+<section id="typy-zadan-z-grawitacji">
+<h3>Typy zadań z Grawitacji<a class="headerlink" href="#typy-zadan-z-grawitacji" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>powiedziane jest, że prędkość satelity <span class="math notranslate nohighlight">\(v_1\)</span> wynosi <code class="docutils literal notranslate"><span class="pre">x</span></code> I prędkośći kosmicznej <span class="math notranslate nohighlight">\(v_0\)</span>.
+Oblicz promień orbity w promieniach Ziamii <span class="math notranslate nohighlight">\(R_z\)</span>.</p>
+<ul>
+<li><p>ze ww. wzoru z pierwiastkiem wyliczamy raz <span class="math notranslate nohighlight">\(R\)</span> dla <span class="math notranslate nohighlight">\(v_1^2\)</span> oraz wartość <span class="math notranslate nohighlight">\(v_0^2\)</span></p></li>
+<li><p>podstawiam <span class="math notranslate nohighlight">\(v_1^2 = x^2 * v_0^2\)</span></p></li>
+<li><p>po zestawieniu obu wzorów wychodzi nam ładny wynik.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="wachadla">
+<h2>Wachadła<a class="headerlink" href="#wachadla" title="Permalink to this heading">¶</a></h2>
+<p><img alt="wachadło" src="https://firmaciszak.pl/1019-large_default/wahadlo-uniwersalne-aluminium-5-cm.jpg" /></p>
+<ul class="simple">
+<li><p>Wzór na okres <strong>wachadła fizycznego:</strong> <span class="math notranslate nohighlight">\(T=2\pi * \sqrt{\frac{I}{d * m * g}}\)</span></p></li>
+<li><p>Okres <strong>wachadła matematycznego</strong>: <span class="math notranslate nohighlight">\(T=2\pi * \sqrt{\frac{l}{g}}\)</span></p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Wachadło matematyczne to tylko szczególny przypadek wachadłą fizycznego.
+Dowodzi tego następujące przekształcenie
+Za <code class="docutils literal notranslate"><span class="pre">I</span></code> podstawiamy wzór dla punktu materialnego, więc:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T &amp;= 2\pi * \sqrt{\frac{I}{d * m * g}} \\
+T &amp;= 2\pi * \sqrt{\frac{m * d^2}{d * m * g}} \\
+T &amp;= 2\pi * \sqrt{\frac{d}{g}} 
+\end{split}\]</div>
+<p>Teraz jeżeli zmodyfikujemy oznaczenie <code class="docutils literal notranslate"><span class="pre">d</span></code> jako <code class="docutils literal notranslate"><span class="pre">l</span></code> otrzymamy dokładnie
+wzór na okres drgań wachadła matematycznego.</p>
+</div>
+<p>Opis:</p>
+<ul class="simple">
+<li><p>d - odległość od środka masy</p></li>
+<li><p>l - długość wachadłą</p></li>
+<li><p>I - moment bezwładności</p></li>
+</ul>
 </section>
 </section>
 
@@ -181,7 +189,11 @@ Prawo Gaussa
 <li><a class="reference internal" href="#typy-zadan">Typy zadań</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#pole-grawitacyjne">Pole Grawitacyjne</a></li>
+<li><a class="reference internal" href="#pole-grawitacyjne">Pole Grawitacyjne</a><ul>
+<li><a class="reference internal" href="#typy-zadan-z-grawitacji">Typy zadań z Grawitacji</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#wachadla">Wachadła</a></li>
 </ul>
 </li>
 </ul>
