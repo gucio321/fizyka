@@ -1,4 +1,4 @@
-.. attention::
+.. .. attention::
    Z powodu niskiego zainteresowania niniejszą dokumentacją, a także
    braku czasu na jej dalszy rozwój, redakcja niniejszej strony ogłasza
    zaprzestanie jej aktualizacji.
@@ -31,6 +31,11 @@ rozszerzonym.
    :maxdepth: 4
 
    assets/dzial_2/index.rst
+
+.. toctree::
+   :maxdepth: 4
+
+   assets/dzial_3/index.md
 
 `Przejdź do źródeł! <https://github.com/gucio321/fizyka>`_
 
