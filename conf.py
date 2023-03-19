@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Zadania z Fizyki'
-copyright = '2021, @gcio321 (https://github.com/gucio321)'
+copyright = '2021-2023, @gcio321 <gucio321@proton.me>'
 author = 'gucio321'
 
 
@@ -31,7 +31,8 @@ extensions = [
         "sphinx.ext.githubpages",
         "sphinxcontrib.images", # https://github.com/sphinx-contrib/images
         "myst_parser",
-        "cloud_sptheme.ext.issue_tracker"
+        #"cloud_sptheme.ext.issue_tracker",
+        "myst_parser" # ref: https://www.sphinx-doc.org/en/master/usage/markdown.html
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -48,7 +49,6 @@ language = 'pl'
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['docs', 'Thumbs.db', '.DS_Store', '_build', 'venv', "README.md"]
-
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -74,3 +74,21 @@ html_copy_source=False
 
 # for cloud_sptheme.ext.issue_tracker
 issue_tracker_url="gh:gucio321/fizyka"
+
+# for myst_parser (markdown)
+myst_enable_extensions = [
+    "amsmath",
+    "attrs_inline",
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "fieldlist",
+    "html_admonition",
+    "html_image",
+    "linkify",
+    "replacements",
+    "smartquotes",
+    "strikethrough",
+    "substitution",
+    "tasklist",
+]
