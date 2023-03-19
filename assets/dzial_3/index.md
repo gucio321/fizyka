@@ -1,5 +1,6 @@
 # Powtórzenie Maturalne
 
+
 ## Hydrostatyka
 
 ![Archimedes](https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/portrait-of-archimedes-of-syracuse-unknown.jpg)
@@ -40,6 +41,12 @@ v &= \sqrt{G * \frac{M}{r}}
 $$
 
 ```
+```{note}
+Definicja: I Prędkość Kosmiczna to **minimalna** prędkość konieczna, aby ciało
+stało się sztucznym satelitom ciała centralnego.
+Innymi słowy, jeżeli zadanie określa prędkość kosmiczną, oznacza to, że
+$v = \sqrt{G * \frac{M_z}{R_z}}$, gdzie $R_z$ to promień ziemii
+```
 
 Oznaczenia:
 - G - stała grawitacyjna
@@ -47,43 +54,37 @@ Oznaczenia:
 - m - masa obiektu/satelity
 - r - odległość _środków masy_ m i M
 
-<!--
-.. include::
-   temat_1/intro.rst
+### Typy zadań z Grawitacji
 
-Zadanie 1
----------
+- powiedziane jest, że prędkość satelity $v_1$ wynosi `x` I prędkośći kosmicznej $v_0$.
+  Oblicz promień orbity w promieniach Ziamii $R_z$.
+  * ze ww. wzoru z pierwiastkiem wyliczamy raz $R$ dla $v_1^2$ oraz wartość $v_0^2$
+  * podstawiam $v_1^2 = x^2 * v_0^2$
+  * po zestawieniu obu wzorów wychodzi nam ładny wynik.
 
-.. include::
-   temat_1/zadanie.rst
+## Wachadła
 
-Elektryzowanie się ciał
-***********************
+![wachadło](https://firmaciszak.pl/1019-large_default/wahadlo-uniwersalne-aluminium-5-cm.jpg)
 
-.. include::
-   temat_2/intro.rst
+- Wzór na okres **wachadła fizycznego:** $T=2\pi * \sqrt{\frac{I}{d * m * g}}$
+- Okres **wachadła matematycznego**: $T=2\pi * \sqrt{\frac{l}{g}}$
+```{tip}
+Wachadło matematyczne to tylko szczególny przypadek wachadłą fizycznego.
+Dowodzi tego następujące przekształcenie
+Za `I` podstawiamy wzór dla punktu materialnego, więc:
 
-Natężenie pola elektrycznego
-****************************
+$$
+T &= 2\pi * \sqrt{\frac{I}{d * m * g}} \\
+T &= 2\pi * \sqrt{\frac{m * d^2}{d * m * g}} \\
+T &= 2\pi * \sqrt{\frac{d}{g}} 
+$$
 
-.. include::
-   temat_3/intro.rst
+Teraz jeżeli zmodyfikujemy oznaczenie `d` jako `l` otrzymamy dokładnie
+wzór na okres drgań wachadła matematycznego.
 
-Praca i Energia w polu elektrycznym
-***********************************
+```
 
-.. include::
-   temat_4/intro.rst
-
-Zadanie 1
----------
-
-.. include::
-   temat_4/zadanie1.rst
-
-Prawo Gaussa
-************
-
-.. include::
-   temat_5/intro.rst
--->
+Opis:
+- d - odległość od środka masy
+- l - długość wachadłą
+- I - moment bezwładności
