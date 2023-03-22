@@ -1,6 +1,5 @@
 # Powtórzenie Maturalne
 
-
 ## Hydrostatyka
 
 ![Archimedes](https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/portrait-of-archimedes-of-syracuse-unknown.jpg)
@@ -88,3 +87,35 @@ Opis:
 - d - odległość od środka masy
 - l - długość wachadłą
 - I - moment bezwładności
+
+## Termodynamika
+
+### Ciepło molowe
+
+1. Ciepło molowe $c^{mol}$ to ciepło właściwe przeliczone na jeden mol
+2. Dla gazów zależy od rodzaju przmiany.
+3. Dla gazu doskonałego: $c_p = c_v + R$
+4. Dla gazu doskonałęgo $c_v = \frac{m}{2} R$ gdzie m to ilość stopni swobody.
+5. analogicznie, korzystając ze wzorów z pkt. 3 i 4:
+
+$$
+c_p &= c_v + R \\
+c_p &= \frac{m}{2} * R + R \\
+C_p &= \frac{m+2}{2} * R
+$$
+
+```{important}
+Ilość stopni swobody dla gazu zależy od liczby atomów w cząsteczce i wynosi odpowiednio:
+
+najprostsza definicja stopnia swobody to **ilość** zmiennych potrzebnych
+do opisania **położenia** cząsteczki (położenie w przestrzeni X, Y Z oraz
+kąty wychylenia/pozycji przestrzennej).
+
+| ilość atomów w cząsteczce | stopnie swobody                       | $c_v$           | $c_p$           |
+|---------------------------|---------------------------------------|-----------------|-----------------|
+| 1                         | 3 (3 osie XYZ)                        | $\frac{3}{2}*R$ | $\frac{5}{2}*R$ |
+| 2                         | 5 (3 osie + ruch obrotowy w 2 osiach) | $\frac{5}{2}*R$ | $\frac{7}{2}*R$ |
+| >= 3                      | 6 (3 osie XYZ + ruch obrotowy)        | $3*R$           | $4*R$           |
+
+```
+
