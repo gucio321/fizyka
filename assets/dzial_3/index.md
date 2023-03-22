@@ -135,3 +135,30 @@ kąty wychylenia/pozycji przestrzennej).
 
 ```
 
+## Optyka
+
+### Soczewka
+
+- Równanie soczewki: $\frac{1}{f} = \frac{1}{x} + \frac{1}{y}$
+- Zdolność skupiająca $L = \frac{1}{f}$ (mieżona w Dioktriach)
+- powiększenie: $p = \frac{x}{y}$
+- Wzór na ogniskową soczewki: $\frac{1}{f} = (\frac{\eta_{soczewki}}{\eta_{ośrodka}} - 1) * (\frac{1}{R_A} + \frac{1}{R_B})$
+
+Opis:
+- x - odległość przedmiotu od soczewki
+- y - odległość obrazu od soczewki
+- f - ogniskowa soczewki
+```{note}
+Jeżeli wartość zmiennej > 0 - oznacza to że wielkość jest rzeczywista
+jeżeli < 0 - urojona
+```
+
+### Siatka dyfrakcyjna
+
+- Wzór siatki dyfrakcyjnej $d * sin(\theta) = m * \lambda$
+
+Opis:
+- d - odległość szczelin od siebie
+- $\theta$ - kąt pomiędzy prążkiem 0-rzędu a prążkiem m-rzędu.
+- m - numer prążka
+- $\lambda$ - długość fali
