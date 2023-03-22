@@ -171,3 +171,16 @@ Opis:
 - $\theta$ - kąt pomiędzy prążkiem 0-rzędu a prążkiem m-rzędu.
 - m - numer prążka
 - $\lambda$ - długość fali
+
+## Elektrostatyka, elektromagnetyzm
+
+- Siła elektrostatyczna: $F = k \frac{q_1 * q_2}{r^2}$
+- Siła elektrodynamiczna: $F = B * I * l * sin(\alpha)$
+- Siła Lorentza (powstaje przy łądunkach poruszających się w polu magnetycznym)
+$F = q * v * B * sin(\alpha)$
+- Prawo indukcji Faradaya:
+
+$$
+\epsilon &= \frac{\Delta \Phi}{\Delta t} \\
+\Phi &= B * s * cos(\alpha)
+$$
