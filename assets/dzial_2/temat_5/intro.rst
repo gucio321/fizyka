@@ -62,12 +62,12 @@ jest równy 0, gdyż :math:`\alpha = 90^o \Rightarrow cos \alpha`.
 Pozostaje nam w takim razie tylko strumień przez oba "denka"
 
 .. math::
-   \Phi = 2 * \Phi_p \\
-   \Phi = 2 * E * s \\
-   \Phi = 2 * k * Q * 4 \pi
-   \Phi = \frac{2 * Q}{\epsilon_0 * \epsilon_r} \\
-   \Phi = \frac{2 * Q}{\epsilon_0 * \epsilon_r} \\
-   \Phi = \frac{2 * \sigma * s}{\epsilon_0*\epsilon_r} \\
+   \Phi &= 2 * \Phi_p \\
+   \Phi &= 2 * E * s \\
+   \Phi &= 2 * k * Q * 4 \pi \\
+   \Phi &= \frac{2 * Q}{\epsilon_0 * \epsilon_r} \\
+   \Phi &= \frac{2 * Q}{\epsilon_0 * \epsilon_r} \\
+   \Phi &= \frac{2 * \sigma * s}{\epsilon_0*\epsilon_r} \\
 
 powróćmy teraz do prawa Gaussa
 
