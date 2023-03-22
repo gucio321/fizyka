@@ -31,7 +31,7 @@ Tym ostatnim wzorem jest właśnie **Prawo Gaussa**:
    \Phi = \frac{Q}{\epsilon_0 * \epsilon_r} \\
 
 Strumień natężenia pola elektrycznego przez dowolną **zamkniętą** powierzchnię
-równy jest załkowitemu ładunkowi zamkniętemu wewnątrz tej powierzchni dzielonemu
+równy jest całkowitemu ładunkowi zamkniętemu wewnątrz tej powierzchni dzielonemu
 przez przenikalność elektryczną danego ośrodka.
 
 Przykłady zastosowania
@@ -40,14 +40,14 @@ Przykłady zastosowania
 Płyta
 =====
 
-Natełżenie pola elektrycznego przy nieskończenie rozciągłej płycie
-nałądowanej z jednakową gęstością :math:`\sigma`.
+Natężenie pola elektrycznego przy nieskończenie rozciągłej płycie
+naładowanej z jednakową gęstością :math:`\sigma`.
 
 gęstość ładunków :math:`\sigma = \frac{Q}{s}`
 
 Na tej płycie linie pola są prostopadłe do niej oraz równoległe do siebie.
-Załóżmy, że fragment płyty zamkniemy w powierzchni zamkniętej w kształćie walca tak, że
-powieżchnia boczna będzie prostopadłą do powierzchni płyty.
+Załóżmy, że fragment płyty zamkniemy w powierzchni zamkniętej w kształcie walca tak, że
+powierzchnia boczna będzie prostopadłą do powierzchni płyty.
 Obliczmy strumień przez tę powierzchnię.
 
 .. math::
@@ -69,15 +69,15 @@ Pozostaje nam w takim razie tylko strumień przez oba "denka"
    \Phi = \frac{2 * Q}{\epsilon_0 * \epsilon_r} \\
    \Phi = \frac{2 * \sigma * s}{\epsilon_0*\epsilon_r} \\
 
-porwóćmy teraz do prawa Gaussa
+powróćmy teraz do prawa Gaussa
 
-.. warning:: Work in progress
+.. warning:: Praca nad tym działem wciąż trwa...
 
 Nić
 ===
 
 Pole wytworzone nieskończenie długą nić:
-Zauważmy, że linie pola są prostopadłę do nici (w uproszczeniu przypominają
+Zauważmy, że linie pola są prostopadłe do nici (w uproszczeniu przypominają
 szczotkę do czyszczenia butelek). 
 
 .. math::

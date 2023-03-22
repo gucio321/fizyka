@@ -35,7 +35,7 @@ Energia potencjalna
 -------------------
 
 Energia potencjalna w polu elektrycznym określa energię, jaką posiada ciało
-w danej odległości od łądunku elektrycznego.
+w danej odległości od ładunku elektrycznego.
 
 .. math::
    E_p = \frac{k * Q}{r}
@@ -43,7 +43,7 @@ w danej odległości od łądunku elektrycznego.
 gdzie:
 
 - `k` to stałą elektryczna
-- `Q` to łądunek ciałą centralnego (oddziałującego na ładunek próbny **dodatni** w odległości r)
+- `Q` to ładunek ciała centralnego (oddziałującego na ładunek próbny **dodatni** w odległości r)
 - `r` - odległość ładunków
 
 .. tip::

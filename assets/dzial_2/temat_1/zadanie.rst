@@ -3,7 +3,7 @@
 
 W jakiej odległości `r` od punktowego ładunku o wartości
 :math:`Q = 16 * 10^{-10} C`, zanurzonego w destylowanej wodzie,
-natężenie pola elektyrcznego wynosi :math:`E = 0.4 \frac{V}{m}`?
+natężenie pola elektrycznego wynosi :math:`E = 0.4 \frac{V}{m}`?
 Stała dielektryczna (zwana też względną przenikalnością elektryczną)
 wody :math:`\epsilon = 81`.
 
@@ -18,14 +18,14 @@ wody :math:`\epsilon = 81`.
 **rozwiązanie**
 ===============
 
-Zadanie plega praktycznie na podstawieniu danych do wzoru.
-Jedyną tródnością, jest przypomnienie sobi wzoru na `k`, które
+Zadanie polega praktycznie na podstawieniu danych do wzoru.
+Jedyną trudnością, jest przypomnienie sobie wzoru na `k`, które
 nie jest podane w zadaniu.
 
 .. math::
    k = \frac{1}{4\pi*\epsilon_0*\epsilon_r}
 
-Wiąze się to również z przypomnieniem wartości przenikalności elektrycznej próżni.
+Wiąże się to również z przypomnieniem wartości przenikalności elektrycznej próżni.
 
 .. math::
    \epsilon_0 = 8.85 * 10^{-12} \frac{m^2}{N*C^2}
@@ -38,7 +38,7 @@ Najpierw należy przekształcić wzory, aby móc wyliczyć `r`:
    r^2 = \frac{Q}{4 \pi * \epsilon_0 * \epsilon_r * E} \\
    r = \sqrt{\frac{Q}{4 \pi * \epsilon_0 * \epsilon_r * E}} \\
 
-Teraz podstawienie to już bółka z masłem
+Teraz podstawienie to już bułka z masłem
 
 .. math::
    r = \sqrt{\frac{16 * 10^{-10}}{4 \pi * 8.85 * 10^{-12} * 81 * 0.4}} m \\

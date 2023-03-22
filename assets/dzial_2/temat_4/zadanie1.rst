@@ -20,9 +20,9 @@ od masy krążącego ładunku.
 **rozwiązanie**
 ===============
 
-wiemy, że łądunek `q` krąży wokół ładunku `Q`. Oznacza to, że
+wiemy, że ładunek `q` krąży wokół ładunku `Q`. Oznacza to, że
 działa na niego siłą odśrodkowa (:math:`F_d`) oraz, że ta siła
-ma taką samą wartość jak działąjąca pomiędzy ładunkami różnoimiennymi
+ma taką samą wartość jak działająca pomiędzy ładunkami różnoimiennymi
 siła oddziaływań elektrostatycznych.
 
 Siły te mają ten sam kierunek (równoległy do promienia okręgu), ale
