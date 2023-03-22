@@ -137,6 +137,15 @@ kąty wychylenia/pozycji przestrzennej).
 
 ## Optyka
 
+### odbicie i załąmanie promieni świetlnych
+
+- załamanie: $\frac{sin(\alpha)}{sin(\beta)} = \frac{\eta_2}{\eta_1}$
+- Całkowite wewnętrzne odbicie:
+
+$$
+\beta = 90^o \Rightarrow sin(\beta) = 1 \Rightarrow sin(\alpha) = \frac{\eta_2}{\eta_1}
+$$
+
 ### Soczewka
 
 - Równanie soczewki: $\frac{1}{f} = \frac{1}{x} + \frac{1}{y}$
