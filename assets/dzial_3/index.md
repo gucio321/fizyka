@@ -90,6 +90,22 @@ Opis:
 
 ## Termodynamika
 
+### Energia
+
+- I zas. Dynamiki mówi, że zmiana energii wewnętrznej układu
+jest równa sumie ciepła przekazanego oraz wykonanej pracy.
+$\Delta U = Q + W_z$
+```{note}
+Zmianę energii wewnętrznej odzwierciedla temperatura (czytaj poniżej).
+```
+
+- Zmiana energii wewnętrznej jest **wprost proporcjonalna** do temperatury
+  i może zostać wyliczona z następującego wzoru:
+
+$$
+\Delta U = \frac{m}{2} n R \Delta T
+$$
+
 ### Ciepło molowe
 
 1. Ciepło molowe $c^{mol}$ to ciepło właściwe przeliczone na jeden mol
