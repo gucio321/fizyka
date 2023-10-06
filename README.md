@@ -39,3 +39,8 @@ now you can use `make html` to build page locally in `_build`
 
 the project is using PySpelling (aspell / huspell) so ensure that
 you have polish dictionary installed
+
+On Fedora:
+```sh
+sudo dnf install aspell-pl
+```
