@@ -82,12 +82,12 @@ $(e^x)' = e^x$
 ```
 
 #### Rachunek całkowy
-<!--  jeszcze nie rozumiem całek do końca więc trzeba to przejżeć TODO -->
+<!--  jeszcze nie rozumiem całek do końca więc trzeba to przejrzeć TODO -->
 Istnieją 2 typy całek
 - Całka nieoznaczona:
-    * pozwala na odnalezienie funkcji pierwotnej (z ktorej powstała pochodna)
+    * pozwala na odnalezienie funkcji pierwotnej (z której powstała pochodna)
 - całka oznaczona
-    * może byc interpretowana jako pole pod wykresem krzywej
+    * może być interpretowana jako pole pod wykresem krzywej
 
 $$
 niech F(x) = \int g(x) dx \\
