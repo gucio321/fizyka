@@ -37,6 +37,11 @@ rozszerzonym.
 
    assets/dzial_3/index.md
 
+.. toctree::
+   :maxdepth: 4
+
+   assets/dzial_4/index.md
+
 `Przejdź do źródeł! <https://github.com/gucio321/fizyka>`_
 
 Wszelkie błędy lub propozycje ulepszeć zgłaszajcie `tutaj <https://github.com/gucio321/fizyka/issues>`_
