@@ -77,6 +77,25 @@ niech f(x) = x^2 wtedy \\
 $$
 ```
 
+```{tip}
+$(e^x)' = e^x$
+```
+
+#### Rachunek całkowy
+<!--  jeszcze nie rozumiem całek do końca więc trzeba to przejżeć TODO -->
+Istnieją 2 typy całek
+- Całka nieoznaczona:
+    * pozwala na odnalezienie funkcji pierwotnej (z ktorej powstała pochodna)
+- całka oznaczona
+    * może byc interpretowana jako pole pod wykresem krzywej
+
+$$
+niech F(x) = \int g(x) dx \\
+dS = f(x)dx \\
+S = \int_A^B f(x) dx \\
+\int_A^B f(x) dx = F(B) - F(A)
+$$
+
 ## Odniesienia
 
 - Kierunek prowadzony przez [profesora dr. hab. inż. Wojciecha Łużney](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
