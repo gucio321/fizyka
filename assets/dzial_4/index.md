@@ -14,7 +14,7 @@ na kierunku Fizyka Techniczna.
     * współrzędne punktu opisane za pomocą wektora wodzącego $\vec{r}$
     * $\vec{r} = \vec{r_x} + \vec{r_y}$
     * współrzędne punktu są określane parą liczb $(x, y)$
-    * $vec{r_x} = r_x * \hat{n_x}$
+    * $\vec{r_x} = r_x * \hat{n_x}$
 
 ```{important}
 Wersor to wektor o długości 1.\
