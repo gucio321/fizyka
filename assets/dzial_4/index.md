@@ -19,7 +19,8 @@ na kierunku Fizyka Techniczna.
 ```{important}
 Wersor to wektor o długości 1.\
 W Kartezjańskim układzie współrzędnych używany do ustalenia jednostki na osiach.\
-ozn: $\hat{n_x}, \hat{n_y}$
+ozn: $\hat{n_x}, \hat{n_y}$\
+Co do samego wersora, to można powiedzieć że dla $\vec{a}$ $\frac{\vec{a}}{a} = \hat{a}$
 ```
 
 - Biegunowy
@@ -57,6 +58,42 @@ $(r, \theta, \phi)$
 ```
 
 ### Matma
+
+#### Działania na wektorach
+
+```{note}
+Własności wektora:
+- Punkt zaczepienia
+- Wartość
+- Kierunek
+- Zwrot
+```
+
+- Dodawanie wektorów _mam nadzieje że jest jasne_
+```{tip}
+odejmowanie wektorów $\vec{a} - \vec{b}$ to po prostu $\vec{a} + (-\vec{b})$
+```
+- Mnożenie wektora przez skalar $x * \vec{a} = [a_x * x, a_y * x]$ (oczywiście wszystkie inne duchowe wymiary obsługiwane)
+- Mnożenie wektora przez wektor
+    * wektorowy iloczyn skalarny (wynikiem jest skalar)
+
+$$
+\vec{a} \cdot \vec{b} = a * b * cos \alpha = a_x * b_x + a_y * b_y \\
+$$
+
+```{important}
+$$
+\bf{cos \alpha = \frac{\vec{a} \cdot \vec{b}}{a * b}}
+$$
+```
+
+```{tip}
+$$
+\bf{\vec{a} \perp \vec{b} \Leftrightarrow \vec{a} \cdot \vec{b} = 0}
+$$
+```
+
+**_Ciąg dalszy nastąpi, dzisiaj idę spać TODO_**
 
 #### Rachunek różniczkowy
 - pochodna określa jak szybko zmienia się funkcja w punkcie $x_0$ względem $x_1$
@@ -98,6 +135,6 @@ $$
 
 ## Odniesienia
 
-- Kierunek prowadzony przez [profesora dr. hab. inż. Wojciecha Łużney](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
+- Pzedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużney](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
 - [Sylabus Przedmiotu](https://sylabusy.agh.edu.pl/pl/document/7e60a851-0abc-44b6-9cdd-d04f9f50e420.pdf)
 
