@@ -186,7 +186,61 @@ Współrzędne w takim układzie określa następująca trójka uporządkowana:
 \bf{\vec{a} \perp \vec{b} \Leftrightarrow \vec{a} \cdot \vec{b} = 0}
 \]</div>
 </div>
-<p><strong><em>Ciąg dalszy nastąpi, dzisiaj idę spać TODO</em></strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>wektorowy iloczyn wektorowy (wynikiem jest wektor)</p></li>
+</ul>
+</div></blockquote>
+<div class="math notranslate nohighlight">
+\[
+\vec{a} \times \vec{b} = \vec{c}
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Kierunek wektora <span class="math notranslate nohighlight">\(\vec{c}\)</span> określa się na podstawie zasady śruby prawoskrętnej
+oraz <span class="math notranslate nohighlight">\(\vec{a} \perp \vec{c} \land \vec{b} \perp \vec{c}\)</span></p>
+</div>
+<p>Z tego powodu <span class="math notranslate nohighlight">\(\vec{a} \times \vec{b} \neq \vec{b} \times \vec{a}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+niech ~ a, b, \alpha \\
+|\vec{a} \times \vec{b}| = a * b * sin \alpha
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+niech ~ \vec{a}, \vec{b} \\
+\vec{a} \times \vec{b} = (a_y * b_z - a_z * b_y, a_z * b_x - a_x * b_z, a_x* b_y - a_y * b_x)
+\end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Powyższy wzór otrzymamy rozważając następującą macierz:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+a_x &amp; a_y &amp; a_z \\
+b_x &amp; b_y &amp; b_z
+\end{vmatrix}
+\\
+\\
+\begin{matrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+a_x &amp; a_y &amp; a_z \\
+b_x &amp; b_y &amp; b_z \\
+\color{gray}{\hat{i}} &amp; \color{gray}\hat{j} &amp; \color{gray}\hat{k} \\
+\color{gray}a_x &amp; \color{gray}a_y &amp; \color{gray}a_z \\
+\end{matrix} ~ W = \\
+= \hat{i} * a_y * b_z + a_x * b_y * \hat{k} + b_x * \hat{j} * a_z - \hat{k} * a_y * b_x - a_z * b_y * \hat{i} - b_z * \hat{j} * a_x \\
+= \hat{i} * (a_y * b_z - a_z * b_y) + \hat{j} *( a_z * b_x - a_x * b_z) + \hat{k} * (a_x * b_y - a_y * b_x)  \\
+\end{split}\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{a} \parallel \vec{b} \Leftrightarrow \vec{a} \times \vec{b}
+\]</div>
+</div>
 </section>
 <section id="rachunek-rozniczkowy">
 <h4>Rachunek różniczkowy<a class="headerlink" href="#rachunek-rozniczkowy" title="Link to this heading">¶</a></h4>
