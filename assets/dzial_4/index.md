@@ -93,7 +93,57 @@ $$
 $$
 ```
 
-**_Ciąg dalszy nastąpi, dzisiaj idę spać TODO_**
+> * wektorowy iloczyn wektorowy (wynikiem jest wektor)
+
+$$
+\vec{a} \times \vec{b} = \vec{c}
+$$
+
+```{note}
+Kierunek wektora $\vec{c}$ określa się na podstawie zasady śruby prawoskrętnej
+oraz $\vec{a} \perp \vec{c} \land \vec{b} \perp \vec{c}$
+```
+
+Z tego powodu $\vec{a} \times \vec{b} \neq \vec{b} \times \vec{a}$
+
+$$
+niech ~ a, b, \alpha \\
+|\vec{a} \times \vec{b}| = a * b * sin \alpha
+$$
+
+$$
+niech ~ \vec{a}, \vec{b} \\
+\vec{a} \times \vec{b} = (a_y * b_z - a_z * b_y, a_z * b_x - a_x * b_z, a_x* b_y - a_y * b_x)
+$$
+
+```{note}
+Powyższy wzór otrzymamy rozważając następującą macierz:
+
+$$
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+a_x & a_y & a_z \\
+b_x & b_y & b_z
+\end{vmatrix}
+\\
+\\
+\begin{matrix}
+\hat{i} & \hat{j} & \hat{k} \\
+a_x & a_y & a_z \\
+b_x & b_y & b_z \\
+\color{gray}{\hat{i}} & \color{gray}\hat{j} & \color{gray}\hat{k} \\
+\color{gray}a_x & \color{gray}a_y & \color{gray}a_z \\
+\end{matrix} ~ W = \\
+= \hat{i} * a_y * b_z + a_x * b_y * \hat{k} + b_x * \hat{j} * a_z - \hat{k} * a_y * b_x - a_z * b_y * \hat{i} - b_z * \hat{j} * a_x \\
+= \hat{i} * (a_y * b_z - a_z * b_y) + \hat{j} *( a_z * b_x - a_x * b_z) + \hat{k} * (a_x * b_y - a_y * b_x)  \\
+$$
+```
+
+```{tip}
+$$
+\vec{a} \parallel \vec{b} \Leftrightarrow \vec{a} \times \vec{b}
+$$
+```
 
 #### Rachunek różniczkowy
 - pochodna określa jak szybko zmienia się funkcja w punkcie $x_0$ względem $x_1$
