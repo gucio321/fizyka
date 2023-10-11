@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=a6e50efb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=6897fae6" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
     
     <script src="../../_static/documentation_options.js?v=a28d12eb"></script>
@@ -301,18 +301,70 @@ S = \int_A^B f(x) dx \\
 <p class="admonition-title">Informacja</p>
 <p>korzystamy z modelu punktu materialnego (pomijamy wszystkie statystyki z wyjątkiem masy)</p>
 </div>
-<p>Równanie ruchu: <span class="math notranslate nohighlight">\(\vec{r}(t) = x(t) * \hat{n_x} + y(t) * \hat(n_y}\)</span></p>
+<p>Równanie ruchu: <span class="math notranslate nohighlight">\(\vec{r}(t) = x(t) * \hat{n_x} + y(t) * \hat{n_y}\)</span></p>
 <section id="predkosc">
 <h4>Prędkość<a class="headerlink" href="#predkosc" title="Link to this heading">¶</a></h4>
+<div class="admonition-predkosc-srednia admonition">
+<p class="admonition-title">Prędkość Średnia</p>
+<p><span class="math notranslate nohighlight">\(v_śr = \frac{\Delta \vec{r}}{\Delta r}\)</span></p>
+</div>
+<div class="admonition-predkosc-chwilowa admonition">
+<p class="admonition-title">Prędkość chwilowa</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+lim_{\Delta r \to 0} \frac{\Delta \vec{r}}{\Delta t} \\
+\vec{V} = \frac{d \vec{r}}{d t} = \frac{d}{d t} (x * \hat{n_x} + y * \hat{n_y}) = \\
+= \frac{dx}{dt}*\hat{n_x} + \frac{dy}{dt}*\hat{n_y} = \\
+= v_x * \hat{n_x} + v_y * \hat{n_y} = \\
+bf{= \vec{v_x} + \vec{v_y}}
+\end{split}\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p><span class="math notranslate nohighlight">\(v\)</span> jest zawsze styczne do toru, po którym prosusza się ciało.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
 <ul class="simple">
-<li><p>dla <span class="math notranslate nohighlight">\(\vec{v} = const\)</span> ruchjednostajny prostoliniowy <span class="math notranslate nohighlight">\(\vec{r} = \vec{v} * t\)</span></p></li>
-<li><p>ruch jest prostoliniowy, gdy kierunek prędkości jest stały</p></li>
-<li><p>ruch krzywoliniowy występuje, gdy <span class="math notranslate nohighlight">\(\vec{r} = const\)</span></p></li>
+<li><p>dla <span class="math notranslate nohighlight">\(\vec{v} = const\)</span> ruch *<em>jednostajny prostoliniowy</em> <span class="math notranslate nohighlight">\(\vec{r} = \vec{v} * t\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{v} = \frac{d\vec{r}}{dt} \\
+d\vec{r} = \vec{v}dt \\
+\int d\vec{r} = \int\vec{v}dt \\
+\\
+\int d\vec{r} = \vec{r}\\
+\\
+\vec{r} = \int\vec{v}dt \\
+\\
+dla ~ v = const \\
+\int \vec{v}dt = \vec{v} \int dt \\
+\\
+\vec{r} = \vec{v}\int dt \\
+\vec{r} = \vec{v}t + C \\
+\end{split}\]</div>
+<ul class="simple">
+<li><p>ruch jest <strong>prostoliniowy</strong>, gdy kierunek prędkości jest stały</p></li>
+<li><p>ruch jednostajny krzywoliniowy występuje, gdy <span class="math notranslate nohighlight">\(|\vec{r}| = const\)</span></p></li>
 </ul>
 </div>
 </section>
+</section>
+<section id="przyspieszenie">
+<h3>Przyspieszenie<a class="headerlink" href="#przyspieszenie" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>określa szybkość zmiany prędkości</p></li>
+</ul>
+<div class="admonition-przyspieszenie-srednie-i-chwilowe admonition">
+<p class="admonition-title">Przyspieszenie średnie i chwilowe</p>
+<p>Przyśpieszenie średnie definiujemy jako:</p>
+<div class="math notranslate nohighlight">
+\[
+a_śr = \frac{\Delta \vec{v}}{\Delta t}
+\]</div>
+</div>
+<!--<iframe src="https://www.desmos.com/calculator/oql4j6fhks" width="100%" style="min-height:200px"></iframe>-->
 </section>
 </section>
 <section id="odniesienia">
@@ -347,6 +399,7 @@ S = \int_A^B f(x) dx \\
 <li><a class="reference internal" href="#predkosc">Prędkość</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#przyspieszenie">Przyspieszenie</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#odniesienia">Odniesienia</a></li>
