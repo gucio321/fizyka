@@ -183,8 +183,39 @@ S = \int_A^B f(x) dx \\
 \int_A^B f(x) dx = F(B) - F(A)
 $$
 
+<!-- 10.10.2023 -->
+### Ruch punktu materialnego na płaszczyźnie
+
+```{note}
+korzystamy z modelu punktu materialnego (pomijamy wszystkie statystyki z wyjątkiem masy)
+```
+
+Równanie ruchu: $\vec{r}(t) = x(t) * \hat{n_x} + y(t) * \hat(n_y}$
+
+#### Prędkość
+
+```{admonition}
+**PRędkość średnia** $v_śr = \frac{\Delta \vec{r}}{\Delta r}
+```
+
+```{admonition}
+**Prędkość chwilowa**
+
+$$
+lim_{\Delta r \to 0} \frac{\Delta \vec{r}}{\Delta t} \\
+\vec{V} = \frac{d \vec{r}}{d t} = \frac{d}{d t} (x * \hat{n_x} + y * \hat{n_y}) = \\
+= \frac{dx}{dt}*\hat{n_x} + \frac{dy}{dt}*\hat{n_y} \\
+$$
+```
+
+```{note}
+- dla $\vec{v} = const$ ruchjednostajny prostoliniowy $\vec{r} = \vec{v} * t$
+- ruch jest prostoliniowy, gdy kierunek prędkości jest stały
+- ruch krzywoliniowy występuje, gdy $\vec{r} = const$
+```
+
 ## Odniesienia
 
-- Pzedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużney](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
+- Przedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużny](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
 - [Sylabus Przedmiotu](https://sylabusy.agh.edu.pl/pl/document/7e60a851-0abc-44b6-9cdd-d04f9f50e420.pdf)
 
