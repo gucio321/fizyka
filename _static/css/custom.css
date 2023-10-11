@@ -90,6 +90,10 @@ div.body h2 {
 
 
 /* note, important, tip warning, background */
+div.admonition {
+	background-color: #31005d;
+}
+
 div.important {
 	background-color: #391a1a;
 }
@@ -104,4 +108,11 @@ div.note {
 
 div.tip {
 	background-color: #265022;
+}
+
+
+div.body hr {
+        height: 2px;
+        background-color: white;
+        border: none;
 }

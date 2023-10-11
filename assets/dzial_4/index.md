@@ -190,29 +190,66 @@ $$
 korzystamy z modelu punktu materialnego (pomijamy wszystkie statystyki z wyjątkiem masy)
 ```
 
-Równanie ruchu: $\vec{r}(t) = x(t) * \hat{n_x} + y(t) * \hat(n_y}$
+Równanie ruchu: $\vec{r}(t) = x(t) * \hat{n_x} + y(t) * \hat{n_y}$
 
 #### Prędkość
 
-```{admonition}
-**PRędkość średnia** $v_śr = \frac{\Delta \vec{r}}{\Delta r}
+```{admonition} Prędkość Średnia
+$v_śr = \frac{\Delta \vec{r}}{\Delta r}$
 ```
 
-```{admonition}
-**Prędkość chwilowa**
-
+```{admonition} Prędkość chwilowa
 $$
 lim_{\Delta r \to 0} \frac{\Delta \vec{r}}{\Delta t} \\
 \vec{V} = \frac{d \vec{r}}{d t} = \frac{d}{d t} (x * \hat{n_x} + y * \hat{n_y}) = \\
-= \frac{dx}{dt}*\hat{n_x} + \frac{dy}{dt}*\hat{n_y} \\
+= \frac{dx}{dt}*\hat{n_x} + \frac{dy}{dt}*\hat{n_y} = \\
+= v_x * \hat{n_x} + v_y * \hat{n_y} = \\
+bf{= \vec{v_x} + \vec{v_y}}
 $$
 ```
 
-```{note}
-- dla $\vec{v} = const$ ruchjednostajny prostoliniowy $\vec{r} = \vec{v} * t$
-- ruch jest prostoliniowy, gdy kierunek prędkości jest stały
-- ruch krzywoliniowy występuje, gdy $\vec{r} = const$
+```{tip}
+$v$ jest zawsze styczne do toru, po którym prosusza się ciało.
 ```
+
+```{note}
+- dla $\vec{v} = const$ ruch **jednostajny prostoliniowy* $\vec{r} = \vec{v} * t$
+
+$$
+\vec{v} = \frac{d\vec{r}}{dt} \\
+d\vec{r} = \vec{v}dt \\
+\int d\vec{r} = \int\vec{v}dt \\
+\\
+\int d\vec{r} = \vec{r}\\
+\\
+\vec{r} = \int\vec{v}dt \\
+\\
+dla ~ v = const \\
+\int \vec{v}dt = \vec{v} \int dt \\
+\\
+\vec{r} = \vec{v}\int dt \\
+\vec{r} = \vec{v}t + C \\
+$$
+
+
+- ruch jest **prostoliniowy**, gdy kierunek prędkości jest stały
+- ruch jednostajny krzywoliniowy występuje, gdy $|\vec{r}| = const$
+```
+
+### Przyspieszenie
+
+- określa szybkość zmiany prędkości
+
+```{admonition} Przyspieszenie średnie i chwilowe
+Przyśpieszenie średnie definiujemy jako:
+
+$$
+a_śr = \frac{\Delta \vec{v}}{\Delta t}
+$$
+
+```
+
+<!--<iframe src="https://www.desmos.com/calculator/oql4j6fhks" width="100%" style="min-height:200px"></iframe>-->
 
 ## Odniesienia
 
