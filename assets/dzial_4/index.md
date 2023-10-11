@@ -209,11 +209,11 @@ $$
 ```
 
 ```{tip}
-$v$ jest zawsze styczne do toru, po którym prosusza się ciało.
+$v$ jest zawsze styczne do toru, po którym porusza się ciało.
 ```
 
 ```{note}
-- dla $\vec{v} = const$ ruch **jednostajny prostoliniowy* $\vec{r} = \vec{v} * t$
+- dla $\vec{v} = const$ ruch **jednostajny prostoliniowy** $\vec{r} = \vec{v} * t$
 
 $$
 \vec{v} = \frac{d\vec{r}}{dt} \\
@@ -244,7 +244,7 @@ $$
 Przyśpieszenie średnie definiujemy jako:
 
 $$
-a_śr = \frac{\Delta \vec{v}}{\Delta t}
+a_{śr} = \frac{\Delta \vec{v}}{\Delta t}
 $$
 
 ```
