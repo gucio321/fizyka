@@ -388,22 +388,18 @@ $$
 $$
 
 ```{tip}
-$\vec{\omega} jest prostopadły do wektora prędkości i promienia wodzącego
+$\vec{\omega}$ jest prostopadły do wektora prędkości i promienia wodzącego
 (prostopadły do płaszczyzny na któ©ej odbywa sie ruch)
 ```
 
-Przyspieszenie kątowe
-$$
-\epsilon = \frac{d \omega}{dt}
-$$
+Przyspieszenie kątowe $\epsilon = \frac{d \omega}{dt}$
 
 $$
-a = \frac{dv}{dt} \\
-a = \frac{d(\omega \times \r)}{dt} \\
-a = \frac{d \omega}{\dt} \times \frac{r}{dt} \\
-a = \epsilon \vec{r} \times \vec{\omega} \vec{v} \\
+\vec{a} = \frac{d\vec{v}}{dt} \\
+\vec{a} = \frac{d(\omega \times \vec{r})}{dt} \\
+\vec{a} = \frac{d \vec{\omega}}{dt} \times \frac{\vec{r}}{dt} \\
+\vec{a} = \epsilon \vec{r} + \vec{\omega} \vec{v} \\
 $$
-<!--dodaj tu wektory TODO-->
 
 ## Odniesienia
 
