@@ -236,7 +236,7 @@ $$
 - ruch jednostajny krzywoliniowy występuje, gdy $|\vec{r}| = const$
 ```
 
-### Przyspieszenie
+#### Przyspieszenie
 
 - określa szybkość zmiany prędkości
 
@@ -250,6 +250,160 @@ $$
 ```
 
 <!--<iframe src="https://www.desmos.com/calculator/oql4j6fhks" width="100%" style="min-height:200px"></iframe>-->
+
+<!--12.10.2023-->
+#### Rzut ukośny (przykład 1)
+Założenia początkowe
+$$
+\vec{r_0} = [0,0] \\
+\vec{v_0} = [\vec{v_0} cos \alpha, \vec{v_0} sin \alpha] 
+$$
+
+```{warning}
+Jedyną siłą działającą na ciało w rzucie ukośny jest grawitacja.
+$a_x = 0 \\ a_y = -g$
+```
+
+$$
+\int a_x dt = v_x \\
+\int 0 dt = v_x \\
+v_x = C_1 = v_0 cos \alpha \\
+\\
+\int a_y dt = v_y \\
+\int -g dt = v_y \\
+-g t + C_2 = v_y \\
+dla~chwili~t_0:\\
+-g * 0 + C_2 = \vec{v} sin \alpha \\
+v_x = v_0 cos \alpha \\
+v_y = -gt + v_0 sin \alpha \\
+$$
+
+$$
+x(t) = \int v_x dt \\
+x(t) = \int v_0 cos \alpha dt \\
+x(0) = v_0 cos \alpha t + C_3 \\
+dla~t_0 ~ x=0 \Rightarrow C_3 = 0 \\
+x(0) = v_0 cos \alpha t \\
+\\
+y(t) = \int v_y dt \\
+y(t) = \int (-gt + v_0 sin \alpha) dt \\
+y(t) = \int -gt dt + \int v_0 sin \alpha dt \\
+y(t) = \frac{-gt^2}{2} + v_0 sin \alpha t + C_4 \\
+dla~t_0~y_0 = 0 \Rightarrow C_4 = 0 \\
+y(t) = \frac{-gt^2}{2} + v_0 sin \alpha t \\
+$$
+
+##### Zasięg
+
+$$
+t = \frac{x}{v_0 cos \alpha}\\
+podstawienie~do~równania~y\\
+y = x (\frac{-g}{2} * x{v_0 cos \alpha} + )
+$$
+
+$$
+d = \frac{2v_0^2 sin\alpha*\cos \alpha}{g}
+$$
+
+#### Ruch łudki w poprzek rzeki (przykład 2)
+
+```{admonition} Załorzenia
+- prękdość rzeki na środku jest największa (przy przegu prędkość wynosi 0)
+Profil prędkości sinusoidalny. (x = cos(\frac{\pi y}{L}))
+
+$$
+\vec{r} = [0,0]
+v_x = v_0 * sin \alpha~v_0 cos\alpha* t \\
+v_y = v_0 cos \alpha
+$$
+```
+
+$$
+x(t) &= \int v_x dt \\
+x(t) &= v_0 \frac{L}{\pi~v_1}*cos(\frac{\pi~v_1}{L})*t + C\\
+C &= v_0 \frac{L}{\pi v_1} \\
+x(t) &= - v_0 \frac{L}{\pi~v_1}*cos(\frac{\pi~v_1}{L})*t + v_0\frac{L}{\pi~v_1}\\
+x(t) &= v_0 \frac{L}{\pi~v_1} * (-cos(\frac{\pi~v_1}{L})*t +1 )\\
+\\
+y(t) &= v_1 t\\
+\\
+x &= \frac{v_0 L}{\pi V_1}*(1-cos\frac{\pi L}{y}) \\
+d &= \frac{2v_0L}{\pi v_1}
+$$
+
+### Ruch względny i transformacja galileusza
+
+Rozważmy dwa układy odniesienia ($S$ i $S'$).
+$\vec{V_U} = const$ - prędkość $S'$ względem $S$.
+
+```{important}
+Załużmy, że $X \paralel X'$
+```
+
+```{note}
+$$
+S \Rightleftarrow S' \\
+t' = t = t_0
+$$
+```
+
+Załużmy punkt $A$, wtedy jego położenie można określić zrówno jako $\vec{r}$ względem $S$
+oraz $\vec{r'}$ względem $S'$
+
+**Transformacja** to związek między $\vec{r}$ a $\vec{r'}$.
+
+Niech $\vec{R}$ to wektor określający położenie $S'$ względem $S$
+
+```{note}
+$$
+dla~t_0 \\
+\vec{R} = 0 \\
+\vec{R} = v_u * t
+$$
+
+niech $R_x = R \land R_y = 0 \land R_z = 0$
+```
+
+$$
+\vec{r'} = \vec{r} - \vec{R} \\
+x' = r_X - v_u t
+$$
+
+$$
+v_x' = v_x - v_u
+$$
+
+```{tip}
+Przyspieszenie w obu układach jest stałe $\Leftrightarrow$ wykonują one względem
+siebie ruch jednostajny prostoliniowy
+```
+
+### Dynamika ruchu po okręgu
+$$
+\omega = \frac{d\phi}{dt}
+$$
+
+$$
+\vec{v} = \vec{\omega} \times \vec{r}
+$$
+
+```{tip}
+$\vec{\omega} jest prostopadły do wektora prędkości i promienia wodzącego
+(prostopadły do płaszczyzny na któ©ej odbywa sie ruch)
+```
+
+Przyspieszenie kątowe
+$$
+\epsilon = \frac{d \omega}{dt}
+$$
+
+$$
+a = \frac{dv}{dt} \\
+a = \frac{d(\omega \times \r)}{dt} \\
+a = \frac{d \omega}{\dt} \times \frac{r}{dt} \\
+a = \epsilon \vec{r} \times \vec{\omega} \vec{v} \\
+$$
+<!--dodaj tu wektory TODO-->
 
 ## Odniesienia
 
