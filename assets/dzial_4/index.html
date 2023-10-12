@@ -350,9 +350,8 @@ dla ~ v = const \\
 </ul>
 </div>
 </section>
-</section>
 <section id="przyspieszenie">
-<h3>Przyspieszenie<a class="headerlink" href="#przyspieszenie" title="Link to this heading">¶</a></h3>
+<h4>Przyspieszenie<a class="headerlink" href="#przyspieszenie" title="Link to this heading">¶</a></h4>
 <ul class="simple">
 <li><p>określa szybkość zmiany prędkości</p></li>
 </ul>
@@ -365,6 +364,165 @@ a_{śr} = \frac{\Delta \vec{v}}{\Delta t}
 \]</div>
 </div>
 <!--<iframe src="https://www.desmos.com/calculator/oql4j6fhks" width="100%" style="min-height:200px"></iframe>-->
+<!--12.10.2023-->
+</section>
+<section id="rzut-ukosny-przyklad-1">
+<h4>Rzut ukośny (przykład 1)<a class="headerlink" href="#rzut-ukosny-przyklad-1" title="Link to this heading">¶</a></h4>
+<p>Założenia początkowe
+$<span class="math notranslate nohighlight">\(
+\vec{r_0} = [0,0] \\
+\vec{v_0} = [\vec{v_0} cos \alpha, \vec{v_0} sin \alpha] 
+\)</span>$</p>
+<div class="admonition warning">
+<p class="admonition-title">Ostrzeżenie</p>
+<p>Jedyną siłą działającą na ciało w rzucie ukośny jest grawitacja.
+<span class="math notranslate nohighlight">\(a_x = 0 \\ a_y = -g\)</span></p>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\int a_x dt = v_x \\
+\int 0 dt = v_x \\
+v_x = C_1 = v_0 cos \alpha \\
+\\
+\int a_y dt = v_y \\
+\int -g dt = v_y \\
+-g t + C_2 = v_y \\
+dla~chwili~t_0:\\
+-g * 0 + C_2 = \vec{v} sin \alpha \\
+v_x = v_0 cos \alpha \\
+v_y = -gt + v_0 sin \alpha \\
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x(t) = \int v_x dt \\
+x(t) = \int v_0 cos \alpha dt \\
+x(0) = v_0 cos \alpha t + C_3 \\
+dla~t_0 ~ x=0 \Rightarrow C_3 = 0 \\
+x(0) = v_0 cos \alpha t \\
+\\
+y(t) = \int v_y dt \\
+y(t) = \int (-gt + v_0 sin \alpha) dt \\
+y(t) = \int -gt dt + \int v_0 sin \alpha dt \\
+y(t) = \frac{-gt^2}{2} + v_0 sin \alpha t + C_4 \\
+dla~t_0~y_0 = 0 \Rightarrow C_4 = 0 \\
+y(t) = \frac{-gt^2}{2} + v_0 sin \alpha t \\
+\end{split}\]</div>
+<section id="zasieg">
+<h5>Zasięg<a class="headerlink" href="#zasieg" title="Link to this heading">¶</a></h5>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+t = \frac{x}{v_0 cos \alpha}\\
+podstawienie~do~równania~y\\
+y = x (\frac{-g}{2} * x{v_0 cos \alpha} + )
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+d = \frac{2v_0^2 sin\alpha*\cos \alpha}{g}
+\]</div>
+</section>
+</section>
+<section id="ruch-ludki-w-poprzek-rzeki-przyklad-2">
+<h4>Ruch łudki w poprzek rzeki (przykład 2)<a class="headerlink" href="#ruch-ludki-w-poprzek-rzeki-przyklad-2" title="Link to this heading">¶</a></h4>
+<div class="admonition-zalorzenia admonition">
+<p class="admonition-title">Załorzenia</p>
+<ul class="simple">
+<li><p>prękdość rzeki na środku jest największa (przy przegu prędkość wynosi 0)
+Profil prędkości sinusoidalny. (x = cos(\frac{\pi y}{L}))</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{r} = [0,0]
+v_x = v_0 * sin \alpha~v_0 cos\alpha* t \\
+v_y = v_0 cos \alpha
+\end{split}\]</div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x(t) &amp;= \int v_x dt \\
+x(t) &amp;= v_0 \frac{L}{\pi~v_1}*cos(\frac{\pi~v_1}{L})*t + C\\
+C &amp;= v_0 \frac{L}{\pi v_1} \\
+x(t) &amp;= - v_0 \frac{L}{\pi~v_1}*cos(\frac{\pi~v_1}{L})*t + v_0\frac{L}{\pi~v_1}\\
+x(t) &amp;= v_0 \frac{L}{\pi~v_1} * (-cos(\frac{\pi~v_1}{L})*t +1 )\\
+\\
+y(t) &amp;= v_1 t\\
+\\
+x &amp;= \frac{v_0 L}{\pi V_1}*(1-cos\frac{\pi L}{y}) \\
+d &amp;= \frac{2v_0L}{\pi v_1}
+\end{split}\]</div>
+</section>
+</section>
+<section id="ruch-wzgledny-i-transformacja-galileusza">
+<h3>Ruch względny i transformacja galileusza<a class="headerlink" href="#ruch-wzgledny-i-transformacja-galileusza" title="Link to this heading">¶</a></h3>
+<p>Rozważmy dwa układy odniesienia (<span class="math notranslate nohighlight">\(S\)</span> i <span class="math notranslate nohighlight">\(S'\)</span>).
+<span class="math notranslate nohighlight">\(\vec{V_U} = const\)</span> - prędkość <span class="math notranslate nohighlight">\(S'\)</span> względem <span class="math notranslate nohighlight">\(S\)</span>.</p>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Załużmy, że <span class="math notranslate nohighlight">\(X \paralel X'\)</span></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+S \Rightleftarrow S' \\
+t' = t = t_0
+\end{split}\]</div>
+</div>
+<p>Załużmy punkt <span class="math notranslate nohighlight">\(A\)</span>, wtedy jego położenie można określić zrówno jako <span class="math notranslate nohighlight">\(\vec{r}\)</span> względem <span class="math notranslate nohighlight">\(S\)</span>
+oraz <span class="math notranslate nohighlight">\(\vec{r'}\)</span> względem <span class="math notranslate nohighlight">\(S'\)</span></p>
+<p><strong>Transformacja</strong> to związek między <span class="math notranslate nohighlight">\(\vec{r}\)</span> a <span class="math notranslate nohighlight">\(\vec{r'}\)</span>.</p>
+<p>Niech <span class="math notranslate nohighlight">\(\vec{R}\)</span> to wektor określający położenie <span class="math notranslate nohighlight">\(S'\)</span> względem <span class="math notranslate nohighlight">\(S\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+dla~t_0 \\
+\vec{R} = 0 \\
+\vec{R} = v_u * t
+\end{split}\]</div>
+<p>niech <span class="math notranslate nohighlight">\(R_x = R \land R_y = 0 \land R_z = 0\)</span></p>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{r'} = \vec{r} - \vec{R} \\
+x' = r_X - v_u t
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+v_x' = v_x - v_u
+\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Przyspieszenie w obu układach jest stałe <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span> wykonują one względem
+siebie ruch jednostajny prostoliniowy</p>
+</div>
+</section>
+<section id="dynamika-ruchu-po-okregu">
+<h3>Dynamika ruchu po okręgu<a class="headerlink" href="#dynamika-ruchu-po-okregu" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\omega = \frac{d\phi}{dt}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\vec{v} = \vec{\omega} \times \vec{r}
+\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>$\vec{\omega} jest prostopadły do wektora prędkości i promienia wodzącego
+(prostopadły do płaszczyzny na któ©ej odbywa sie ruch)</p>
+</div>
+<p>Przyspieszenie kątowe
+$<span class="math notranslate nohighlight">\(
+\epsilon = \frac{d \omega}{dt}
+\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+a = \frac{dv}{dt} \\
+a = \frac{d(\omega \times \r)}{dt} \\
+a = \frac{d \omega}{\dt} \times \frac{r}{dt} \\
+a = \epsilon \vec{r} \times \vec{\omega} \vec{v} \\
+\end{split}\]</div>
+<!--dodaj tu wektory TODO-->
 </section>
 </section>
 <section id="odniesienia">
@@ -397,9 +555,16 @@ a_{śr} = \frac{\Delta \vec{v}}{\Delta t}
 </li>
 <li><a class="reference internal" href="#ruch-punktu-materialnego-na-plaszczyznie">Ruch punktu materialnego na płaszczyźnie</a><ul>
 <li><a class="reference internal" href="#predkosc">Prędkość</a></li>
+<li><a class="reference internal" href="#przyspieszenie">Przyspieszenie</a></li>
+<li><a class="reference internal" href="#rzut-ukosny-przyklad-1">Rzut ukośny (przykład 1)</a><ul>
+<li><a class="reference internal" href="#zasieg">Zasięg</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#przyspieszenie">Przyspieszenie</a></li>
+<li><a class="reference internal" href="#ruch-ludki-w-poprzek-rzeki-przyklad-2">Ruch łudki w poprzek rzeki (przykład 2)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ruch-wzgledny-i-transformacja-galileusza">Ruch względny i transformacja galileusza</a></li>
+<li><a class="reference internal" href="#dynamika-ruchu-po-okregu">Dynamika ruchu po okręgu</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#odniesienia">Odniesienia</a></li>
