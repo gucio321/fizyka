@@ -37,6 +37,22 @@ python3 -m pip install -r requirements.txt
 
 now you can use `make html` to build page locally in `_build`
 
+## Building PDF document
+
+Sphinx supports converting whole code to latex and then to PDF document.
+To do so execute `make latexpdf`.
+
+### Linux
+
+There are several DNF packages you need to install before running `make latexpdf`.
+I'll try to create a full list of these packages later. For now:
+
+```sh
+dnf install -y latexmk texlive-cmap texlive-collection-fontsrecommended texlive-fncychap texlive-wrapfig texlive-capt-of texlive-framed texlive-upquote texlive-needspace texlive-tabulary texlive-parskip texlive-oberdiek texlive-cancel
+```
+
+_For ubuntu-based sysstems package names might be slightly different_
+
 ## Spell checking
 
 the project is using PySpelling (aspell / huspell) so ensure that
