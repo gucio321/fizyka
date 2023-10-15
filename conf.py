@@ -92,3 +92,9 @@ myst_enable_extensions = [
     "substitution",
     "tasklist",
 ]
+
+latex_elements = {
+        'preamble': r'''
+        \usepackage{cancel}
+        ''',
+}
