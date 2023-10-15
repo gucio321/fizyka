@@ -195,7 +195,7 @@ Równanie ruchu: $\vec{r}(t) = x(t) * \hat{n_x} + y(t) * \hat{n_y}$
 #### Prędkość
 
 ```{admonition} Prędkość Średnia
-$v_śr = \frac{\Delta \vec{r}}{\Delta r}$
+$v_{śr} = \frac{\Delta \vec{r}}{\Delta r}$
 ```
 
 ```{admonition} Prędkość chwilowa
@@ -337,12 +337,12 @@ Rozważmy dwa układy odniesienia ($S$ i $S'$).
 $\vec{V_U} = const$ - prędkość $S'$ względem $S$.
 
 ```{important}
-Załużmy, że $X \paralel X'$
+Załużmy, że $X \parallel X'$
 ```
 
 ```{note}
 $$
-S \Rightleftarrow S' \\
+S \Leftrightarrow S' \\
 t' = t = t_0
 $$
 ```

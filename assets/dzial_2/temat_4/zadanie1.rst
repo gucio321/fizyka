@@ -37,7 +37,7 @@ Prędkość w ruchu po okręgu to :math:`v = \frac{2 * \pi * r}{T}`
 Teraz należy tylko wyliczyć okres obrotu:
 
 .. math::
-   \frac{m v^2}{\cancel{R}} = - k \frac{q * Q}{R^\cancel{2}} \\
+   \frac{m v^2}{\cancel{R}} = - k \frac{q * Q}{R^{\cancel{2}}} \\
    m * \left(\frac{2 * \pi * R}{T}\right)^2 = - k \frac{q * Q}{R} \\
    m * \left(2 \pi \right)^2 R^3 = - k * q * Q * T^2 \\
    T = \sqrt{- \frac{m * \left(2 \pi \right)^2 R^3}{k * q * Q}} \\
