@@ -5,6 +5,7 @@ matrix:
     d: pl
   sources:
   - assets/**/*rst
+  - assets/**/*md
   dictionary:
     wordlists:
     - assets/custom-wordlist.txt

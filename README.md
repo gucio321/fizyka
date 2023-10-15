@@ -1,3 +1,4 @@
+<!--
 # NOTE 
 <image align="left" src="https://user-images.githubusercontent.com/242652/138285004-b27d55b3-163b-4fe3-a8ff-6c34518044bd.png">
 This project is currently deprecated and not developed anymore.
@@ -9,6 +10,7 @@ https://gucio321.github.io/fizyka
 Thanx!
 gucio321 <gucio321@users.noreply.github.com> - editor-in-chief of "Zadania z Fizyki - Dokumentacja" website
 <br clear="all" />
+-->
 
 <p align="center">
 <a href="https://github.com/gucio321/fizyka/issues/new">
@@ -39,3 +41,8 @@ now you can use `make html` to build page locally in `_build`
 
 the project is using PySpelling (aspell / huspell) so ensure that
 you have polish dictionary installed
+
+On Fedora:
+```sh
+sudo dnf install aspell-pl
+```

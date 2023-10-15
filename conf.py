@@ -57,6 +57,11 @@ exclude_patterns = ['docs', 'Thumbs.db', '.DS_Store', '_build', 'venv', "README.
 #
 # more themes: https://sphinx-themes.org/#theme-groundwork-sphinx-theme
 html_theme = 'cloud'
+html_theme_options = {
+        "sidebar_localtoc_title": "Spis treści:",
+        "sidebar_prev_title": "Poprzednia strona",
+        "sidebar_next_title": "Następna strona",
+}
 html_css_files= [
         'css/custom.css'
 ]
