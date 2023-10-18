@@ -184,6 +184,8 @@ S = \int_A^B f(x) dx \\
 $$
 
 <!-- 10.10.2023 -->
+## Mechanika
+
 ### Ruch punktu materialnego na płaszczyźnie
 
 ```{note}
@@ -400,6 +402,57 @@ $$
 \times~\text{traktujemy jak zwykłe mnożenie i liczymy pochodną}\\
 \vec{a} &= \frac{d \vec{\omega}}{dt} \times \vec{r} + \frac{d\vec{r}}{dt} \times \vec{\omega} \\
 \vec{a} &= \vec{\epsilon} \times \vec{r} + \vec{\omega} \times \vec{v} \\
+$$
+
+### Względność ruchu po okręgu
+
+Niech $S'$ będzie układem inercjalnym względem $S$.
+Niech $z = z'$ i niech $\vec{\omega}_{S'} \parallel z \parallel z'$
+
+Dla $t = t' = 0~x = x' \land y = y'$
+
+#### $\bf{\vec{v} \leftrightarrow \vec{v'}}$
+
+$$
+dla~\vec{v'} = 0 &\qquad \vec{v} = \vec{\omega}\times \vec{r} \\
+dla~\vec{v'} \neq 0 &\qquad \vec{v} = \vec{\omega}\times \vec{r} + \vec{v'} \\
+$$
+
+dla układu biegunowego
+
+$$
+\hat{n_r} &= cos \phi \hat{n_x} + sin \phi \hat{n_y} \\
+\hat{n_\phi} &= -sin \phi \hat{n_x} + cos \phi \hat{n_y} \\
+\\
+\vec{v} &= \frac{d}{dt} (r \hat{n}) \\
+\vec{v} &= \frac{dr}{dt} \hat{n_r} + \frac{d\hat{n_r}}{dt} r \\
+\vec{v} &= \frac{dr}{dt} \hat{n_r} + r \frac{d}{dt}\left(cos \phi \hat{n_x} + sin \phi \hat{n_y} \right) \\
+\vec{v} &= \frac{dr}{dt} \hat{n_r} + r \left(\frac{d\phi}{dt} (-sin \phi) \hat{n_x} + \frac{d\phi}{dt} cos \phi \hat{n_y} \right) \\
+\vec{v} &= \frac{dr}{dt} \hat{n_r} + r \frac{d\phi}{dt} \bf{\left(-sin \phi \hat{n_x} + cos \phi \hat{n_y} \right)} \\
+\vec{v} &= \frac{dr}{dt} \hat{n_r} + r \frac{d\phi}{dt} n_\phi \\
+$$
+
+#### $\bf{\vec{a} \leftrightarrow \vec{a'}}$
+
+$$
+\vec{a} = \vec{a'} + 2\vec{\omega} \times \vec{v} + \vec{\omega} \times (\vec{\omega} \times \vec{r})\\
+$$
+
+dla układu biegunowego
+
+$$
+\vec{a} &= a_r \hat{n_r} + a_\phi \hat{n_\phi} \\
+a_r = \frac{dv_r}{dt} &\quad a_\phi = \frac{dv_\phi}{dt}\\
+\vec{a} &= \frac{dv_r}{dt} \hat{n_r} + \frac{dv_\phi}{dt} \hat{n_\phi} \\
+\vec{a} &= \frac{d}{dt}\left(\frac{dr}{dt} \hat{n_r} + r\frac{d\phi}{dt} \hat{n_\phi}\right) \\
+
+niech~x = \frac{d}{dt}\left(\frac{dr}{dt} \hat{n_r}\right) &\land
+y = \frac{d}{dt}\left(r \frac{d\phi}{dt}\hat{n_\phi}\right) \\
+
+x = \frac{d^2r}{dt^2} \hat{n_r} + \frac{dr}{dt}\frac{d\phi}{dt}\hat{n_\phi} &\land
+y = \frac{dr}{dt}\frac{d\phi}{dt}\hat{n_\phi} + r \frac{d}{dt}\left(\frac{d\phi}{dt}\hat{n_\phi} \right)\\
+
+&~y = \frac{dr}{dt}\frac{d\phi}{dt}\hat{n_\phi} + r \left(\frac{d^2\phi}{dt^2}\hat{n_\phi + \frac{d\phi}{dt}\frac{d \hat{n_\phi}}{dt}} \right)\\
 $$
 
 ## Odniesienia
