@@ -452,7 +452,31 @@ y = \frac{d}{dt}\left(r \frac{d\phi}{dt}\hat{n_\phi}\right) \\
 x = \frac{d^2r}{dt^2} \hat{n_r} + \frac{dr}{dt}\frac{d\phi}{dt}\hat{n_\phi} &\land
 y = \frac{dr}{dt}\frac{d\phi}{dt}\hat{n_\phi} + r \frac{d}{dt}\left(\frac{d\phi}{dt}\hat{n_\phi} \right)\\
 
-&~y = \frac{dr}{dt}\frac{d\phi}{dt}\hat{n_\phi} + r \left(\frac{d^2\phi}{dt^2}\hat{n_\phi + \frac{d\phi}{dt}\frac{d \hat{n_\phi}}{dt}} \right)\\
+&~y = \frac{dr}{dt}\frac{d\phi}{dt}\hat{n_\phi} + r \left(\frac{d^2\phi}{dt^2}\hat{n_\phi} + \frac{d\phi}{dt}\frac{d \hat{n_\phi}}{dt} \right)\\
+\frac{dn_\phi}{dt} &= \frac{d}{dt}\left(-sin\phi\hat{n_x} + cos\phi\hat{n_y}\right) \\
+\frac{dn_\phi}{dt} &= \frac{d\phi}{dt}\left(-cos\phi\hat{n_x} - sin\phi\hat{n_y}\right) \\
+\frac{dn_\phi}{dt} &= -\frac{d\phi}{dt}\bf{\left(cos\phi\hat{n_x} + sin\phi\hat{n_y}\right)} \\
+\frac{dn_\phi}{dt} &= -\frac{d\phi}{dt}\hat{n_r} \\
+&~y = \frac{dr}{dt}\frac{d\phi}{dt}\hat{n_\phi} + r \left(\frac{d^2\phi}{dt^2}\hat{n_\phi} - \frac{d^2\phi}{dt^2} \hat{n_r} \right)\\
+$$
+
+$$
+\vec{a} = 
+\frac{d^2r}{dt^2} \hat{n_r} + \frac{dr}{dt}\frac{d\phi}{dt}\hat{n_\phi} + 
+\frac{dr}{dt}\frac{d\phi}{dt}\hat{n_\phi} + r \left(\frac{d^2\phi}{dt^2}\hat{n_\phi} - \frac{d^2\phi}{dt^2} \hat{n_r} \right) \\
+
+\vec{a} = 
+\color{red}{\frac{d^2r}{dt^2} \hat{n_r}} + \color{green}{\frac{dr}{dt}\frac{d\phi}{dt}\hat{n_\phi}} + 
+\color{green}{\frac{dr}{dt}\frac{d\phi}{dt}\hat{n_\phi}} \color{green}{+ r \frac{d^2\phi}{dt^2}\hat{n_\phi}} \color{red}{- r \frac{d^2\phi}{dt^2} \hat{n_r}} \\
+
+\vec{a} = 
+\color{red}{\hat{n_r}\left(\frac{d^2r}{dt^2} \hat{n_r} - r\frac{d^2\phi}{dt^2}\right)} 
+\color{green}{+\hat{n_\phi}\left(\frac{dr}{dt}\frac{d\phi}{dt} + \frac{dr}{dt}\frac{d\phi}{dt}+ r \frac{d^2\phi}{dt^2}\right)}\\
+\\
+\left\{\begin{array}
+a_x = \hat{n_r}\left(\frac{d^2r}{dt^2} \hat{n_r} - r\frac{d^2\phi}{dt^2}\right) \\
+a_y = +\hat{n_\phi}\left(\frac{dr}{dt}\frac{d\phi}{dt} + \frac{dr}{dt}\frac{d\phi}{dt}+ r \frac{d^2\phi}{dt^2}\right)\\
+\end{array}\right.
 $$
 
 ## Odniesienia
