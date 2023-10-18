@@ -479,6 +479,26 @@ a_y = +\hat{n_\phi}\left(\frac{dr}{dt}\frac{d\phi}{dt} + \frac{dr}{dt}\frac{d\ph
 \end{array}\right.
 $$
 
+## Dynamika
+
+### Prawo bezwładności aka I Zasada Dynamiki Newtona
+
+```{admonition} Definicja
+Swobodny\* **punkt materialny\*\*** zawsze wykonuje ruch jednostajny prostoliniowy 
+
+
+:::{note}
+**\* Swobodny** - nie oddziaływuje z innymi ciałami $(\vec{a} = 0)$ \
+**\*\* Punkt materialny** - model bezywmiarowego ciała, w którym jedyną istotną statystyką jest masa
+:::
+
+```
+
+```{tip}
+**Układy inercjalne** to takie, które wykonują względem siebie jedynie ruch jednostajny
+prostoliniowy.
+```
+
 ## Odniesienia
 
 - Przedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużny](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
