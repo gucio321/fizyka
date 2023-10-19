@@ -499,6 +499,73 @@ Swobodny\* **punkt materialny\*\*** zawsze wykonuje ruch jednostajny prostolinio
 prostoliniowy.
 ```
 
+### Pęd
+
+```{admonition} Pęd
+$\vec{p} = m \vec{v}$
+```
+
+```{tip}
+$p = \left[kg*\frac{m}{s}\right]$
+```
+
+```{note}
+Działa zasada zachowania pędu
+
+Całkowity pęd ukłądy, na którego nie oddziaływują siły zewnętrzne
+jest stały
+```
+
+#### Manewr grawitacyjny
+
+**Manewr grawitaqcyjny** (aka Gravity Assistance - GA) - wykorzystanie
+zjawisk grawitacyjnych do zwiększenia prędkości obiektu.
+
+### Zasady dynamiki Newtona
+
+```{admonition} II Zasada Dynamiki Newtona
+$$
+\vec{F} = \frac{d\vec{p}}{dt}
+$$
+```
+
+```{admonition} III Zasada Dynamiki Newtona
+$$
+\Delta p_1 &= -\Delta p_2 \\
+\frac{d\vec{p_1}}{dt} &= -\frac{d\vec{p_2}}{dt} \\
+\vec{F_1} &= -\vec{F_2}
+$$
+```
+
+$$
+\vec{F} &= \frac{d\vec{p}}{dt} \\
+\vec{F} &= \frac{d}{dt}(m \vec{v}) \\
+\bf{dla~m=const} \\
+\vec{F} &= m \frac{d\vec{v}}{dt} \\
+\vec{F} &= m \vec{a} \\
+$$
+
+### Układy nieinercjalne i siły bezwładności
+
+| Układy Inercjalne (UI) | Układy Nieinercjalne (UN) |
+|---|---|
+| $\vec{u} = const$ |  $\vec{u} \neq const$ |
+| $a = a'$ | $\vec{a'} = \vec{a} - \vec{a_u}$ |
+| $\vec{F'} = \vec{F}$ | $\vec{F} = \vec{a}m - m\vec{a_u}$ |
+
+```{important}
+W układzie nieinercjalnym obserwator zawsze stwierdzi istnienie siły bezwładnoći
+$\vec{F_b}$
+```
+
+#### Przykłady
+
+- wachadło stożkowe (zwykłę wachadło wprowadzone w ruch kołowy)
+w układzie inercjalnym powiązanym z kulką wahadła można zaobserwować
+siłę odśrodkową (czyli siłę bezwładności)
+
+- Winda
+
 ## Odniesienia
 
 - Przedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużny](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
