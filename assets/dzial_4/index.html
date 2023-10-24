@@ -319,7 +319,7 @@ lim_{\Delta r \to 0} \frac{\Delta \vec{r}}{\Delta t} \\
 \vec{V} = \frac{d \vec{r}}{d t} = \frac{d}{d t} (x * \hat{n_x} + y * \hat{n_y}) = \\
 = \frac{dx}{dt}*\hat{n_x} + \frac{dy}{dt}*\hat{n_y} = \\
 = v_x * \hat{n_x} + v_y * \hat{n_y} = \\
-bf{= \vec{v_x} + \vec{v_y}}
+\bf{= \vec{v_x} + \vec{v_y}}
 \end{split}\]</div>
 </div>
 <div class="admonition tip">
@@ -371,11 +371,12 @@ a_{śr} = \frac{\Delta \vec{v}}{\Delta t}
 </section>
 <section id="rzut-ukosny-przyklad-1">
 <h4>Rzut ukośny (przykład 1)<a class="headerlink" href="#rzut-ukosny-przyklad-1" title="Link to this heading">¶</a></h4>
-<p>Założenia początkowe
-$<span class="math notranslate nohighlight">\(
+<p>Założenia początkowe</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \vec{r_0} = [0,0] \\
 \vec{v_0} = [\vec{v_0} cos \alpha, \vec{v_0} sin \alpha] 
-\)</span>$</p>
+\end{split}\]</div>
 <div class="admonition warning">
 <p class="admonition-title">Ostrzeżenie</p>
 <p>Jedyną siłą działającą na ciało w rzucie ukośny jest grawitacja.
@@ -399,7 +400,7 @@ v_y = -gt + v_0 sin \alpha \\
 \[\begin{split}
 x(t) = \int v_x dt \\
 x(t) = \int v_0 cos \alpha dt \\
-x(0) = v_0 cos \alpha t + C_3 \\
+x(t) = v_0 cos \alpha t + C_3 \\
 dla~t_0 ~ x=0 \Rightarrow C_3 = 0 \\
 x(0) = v_0 cos \alpha t \\
 \\
@@ -416,7 +417,8 @@ y(t) = \frac{-gt^2}{2} + v_0 sin \alpha t \\
 \[\begin{split}
 t = \frac{x}{v_0 cos \alpha}\\
 podstawienie~do~równania~y\\
-y = x (\frac{-g}{2} * x{v_0 cos \alpha} + )
+y = \frac{-gx^2}{2v_0^2cos^2\alpha} + v_0 sin\alpha \frac{x}{v_0cos\alpha} \\
+y = \frac{-gx^2}{2v_0^2cos^2\alpha} + x tg \alpha \\
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[
@@ -691,6 +693,37 @@ siłę odśrodkową (czyli siłę bezwładności)</p></li>
 <li><p>Winda</p></li>
 </ul>
 </section>
+<section id="sily-dzialajace-na-ciala-na-powierzchni-ziemii">
+<h4>Siły działające na ciała na powierzchni ziemii<a class="headerlink" href="#sily-dzialajace-na-ciala-na-powierzchni-ziemii" title="Link to this heading">¶</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{a} = \vec{a'} + 2 \vec{\omega} \times \vec{v'} + \vec{\omega} \times (\vec{\omega} \times \vec{r'}) \\
+\vec{a'} = \vec{a} - 2 \vec{\omega} \times \vec{v'} - \vec{\omega} \times (\vec{\omega} \times \vec{r'}) \\
+m \vec{a'} = m \vec{a} - 2m \vec{\omega} \times \vec{v'} - m \vec{\omega} \times (\vec{\omega} \times \vec{r'}) \\
+\vec{F'} = \vec{F} - \vec{F_c} - \vec{F_od} \\
+\vec{F_c} = -2m \vec{\omega} \times \vec{v} \\
+\vec{F_od} = -m \vec{\omega} \times (\vec{\omega} \times \vec{r'})
+\end{split}\]</div>
+<div class="admonition-sila-coriolisa-vec-f-c admonition">
+<p class="admonition-title">Siła Coriolisa <span class="math notranslate nohighlight">\(\vec{F_c}\)</span></p>
+<ul class="simple">
+<li><p>znika dla ciał nieruchomych</p></li>
+<li><p>jest prostopadła do prędkości</p></li>
+<li><p>powoduje zakrzywienie toru</p></li>
+</ul>
+<p>Tor spadającego ciała odchyli isę na wschód.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Ciało w rzucie poziomym npl. <span class="math notranslate nohighlight">\(\vec{v'}\)</span> na zachód, ziła corriolisa
+odchyli ciało na północ</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Wachadło fuco - doświadczenie pozwalające udowodnić że ziemia się obraca - istnieje siła
+Coriolisa</p>
+</div>
+</section>
 </section>
 </section>
 <section id="odniesienia">
@@ -752,6 +785,7 @@ siłę odśrodkową (czyli siłę bezwładności)</p></li>
 <li><a class="reference internal" href="#zasady-dynamiki-newtona">Zasady dynamiki Newtona</a></li>
 <li><a class="reference internal" href="#uklady-nieinercjalne-i-sily-bezwladnosci">Układy nieinercjalne i siły bezwładności</a><ul>
 <li><a class="reference internal" href="#przyklady">Przykłady</a></li>
+<li><a class="reference internal" href="#sily-dzialajace-na-ciala-na-powierzchni-ziemii">Siły działające na ciała na powierzchni ziemii</a></li>
 </ul>
 </li>
 </ul>
