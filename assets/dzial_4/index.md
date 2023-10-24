@@ -206,7 +206,7 @@ lim_{\Delta r \to 0} \frac{\Delta \vec{r}}{\Delta t} \\
 \vec{V} = \frac{d \vec{r}}{d t} = \frac{d}{d t} (x * \hat{n_x} + y * \hat{n_y}) = \\
 = \frac{dx}{dt}*\hat{n_x} + \frac{dy}{dt}*\hat{n_y} = \\
 = v_x * \hat{n_x} + v_y * \hat{n_y} = \\
-bf{= \vec{v_x} + \vec{v_y}}
+\bf{= \vec{v_x} + \vec{v_y}}
 $$
 ```
 
@@ -256,6 +256,7 @@ $$
 <!--12.10.2023-->
 #### Rzut ukośny (przykład 1)
 Założenia początkowe
+
 $$
 \vec{r_0} = [0,0] \\
 \vec{v_0} = [\vec{v_0} cos \alpha, \vec{v_0} sin \alpha] 
@@ -283,7 +284,7 @@ $$
 $$
 x(t) = \int v_x dt \\
 x(t) = \int v_0 cos \alpha dt \\
-x(0) = v_0 cos \alpha t + C_3 \\
+x(t) = v_0 cos \alpha t + C_3 \\
 dla~t_0 ~ x=0 \Rightarrow C_3 = 0 \\
 x(0) = v_0 cos \alpha t \\
 \\
@@ -300,7 +301,8 @@ $$
 $$
 t = \frac{x}{v_0 cos \alpha}\\
 podstawienie~do~równania~y\\
-y = x (\frac{-g}{2} * x{v_0 cos \alpha} + )
+y = \frac{-gx^2}{2v_0^2cos^2\alpha} + v_0 sin\alpha \frac{x}{v_0cos\alpha} \\
+y = \frac{-gx^2}{2v_0^2cos^2\alpha} + x tg \alpha \\
 $$
 
 $$
@@ -565,6 +567,35 @@ w układzie inercjalnym powiązanym z kulką wahadła można zaobserwować
 siłę odśrodkową (czyli siłę bezwładności)
 
 - Winda
+
+#### Siły działające na ciała na powierzchni ziemii
+
+$$
+\vec{a} = \vec{a'} + 2 \vec{\omega} \times \vec{v'} + \vec{\omega} \times (\vec{\omega} \times \vec{r'}) \\
+\vec{a'} = \vec{a} - 2 \vec{\omega} \times \vec{v'} - \vec{\omega} \times (\vec{\omega} \times \vec{r'}) \\
+m \vec{a'} = m \vec{a} - 2m \vec{\omega} \times \vec{v'} - m \vec{\omega} \times (\vec{\omega} \times \vec{r'}) \\
+\vec{F'} = \vec{F} - \vec{F_c} - \vec{F_od} \\
+\vec{F_c} = -2m \vec{\omega} \times \vec{v} \\
+\vec{F_od} = -m \vec{\omega} \times (\vec{\omega} \times \vec{r'})
+$$
+
+```{admonition} Siła Coriolisa $\vec{F_c}$
+- znika dla ciał nieruchomych
+- jest prostopadła do prędkości
+- powoduje zakrzywienie toru
+
+Tor spadającego ciała odchyli isę na wschód.
+```
+
+```{tip}
+Ciało w rzucie poziomym npl. $\vec{v'}$ na zachód, ziła corriolisa
+odchyli ciało na północ
+```
+
+```{note}
+Wachadło fuco - doświadczenie pozwalające udowodnić że ziemia się obraca - istnieje siła
+Coriolisa
+```
 
 ## Odniesienia
 
