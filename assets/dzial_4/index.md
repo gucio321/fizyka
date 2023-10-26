@@ -597,6 +597,137 @@ Wachadło fuco - doświadczenie pozwalające udowodnić że ziemia się obraca -
 Coriolisa
 ```
 
+### Zastosowania praw dynamiki
+
+```{important}
+Przy rozwiązywaniu zadań należy pamiętać o kilku istotnych elementech, m.in:
+- Duży rysunek
+- Oznaczenie wszystkich istotnych sił
+- Wypisanie równań dynamiki (należy uwzględnić tyle równań, ile jest ciał w układzie)
+- Bilans równań i niewiadomych
+- Jeśli konieczne - poszukać dodatkowych równań (np. związki sił)
+```
+
+#### maszyna Atwoda
+
+```{note}
+Na bezwładnym bloczku na nieważkiej nici zawieszono dwie masy: $m_1$ i $m_2$
+```
+
+Jakie będzie przyspieszenie układu?
+
+$$
+\left\{ \begin{matrix}
+m_1 * a_1 = m_1 * g - N \\
+m_2 * a_2 = N - m_2 * g \\
+a_1 = a_2
+\end{matrix}\right. \\
++\left\{ \begin{matrix}
+m_1 * a = m_1 * g - N \\
+m_2 * a = N - m_2 * g \\
+\end{matrix}\right. \\
+a* (m_1 + m_2) = m_1 * g - m_2 * g \\
+a = g * \frac{m_1 - m_2}{m_1+m_2}
+$$
+
+#### Siły tarcia
+
+```{admonition} Siła tarcia
+Tarcie występuje gdy jedno ciało porusza się względem drugiego oraz
+występuje siła dociskające je do siebie.
+
+- tarcie **kintetyczne** ma miejsce gdy jedno ciało przesuwa się o powierzchni drugiego
+```
+
+$$
+T = \mi * N
+$$
+
+```{important}
+Współczynnik tarcia kinetycznego $\mi$ - wartość tablicowa.
+```
+
+#### Tarcie Statyczne
+
+```{admonition} Tarcie statyczne
+równoważy siłę zsuwającą
+- nie jest określone konkretnym wzorem
+- $T_s \in \left<0, T_{s_{max}}\right>$
+- $T_{s_max} = \mi_s N$
+- Najczęściej $\mi_s > \mi$
+```
+
+#### Ciało na równi pochyłej
+
+$$
+a = g * (sin \alpha - k cos \alpha) \Leftrightarrow k cos \alpha > sin \alpha \\
+$$
+
+```{tip}
+kąt graniczny przejścia tarcia kinetycznego na statyczne gdy $tg \alpha = k$
+```
+
+#### Ruch pod wpływem siły sprężystej
+
+```{admonition} Prawo hooka
+$F = -kx$
+```
+
+Równanie dynamiki dla oscylatora harmonicznego
+
+$$
+F = -kx \\
+am = -kx \\
+\frac{d^2 x}{dt^2} m = -k x \\
+ma + kx = 0 \\
+m \frac{d^2x}{dt^2} + kx = 0 \\
+\bf{\frac{d^2x}{dt^2} + \frac{k}{m}x = 0} \\
+niech \frac{k}{m} = \omega^2 \\
+\frac{d^2x}{dt^2} + \omega^2x = 0 \\
+$$
+
+```{important}
+Równania różniczkowe - równania, w których szukana zmienna znajduje się pod pochodną
+```
+
+```{tip}
+równanie $\frac{d^2x}{dt^2} + \omega^2x = 0$ jest:
+- zwyczajne (jednej zmiennej)
+- liniowe
+- o stałych współczynikach ($\omega = const$)
+- jednorodne (po prawej stronie jest `0`)
+
+$$
+x(t) = C_1 * e^{\lambda_1 t} + C_2 * e^{\lambda_2 t} \\
+$$
+
+$C_1$ i $C_2$ otrzymujemy z warunków początkowych
+$\lambda$ z technicznego podstawienia
+
+$$
+x = e^{\lambda t} \\
+\frac{d x}{dt} = \lambda e^{\lambda t} \\
+\frac{d^2 x}{dt^2} = \lambda^2 e^{\lambda t} \\
+\\
+\lambda^2 e^{\lambda t} + \omega^2 e^{\lambda t} = 0 \\
+\lambda^2 = -\omega^2
+$$
+
+$$
+\lambda^2 = - \omega^2 \\
+\lambda_1 = i \omega \\
+\lambda_2 = -i \omega \\
+x(t) = C_1 * e^{i \omega * t} + C_2 * e^{-i \omega * t} \\
+niech~C_1 = C_2 = C \\
+x(t) = C * e^{i \omega * t} + C * e^{-i \omega * t} \\
+x(t) = C * (cos (\omega t) + i~sin(\omega t)) + C * (cos (\omega t) - i~sin(\omega t)) \\
+x(t) = 2C * cos (\omega t) \\
+niech~2C = A \\
+x(0) = A \\
+$$
+
+```
+
 ## Odniesienia
 
 - Przedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużny](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
