@@ -476,7 +476,7 @@ $$
 \color{green}{+\hat{n_\phi}\left(\frac{dr}{dt}\frac{d\phi}{dt} + \frac{dr}{dt}\frac{d\phi}{dt}+ r \frac{d^2\phi}{dt^2}\right)}\\
 \\
 \left\{\begin{array}
-a_x = \hat{n_r}\left(\frac{d^2r}{dt^2} \hat{n_r} - r\frac{d^2\phi}{dt^2}\right) \\
+a_x = \hat{n_r}\left(\frac{d^2r}{dt^2} - r\frac{d^2\phi}{dt^2}\right) \\
 a_y = +\hat{n_\phi}\left(\frac{dr}{dt}\frac{d\phi}{dt} + \frac{dr}{dt}\frac{d\phi}{dt}+ r \frac{d^2\phi}{dt^2}\right)\\
 \end{array}\right.
 $$
