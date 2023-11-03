@@ -475,10 +475,10 @@ $$
 \color{red}{\hat{n_r}\left(\frac{d^2r}{dt^2} \hat{n_r} - r\frac{d^2\phi}{dt^2}\right)} 
 \color{green}{+\hat{n_\phi}\left(\frac{dr}{dt}\frac{d\phi}{dt} + \frac{dr}{dt}\frac{d\phi}{dt}+ r \frac{d^2\phi}{dt^2}\right)}\\
 \\
-\left\{\begin{array}
+\left\{\begin{matrix}
 a_x = \hat{n_r}\left(\frac{d^2r}{dt^2} - r\frac{d^2\phi}{dt^2}\right) \\
 a_y = +\hat{n_\phi}\left(\frac{dr}{dt}\frac{d\phi}{dt} + \frac{dr}{dt}\frac{d\phi}{dt}+ r \frac{d^2\phi}{dt^2}\right)\\
-\end{array}\right.
+\end{matrix}\right.
 $$
 
 ## Dynamika
@@ -640,11 +640,11 @@ występuje siła dociskające je do siebie.
 ```
 
 $$
-T = \mi * N
+T = \mu * N
 $$
 
 ```{important}
-Współczynnik tarcia kinetycznego $\mi$ - wartość tablicowa.
+Współczynnik tarcia kinetycznego $\mu$ - wartość tablicowa.
 ```
 
 #### Tarcie Statyczne
@@ -653,8 +653,8 @@ Współczynnik tarcia kinetycznego $\mi$ - wartość tablicowa.
 równoważy siłę zsuwającą
 - nie jest określone konkretnym wzorem
 - $T_s \in \left<0, T_{s_{max}}\right>$
-- $T_{s_max} = \mi_s N$
-- Najczęściej $\mi_s > \mi$
+- $T_{s_max} = \mu_s N$
+- Najczęściej $\mu_s > \mu$
 ```
 
 #### Ciało na równi pochyłej
