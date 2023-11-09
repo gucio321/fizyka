@@ -481,6 +481,21 @@ a_y = +\hat{n_\phi}\left(\frac{dr}{dt}\frac{d\phi}{dt} + \frac{dr}{dt}\frac{d\ph
 \end{array}\right.
 $$
 
+#### Przyspieszenie styczne i normalne
+
+$$
+a_s = \frac{d\left|\vec{v}\right|}{dt} \\
+\vec{v} = \hat{n_s} v \\
+\vec{a} = \frac{d\vec{v}}{dt} \\
+\vec{a} = \frac{dv}{dt} \hat{n_s} + \frac{d\hat{n_s}}{dt} v \\
+$$
+
+z [tożsamości wersorów stycznego i transwersalnego](#bf-vec-v-leftrightarrow-vec-v)
+
+$$
+\vec{a} = \frac{dv}{dt} \hat{n_s} - \hat{n_n} v \\
+$$
+
 ## Dynamika
 
 ### Prawo bezwładności aka I Zasada Dynamiki Newtona
@@ -640,11 +655,11 @@ występuje siła dociskające je do siebie.
 ```
 
 $$
-T = \mi * N
+T = \mu * N
 $$
 
 ```{important}
-Współczynnik tarcia kinetycznego $\mi$ - wartość tablicowa.
+Współczynnik tarcia kinetycznego $\mu$ - wartość tablicowa.
 ```
 
 #### Tarcie Statyczne
@@ -653,8 +668,8 @@ Współczynnik tarcia kinetycznego $\mi$ - wartość tablicowa.
 równoważy siłę zsuwającą
 - nie jest określone konkretnym wzorem
 - $T_s \in \left<0, T_{s_{max}}\right>$
-- $T_{s_max} = \mi_s N$
-- Najczęściej $\mi_s > \mi$
+- $T_{s_max} = \mu_s N$
+- Najczęściej $\mu_s > \mu$
 ```
 
 #### Ciało na równi pochyłej
@@ -727,6 +742,135 @@ x(0) = A \\
 $$
 
 ```
+
+### Siła oporu w ośrodku lepkim
+
+$$
+F_{op} \sim v \\
+F_{op} = -K \eta \vec{v}
+$$
+
+gdzie:
+- $eta$ - współczynnik lepkości
+- K - współczynnik oporu
+
+```{tip}
+Dla **kuli** $k = 6 \pi R$
+```
+
+```{admonition} Wzór Stoksa
+$F_{op} = -6 \pi \eta R \vec{v}$
+```
+
+#### Spadek w powietrzu
+
+$$
+v(t) = ? \\
+F_w = m * g - bv \\
+v_\infinitif = \frac{mg}{b} \\
+
+m * \frac{dv}{dt} + bv = mg \\
+\frac{dv}{dt} + \frac{bv}{m} = g \\
+\frac{d^2v}{dt^2} + \frac{b}{m} * \frac{dv}{dt} = 0 \\
+\lambda^2 + \frac{b}{m} * \lambda = 0 \\
+v = C_1 * e^0t + C_2 e ^{-\frac{b}{m}t} \\
+v' = C_2 * (\frac{-b}{m}) e ^{-\frac{b}{m}t} \\
+C_1 = \frac{mg}{b} \\
+v(t=0) = 0 \\
+C_2 = -\frac{mg}{b} \\
+v(t) = \frac{mg}{b} \left(1-e^{-\frac{m}{b}t}\right)
+$$
+<!-- co tu się dzieje??? -->
+
+### Dynamika ciało o zmiennej masie
+
+#### 3 przykłady
+
+- Na jadącej po poziomym torze platformie osadza się śnieg
+
+$$
+M = m_0 + \mu * t \\
+\mu = \frac{d \ui}{dt}
+F = \frac{dp}{dt} \\
+F = \frac{dp}{dt} \\
+dp = (m + dm) * (v + dv) -mv \\
+dp = dm * v + m * dv + dm * dv \\
+dp = dm * v + m * dv \\
+dp = d(mv) \\
+F = 0 \Rightarrow d(mv) = 0 \Rightarrow mv = const \\
+mv = m_0 v_0 \\
+v = \frac{m_0 v_0}{m} \\
+v = \frac{m_0 v_0}{\mu * t} \\
+$$
+
+- Siła jest stała
+
+$$
+niech~v_0 = 0\\
+v(t) = ? \\
+m = m_0 + \mu * t \\
+\mu = \frac{d \ui}{dt}
+F = \frac{dp}{dt} \\
+F = \frac{dp}{dt} \\
+dp = (m + dm) * (v + dv) -mv \\
+dp = dm * v + m * dv + dm * dv \\
+dp = dm * v + m * dv \\
+dp = d(mv) \\
+F = \frac{dp}{dt} \\
+F = \frac{d(mv)}{dt} \\
+d(mv) = F * dt \\
+\int d(mv) = \int F * dt \\
+mv = F * t + C  \\
+m * 0 = F * 0 + C \Rightarrow C = 0 \\
+v = \frac{F * t}{m} \\
+v = \frac{F * t}{m_0 + \mu t} \\
+$$
+
+- Utrata masy
+
+$$
+niech~F = const \\
+v(t) = ? \\
+m = m_0 - \mu * t \\
+
+F = \frac{dp}{dt} \\
+F = \frac{dp}{dt} \\
+dp = ((m + dm) * (v + dv) + (-dm) * v) - mv \\
+dp = m * dv \\
+
+F = \frac{dp}{dt} \\
+F = \frac{d(mv)}{dt} \\
+m d(v) = F * dt \\
+\int (m_0 - dm)dv = \int F * dt \\
+
+v = - \frac{1}{\mu} ln(m_0 - \mu t}) * F + C \\
+
+v = \frac{F}{\mu} ln \frac{m_0}{m_0 + \mu t} \\
+$$
+
+#### Dynamika rakiety
+
+- $v_g$ - prędkość gazów względem rakiety
+  $v_g = v' - v$
+
+$$
+niech~F = const \\
+v(t) = ? \\
+m = m_0 - \mu * t \\
+
+// dp = ((m + dm) * (v + dv) + (-dm) * v') - mv \\
+dp = m * dv - v_g dm \\
+
+F = \frac{dp}{dt} \\
+F = \frac{d(mv)}{dt} \\
+m d(v) = F * dt \\
+\int (m_0 - dm)dv = \int F * dt \\
+
+v = - \frac{1}{\mu} ln(m_0 - \mu t}) * F + C \\
+
+v = \frac{F}{\mu} ln \frac{m_0}{m_0 + \mu t} \\
+$$
+
 
 ## Odniesienia
 
