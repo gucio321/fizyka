@@ -999,6 +999,92 @@ m d(v) = F * dt \\
 \int (m_0 - dm)dv = \int F * dt \\\end{split}\\\begin{split}v = - \frac{1}{\mu} ln(m_0 - \mu t}) * F + C \\\end{split}\\\begin{split}v = \frac{F}{\mu} ln \frac{m_0}{m_0 + \mu t} \\
 \end{split}\end{aligned}\end{align} \]</div>
 </section>
+<section id="energia-w-plaskim-ruchu-krzywoliniowym">
+<h4>Energia w płaskim ruchu krzywoliniowym<a class="headerlink" href="#energia-w-plaskim-ruchu-krzywoliniowym" title="Link to this heading">¶</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E = \frac{mv^2}{2} + E_p
+E = \frac{m}{2}((\frac{dr}{dt})^2 + (\frac{d \phi}{dt})^2 * r^2) +E_p \\
+\vec{L} = m r^2 * \vec{omega} \\
+E = \frac{m}{2}((\frac{dr}{dt})^2 + \omega^2 * r^2) +E_p \\ 
+E = \frac{m}{2}((\frac{dr}{dt})^2 + (\frac{L}{mr})^2) +E_p \\ 
+E = \frac{m}{2}(\frac{dr}{dt})^2 + \frac{L^2}{2mr^2} +E_p \\ 
+\end{split}\]</div>
+<p>niech siła będzie centralna</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{L^2}{2m} = const = C \\
+E = \frac{m}{2}(\frac{dr}{dt})^2 + \frac{C}{r} +E_p \\ 
+\end{split}\]</div>
+</section>
+</section>
+<section id="ruch-drgajacy">
+<h3>Ruch drgający<a class="headerlink" href="#ruch-drgajacy" title="Link to this heading">¶</a></h3>
+<section id="kinematyka-prostego-ruchu-harmonicznego">
+<h4>Kinematyka prostego ruchu harmonicznego<a class="headerlink" href="#kinematyka-prostego-ruchu-harmonicznego" title="Link to this heading">¶</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x(t) = A sin(\omega * t + \phi_0)
+\omega = \frac{2 \pi}{T} \\
+\hat{x} = \hat{A} e^{i * \omega t} \\
+\hat{A} = e^{i \phi}
+\end{split}\]</div>
+</section>
+<section id="wachadlo-matematyczne">
+<h4>Wachadło matematyczne<a class="headerlink" href="#wachadlo-matematyczne" title="Link to this heading">¶</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p><strong>Wachadłęm matematycznym</strong> nazywamy punktową mase <span class="math notranslate nohighlight">\(m\)</span> zawieszoną na nieważkiej, nierozciągliwej
+i nieskończenie cienkiej nici o dlugości <span class="math notranslate nohighlight">\(L\)</span></p>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+F = am \\
+g sin \alpha = L \frac{d^2 x}{dt^2} \\
+\frac{g sin \alpha}{L} = \frac{d^2 x}{dt^2} \\
+\text{niech} sin \alpha \approx \alpha \\
+g \alpha = L \frac{d^2 x}{dt^2} \\
+\alpha(t) = A sin(\omega t + \phi_0) \\
+\omega^2 = \frac{g}{L} \\
+\omega = \frac{2\pi}{T} \\
+T = 2 \pi \sqrt{\frac{L}{g}}
+Jeżeli~sin \alpha \neq \alpha \\
+T' = T'_ 0 \sqrt{1+\frac{\alpha_0}{16} + ...}
+\end{split}\]</div>
+</section>
+<section id="superpozycja-drgan-prostych">
+<h4>Superpozycja drgań prostych<a class="headerlink" href="#superpozycja-drgan-prostych" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>dla <span class="math notranslate nohighlight">\(\phi = 0 \quad \alpha = (A_1 + A_2) cos(\omega t)\)</span></p></li>
+<li><p>dla <span class="math notranslate nohighlight">\(\phi = \pi \quad \alpha = |A_1 - A_2| cos(\omega t)\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\hat{x} = \hat{A} e^{i(\omega t+\phi)} \\
+\hat{x_1} + \hat_1 = e^{i \omega t}(\hat{A_1} + \hat{A_2} e^{i \phi}) \\
+\end{split}\]</div>
+</section>
+<section id="omega-1-neq-omega-2">
+<h4><span class="math notranslate nohighlight">\(\omega_1 \neq \omega_2\)</span><a class="headerlink" href="#omega-1-neq-omega-2" title="Link to this heading">¶</a></h4>
+<p>Niech <span class="math notranslate nohighlight">\(\phi = 0\)</span></p>
+<ul class="simple">
+<li><p>Niech <span class="math notranslate nohighlight">\(A_1 = A_2\)</span>
+$<span class="math notranslate nohighlight">\(
+x_1 + x_2 = A cos \omega_1 t + A cos \omega_2 t
+x = 2A_1 cos \frac{\omega_1 t - \omega_2 t}{2} * cos \frac{\omega_1 t + \omega_2 t}{2}
+\)</span>$</p></li>
+<li><p><span class="math notranslate nohighlight">\(x_1 \prep x_2\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x_1 = A cos(\omega t) \\
+x_1 = B cos(\omega t) \\
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+E_p = C + \frac{1}{2}k (x-x_0)^2
+\]</div>
+</section>
 </section>
 </section>
 <section id="odniesienia">
@@ -1079,6 +1165,14 @@ m d(v) = F * dt \\
 <li><a class="reference internal" href="#dynamika-cialo-o-zmiennej-masie">Dynamika ciało o zmiennej masie</a><ul>
 <li><a class="reference internal" href="#id2">3 przykłady</a></li>
 <li><a class="reference internal" href="#dynamika-rakiety">Dynamika rakiety</a></li>
+<li><a class="reference internal" href="#energia-w-plaskim-ruchu-krzywoliniowym">Energia w płaskim ruchu krzywoliniowym</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ruch-drgajacy">Ruch drgający</a><ul>
+<li><a class="reference internal" href="#kinematyka-prostego-ruchu-harmonicznego">Kinematyka prostego ruchu harmonicznego</a></li>
+<li><a class="reference internal" href="#wachadlo-matematyczne">Wachadło matematyczne</a></li>
+<li><a class="reference internal" href="#superpozycja-drgan-prostych">Superpozycja drgań prostych</a></li>
+<li><a class="reference internal" href="#omega-1-neq-omega-2"><span class="math notranslate nohighlight">\(\omega_1 \neq \omega_2\)</span></a></li>
 </ul>
 </li>
 </ul>
