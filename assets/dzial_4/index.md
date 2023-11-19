@@ -871,7 +871,87 @@ v = - \frac{1}{\mu} ln(m_0 - \mu t}) * F + C \\
 v = \frac{F}{\mu} ln \frac{m_0}{m_0 + \mu t} \\
 $$
 
+#### Energia w płaskim ruchu krzywoliniowym
 
+$$
+E = \frac{mv^2}{2} + E_p
+E = \frac{m}{2}((\frac{dr}{dt})^2 + (\frac{d \phi}{dt})^2 * r^2) +E_p \\
+\vec{L} = m r^2 * \vec{omega} \\
+E = \frac{m}{2}((\frac{dr}{dt})^2 + \omega^2 * r^2) +E_p \\ 
+E = \frac{m}{2}((\frac{dr}{dt})^2 + (\frac{L}{mr})^2) +E_p \\ 
+E = \frac{m}{2}(\frac{dr}{dt})^2 + \frac{L^2}{2mr^2} +E_p \\ 
+$$
+
+niech siła będzie centralna
+
+$$
+\frac{L^2}{2m} = const = C \\
+E = \frac{m}{2}(\frac{dr}{dt})^2 + \frac{C}{r} +E_p \\ 
+$$
+
+### Ruch drgający
+
+#### Kinematyka prostego ruchu harmonicznego
+
+$$
+x(t) = A sin(\omega * t + \phi_0)
+\omega = \frac{2 \pi}{T} \\
+\hat{x} = \hat{A} e^{i * \omega t} \\
+\hat{A} = e^{i \phi}
+$$
+
+#### Wachadło matematyczne
+
+```{note}
+**Wachadłęm matematycznym** nazywamy punktową mase $m$ zawieszoną na nieważkiej, nierozciągliwej
+i nieskończenie cienkiej nici o dlugości $L$
+```
+
+$$
+F = am \\
+g sin \alpha = L \frac{d^2 x}{dt^2} \\
+\frac{g sin \alpha}{L} = \frac{d^2 x}{dt^2} \\
+\text{niech} sin \alpha \approx \alpha \\
+g \alpha = L \frac{d^2 x}{dt^2} \\
+\alpha(t) = A sin(\omega t + \phi_0) \\
+\omega^2 = \frac{g}{L} \\
+\omega = \frac{2\pi}{T} \\
+T = 2 \pi \sqrt{\frac{L}{g}}
+Jeżeli~sin \alpha \neq \alpha \\
+T' = T'_ 0 \sqrt{1+\frac{\alpha_0}{16} + ...}
+$$
+
+#### Superpozycja drgań prostych
+
+- dla $\phi = 0 \quad \alpha = (A_1 + A_2) cos(\omega t)$
+- dla $\phi = \pi \quad \alpha = |A_1 - A_2| cos(\omega t)$
+
+$$
+\hat{x} = \hat{A} e^{i(\omega t+\phi)} \\
+\hat{x_1} + \hat_1 = e^{i \omega t}(\hat{A_1} + \hat{A_2} e^{i \phi}) \\
+$$
+
+#### $\omega_1 \neq \omega_2$
+
+Niech $\phi = 0$
+
+- Niech $A_1 = A_2$
+$$
+x_1 + x_2 = A cos \omega_1 t + A cos \omega_2 t
+x = 2A_1 cos \frac{\omega_1 t - \omega_2 t}{2} * cos \frac{\omega_1 t + \omega_2 t}{2}
+$$
+
+- $x_1 \prep x_2$
+
+$$
+x_1 = A cos(\omega t) \\
+x_1 = B cos(\omega t) \\
+$$
+
+
+$$
+E_p = C + \frac{1}{2}k (x-x_0)^2
+$$
 ## Odniesienia
 
 - Przedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużny](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
