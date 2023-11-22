@@ -928,10 +928,10 @@ $$
 
 $$
 \hat{x} = \hat{A} e^{i(\omega t+\phi)} \\
-\hat{x_1} + \hat_1 = e^{i \omega t}(\hat{A_1} + \hat{A_2} e^{i \phi}) \\
+\hat{x_1} + \hat{x_2} = e^{i \omega t}(\hat{A_1} + \hat{A_2} e^{i \phi}) \\
 $$
 
-#### $\omega_1 \neq \omega_2$
+##### $\omega_1 \neq \omega_2$
 
 Niech $\phi = 0$
 
@@ -948,10 +948,80 @@ x_1 = A cos(\omega t) \\
 x_1 = B cos(\omega t) \\
 $$
 
-
 $$
 E_p = C + \frac{1}{2}k (x-x_0)^2
 $$
+
+#### Drgania Harmoniczne tłumione
+
+$$
+\vec{F} = b \vec{v} \\
+\\
+m \frac{d^2x}{dt^2} + b \frac{dx}{dt} + kx = 0 \\
+\frac{d^2x}{dt^2} + \frac{b}{m} \frac{dx}{dt} + \frac{k}{m} x = 0 \\
+\frac{d^2x}{dt^2} + \frac{b}{m} \frac{dx}{dt} + \omega_0^2 x = 0 \\
+\\
+\frac{d^2x}{dt^2} + 2 \beta \frac{dx}{dt} + \omega_0^2 x = 0 \\
+\\
+x = e^{\lambda t} \\
+\lambda^2 + 2 \beta \lambda + \omega_0^2 = 0 \\
+\Delta = 4 \beta^2 - 4 \omega_0^2 \\
+\Delta = -4 (\omega_0^2 - \beta^2) \\
+$$
+
+Występują 3 przypadki:
+- przypadek słabego tłumienia: $\beta < \omega_0 \Rightarrow \Delta < 0$
+
+$$
+\sqrt{\Delta} = 2i \sqrt{\omega_0^2 - \beta^2} \\
+niech~\omega' =  \sqrt{\omega_0^2 - \beta^2} \\
+\sqrt{\Delta} = 2i \omega' \\
+\\
+\lambda_1 = \frac{-2\beta - 2i \omega'}{2} \\
+\lambda_1 = -\beta -  \omega' \\
+\lambda_2 = -\beta +  \omega' \\
+x = C_1 e^{(-\beta - \omega') * t} + C_2 e^{(-\beta + \omega') * t} 
+niech~C_1 = C_2 \\
+x = Ce^{-\beta t}( e^{i \omega' * t} + e^{-i \omega' * t}) \\
+\text{z eulera} \\
+x = Ce^{-\beta t} 2 cos \omega' t \\
+niech~2C=A \\
+x = A * e^{-\beta t} 2 cos \omega' t \\
+$$
+
+<iframe src="https://www.desmos.com/calculator/fppkbqfmvz" width="100%" style="min-height:200px"></iframe>
+
+- silne tłumienie
+
+Obydwa pierwiastki z delty są rzeczywiste
+Nie pojawiaja się funkcje trygonometryczne $\Rightarrow$ nie pojawiają
+się drgania. Występuje pęzanie
+
+- tłumienie krytyczne $\omega_0 = \beta$
+
+#### Drgania wymuszone i rezonans
+
+$$
+F_w(t) = F_0 * sin(\omega t)
+am = -kx - bv + F_w \\
+\frac{d^2x}{dt^2} + 2\beta \frac{dx}{dt} + \omega_0^2 x = \frac{F_0}{m} sin(\omega t) \\
+x(t) = A sin(\omega t + \delta) \\
+\frac{d^2 \hat{x}}{dt^2} + 2\beta \frac{d\hat{x}}{dt} + \omega \hat{x} = \frac{F_0}{m} e^{i \omega t} \\
+\hat{x} = \hat{A} e^{i\omega t} \\
+\\
+... \\
+\\
+\hat{A} (\omega_0^2 - \omega^2 + 2 \beta \omega i) = \frac{F_0}{m} \\
+\bf{\hat{A} = \frac{\frac{F_0}{m}}{\omega_0^2 - \omega^2 + 2 i \beta \omega}}
+$$
+
+$$
+A = |\hat{A}| = \frac{\frac{F_0}{m}}{\sqrt{(\omega_0^2 - \omega^2)^2 - 4 \beta^2 \omega^2}} \\
+tg \delta = - \frac{2 \beta \omega}{\omega_0^2 - \omega^2}
+$$
+
+<iframe src="https://www.desmos.com/calculator/7ta79ggit4" width="100%" style="min-height:200px"></iframe>
+
 ## Odniesienia
 
 - Przedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużny](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
