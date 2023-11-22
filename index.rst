@@ -23,22 +23,22 @@ przerabianych w III klasie liceum ogulnokształconcego na poziomie
 rozszerzonym.
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 3
 
    assets/dzial_1/index.rst
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 3
 
    assets/dzial_2/index.rst
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 3
 
    assets/dzial_3/index.md
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 3
 
    assets/dzial_4/index.md
 
