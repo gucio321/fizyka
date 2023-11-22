@@ -1060,7 +1060,7 @@ $$
 
 $$
 \hat{x} = \hat{A} e^{i(\omega t+\phi)} \\
-\hat{x_1} + \hat_1 = e^{i \omega t}(\hat{A_1} + \hat{A_2} e^{i \phi}) \\
+\hat{x_1} + \hat{x_2} = e^{i \omega t}(\hat{A_1} + \hat{A_2} e^{i \phi}) \\
 $$
 
 #### $\omega_1 \neq \omega_2$
@@ -1073,7 +1073,7 @@ x_1 + x_2 = A cos \omega_1 t + A cos \omega_2 t
 x = 2A_1 cos \frac{\omega_1 t - \omega_2 t}{2} * cos \frac{\omega_1 t + \omega_2 t}{2}
 $$
 
-- $x_1 \prep x_2$
+- $x_1 \perp x_2$
 
 $$
 x_1 = A cos(\omega t) \\
