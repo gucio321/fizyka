@@ -878,7 +878,148 @@ niech~2C = A \\
 x(0) = A \\
 \end{split}\]</div>
 </div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+m \frac{dv}{dt} = \frac{dp}{dt} - v_g \frac{dm}{dt} \\
+\end{split}\]</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Wzór Ciołkowskiego</p>
+<div class="math notranslate nohighlight">
+\[
+v_k = v_p ln \frac{m_p}{m_k}
+\]</div>
+</div>
 </section>
+</section>
+</section>
+<section id="dynamika-ruchu-krzywoliniowego-punktu-materialnego">
+<h2>Dynamika ruchu krzywoliniowego punktu materialnego<a class="headerlink" href="#dynamika-ruchu-krzywoliniowego-punktu-materialnego" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<ul class="simple">
+<li><p>siła styczna - <span class="math notranslate nohighlight">\(m * \frac{dv}{dt}\)</span></p></li>
+<li><p>siła normalna - <span class="math notranslate nohighlight">\(m * \frac{v^2}{\ro}\)</span></p></li>
+</ul>
+</div>
+<section id="moment-sily">
+<h3>Moment Siły<a class="headerlink" href="#moment-sily" title="Link to this heading">¶</a></h3>
+<p>Moment Siły</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{\tau} = \vec{F} \times \vec{r}
+\]</div>
+<p>Moment Pędu:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{L} = \vec{r} \times \vec{p}
+\\
+\frac{dL}{dt} = \frac{dr}{dt} \times \vec{p} + \vec{r} \times \frac{d\vec{p}}{dt} \\
+\frac{dL}{dt} = \vec{v} \times \vec{p} + \vec{r} \times \vec{F} \\
+\frac{dL}{dt} = \vec{v} \times \vec{v} * m + \vec{r} \times \vec{F} \\
+\frac{dL}{dt} = \vec{r} \times \vec{F} \\
+\\
+\vec{L} = m * \vec{r} \times \left(\vec{\omega} \times \vec{r} \right) \\
+\end{split}\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>DLa ruchu punktu materialnego na płaszczyźnie: <span class="math notranslate nohighlight">\(\vec{L} = \omega m r^2\)</span></p>
+</div>
+</section>
+<section id="sila-centralna">
+<h3>Siła Centralna<a class="headerlink" href="#sila-centralna" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{F} \parallel \vec{r}\)</span></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Jeżeli ciało wykonuje ruch pod wpływem siły centralnej, to jego moment
+pędu względem centrum siły jest stały</p>
+</div>
+</section>
+</section>
+<section id="praca-i-energia">
+<h2>Praca i Energia<a class="headerlink" href="#praca-i-energia" title="Link to this heading">¶</a></h2>
+<section id="praca">
+<h3>Praca<a class="headerlink" href="#praca" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+W = \vec{F} * \vec{s} \\
+W_{AB} = \int_A^B F * r \\
+\bf{W = \int_A^B \vec{F}(\vec{r}) * dr}
+\end{split}\]</div>
+<div class="admonition-przyklad admonition">
+<p class="admonition-title">Przykład</p>
+<h4 class="rubric" id="praca-sily-oscylatora-harmonicznego">Praca siły oscylatora harmonicznego</h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\int_0^{x_0} kx dx = k \int_0^{x_0} x dx = \\
+= k \left[\frac{1}{2} x \right]_0^{x_0} = \\
+\\ = k \left(\frac{x_0^2}{2} - \frac{0^2}{2}\right) = \\
+= \frac{1}{2} k x_0^2
+\end{split}\]</div>
+</div>
+</section>
+<section id="moc">
+<h3>Moc<a class="headerlink" href="#moc" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[
+P = \frac{dW}{dt} = \frac{\vec{F} * d\vec{r}}{dt} = \vec{F} * \vec{V}
+\]</div>
+</section>
+<section id="energia">
+<h3>Energia<a class="headerlink" href="#energia" title="Link to this heading">¶</a></h3>
+<section id="energia-kinetyczna">
+<h4>Energia Kinetyczna<a class="headerlink" href="#energia-kinetyczna" title="Link to this heading">¶</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+W = \int_A^B F ds = \int_A^B m \frac{dv}{dt} ds = m \int \frac{ds}{dt} dv = \\
+= m \int_A^B v dv = m \left[\frac{v^2}{2}\right]_A^B = \\
+= m (\frac{v_B^2}{2} - \frac{v_A^2}{2})
+\end{split}\]</div>
+</section>
+<section id="energia-potencjalna">
+<h4>Energia Potencjalna<a class="headerlink" href="#energia-potencjalna" title="Link to this heading">¶</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+niech F = const\\
+\int_A^B F dr = F \int_A^B dr = F \left[r\right] \\\end{split}\]</div>
+</section>
+</section>
+<section id="sila-zachowawcza">
+<h3>Siła Zachowawcza<a class="headerlink" href="#sila-zachowawcza" title="Link to this heading">¶</a></h3>
+<div class="admonition-sila-zachowawcza admonition">
+<p class="admonition-title">Siła Zachowawcza</p>
+<p>to taka, dla której praca <strong>nie</strong> zależy od toru.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Aby sprawdzić czy siłą jes zachowawcza należy obliczyć rotację siły</p>
+</div>
+<p>niech F będzie siłą zachowawczą
+<span class="math notranslate nohighlight">\(F \leftrightarrow E_p\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+dW = F * dr = F_s * ds = -dE_p \\
+\vec{F} = grad E_p
+F(\vec{r}) = - \frac{dE_p}{dr}
+\end{split}\]</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p><span class="math notranslate nohighlight">\(E_k + E_p = const\)</span></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p><strong>Energia oscylatora harmonicznego</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E_k = \frac{mv^2}{2} = \frac{\frac{dx}{dt}^2 m}{2} \\
+E_k = \frac{m}{2} A^2 \omega^2 cos^2 \omega t \\
+\\
+E_p = \frac{kx^2}{2} = \frac{k}{2} A^2 cos^2 \omega t \\
+E_p + E_k = \frac{m \omega^2 A^2}{2}
+\end{split}\]</div>
+</div>
 </section>
 <section id="sila-oporu-w-osrodku-lepkim">
 <h3>Siła oporu w ośrodku lepkim<a class="headerlink" href="#sila-oporu-w-osrodku-lepkim" title="Link to this heading">¶</a></h3>
@@ -979,7 +1120,7 @@ dp = ((m + dm) * (v + dv) + (-dm) * v) - mv \\
 dp = m * dv \\\end{split}\\\begin{split}F = \frac{dp}{dt} \\
 F = \frac{d(mv)}{dt} \\
 m d(v) = F * dt \\
-\int (m_0 - dm)dv = \int F * dt \\\end{split}\\\begin{split}v = - \frac{1}{\mu} ln(m_0 - \mu t}) * F + C \\\end{split}\\\begin{split}v = \frac{F}{\mu} ln \frac{m_0}{m_0 + \mu t} \\
+\int (m_0 - dm)dv = \int F * dt \\\end{split}\\\begin{split}v = - \frac{1}{\mu} ln(m_0 - \mu t) * F + C \\\end{split}\\\begin{split}v = \frac{F}{\mu} ln \frac{m_0}{m_0 + \mu t} \\
 \end{split}\end{aligned}\end{align} \]</div>
 </section>
 <section id="dynamika-rakiety">
@@ -996,7 +1137,7 @@ m = m_0 - \mu * t \\\end{split}\\\begin{split}// dp = ((m + dm) * (v + dv) + (-d
 dp = m * dv - v_g dm \\\end{split}\\\begin{split}F = \frac{dp}{dt} \\
 F = \frac{d(mv)}{dt} \\
 m d(v) = F * dt \\
-\int (m_0 - dm)dv = \int F * dt \\\end{split}\\\begin{split}v = - \frac{1}{\mu} ln(m_0 - \mu t}) * F + C \\\end{split}\\\begin{split}v = \frac{F}{\mu} ln \frac{m_0}{m_0 + \mu t} \\
+\int (m_0 - dm)dv = \int F * dt \\\end{split}\\\begin{split}v = - \frac{1}{\mu} ln(m_0 - \mu t) * F + C \\\end{split}\\\begin{split}v = \frac{F}{\mu} ln \frac{m_0}{m_0 + \mu t} \\
 \end{split}\end{aligned}\end{align} \]</div>
 </section>
 <section id="energia-w-plaskim-ruchu-krzywoliniowym">
@@ -1158,6 +1299,22 @@ E_p = C + \frac{1}{2}k (x-x_0)^2
 <li><a class="reference internal" href="#ruch-pod-wplywem-sily-sprezystej">Ruch pod wpływem siły sprężystej</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dynamika-ruchu-krzywoliniowego-punktu-materialnego">Dynamika ruchu krzywoliniowego punktu materialnego</a><ul>
+<li><a class="reference internal" href="#moment-sily">Moment Siły</a></li>
+<li><a class="reference internal" href="#sila-centralna">Siła Centralna</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#praca-i-energia">Praca i Energia</a><ul>
+<li><a class="reference internal" href="#praca">Praca</a></li>
+<li><a class="reference internal" href="#moc">Moc</a></li>
+<li><a class="reference internal" href="#energia">Energia</a><ul>
+<li><a class="reference internal" href="#energia-kinetyczna">Energia Kinetyczna</a></li>
+<li><a class="reference internal" href="#energia-potencjalna">Energia Potencjalna</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sila-zachowawcza">Siła Zachowawcza</a></li>
 <li><a class="reference internal" href="#sila-oporu-w-osrodku-lepkim">Siła oporu w ośrodku lepkim</a><ul>
 <li><a class="reference internal" href="#spadek-w-powietrzu">Spadek w powietrzu</a></li>
 </ul>
