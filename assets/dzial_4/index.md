@@ -740,7 +740,139 @@ x(t) = 2C * cos (\omega t) \\
 niech~2C = A \\
 x(0) = A \\
 $$
+```
 
+$$
+m \frac{dv}{dt} = \frac{dp}{dt} - v_g \frac{dm}{dt} \\
+$$
+
+```{important}
+Wzór Ciołkowskiego
+
+$$
+v_k = v_p ln \frac{m_p}{m_k}
+$$
+```
+
+## Dynamika ruchu krzywoliniowego punktu materialnego
+
+```{note}
+- siła styczna - $m * \frac{dv}{dt}$
+- siła normalna - $m * \frac{v^2}{\ro}$
+```
+
+### Moment Siły
+
+Moment Siły
+
+$$
+\vec{\tau} = \vec{F} \times \vec{r}
+$$
+
+Moment Pędu:
+
+$$
+\vec{L} = \vec{r} \times \vec{p}
+\\
+\frac{dL}{dt} = \frac{dr}{dt} \times \vec{p} + \vec{r} \times \frac{d\vec{p}}{dt} \\
+\frac{dL}{dt} = \vec{v} \times \vec{p} + \vec{r} \times \vec{F} \\
+\frac{dL}{dt} = \vec{v} \times \vec{v} * m + \vec{r} \times \vec{F} \\
+\frac{dL}{dt} = \vec{r} \times \vec{F} \\
+\\
+\vec{L} = m * \vec{r} \times \left(\vec{\omega} \times \vec{r} \right) \\
+$$
+
+```{tip}
+DLa ruchu punktu materialnego na płaszczyźnie: $\vec{L} = \omega m r^2$
+```
+
+### Siła Centralna
+
+- $\vec{F} \parallel \vec{r}$
+
+```{note}
+Jeżeli ciało wykonuje ruch pod wpływem siły centralnej, to jego moment
+pędu względem centrum siły jest stały
+```
+
+## Praca i Energia
+
+### Praca
+
+$$
+W = \vec{F} * \vec{s} \\
+W_{AB} = \int_A^B F * r \\
+\bf{W = \int_A^B \vec{F}(\vec{r}) * dr}
+$$
+
+```{admonition} Przykład
+#### Praca siły oscylatora harmonicznego
+
+$$
+\int_0^{x_0} kx dx = k \int_0^{x_0} x dx = \\
+= k \left[\frac{1}{2} x \right]_0^{x_0} = \\
+\\ = k \left(\frac{x_0^2}{2} - \frac{0^2}{2}\right) = \\
+= \frac{1}{2} k x_0^2
+$$
+```
+
+### Moc
+
+$$
+P = \frac{dW}{dt} = \frac{\vec{F} * d\vec{r}}{dt} = \vec{F} * \vec{V}
+$$
+
+### Energia
+
+#### Energia Kinetyczna
+
+$$
+W = \int_A^B F ds = \int_A^B m \frac{dv}{dt} ds = m \int \frac{ds}{dt} dv = \\
+= m \int_A^B v dv = m \left[\frac{v^2}{2}\right]_A^B = \\
+= m (\frac{v_B^2}{2} - \frac{v_A^2}{2})
+$$
+
+#### Energia Potencjalna
+
+$$
+niech F = const\\
+\int_A^B F dr = F \int_A^B dr = F \left[r\right] \\
+
+$$
+
+### Siła Zachowawcza
+
+```{admonition} Siła Zachowawcza
+to taka, dla której praca **nie** zależy od toru.
+```
+
+```{tip}
+Aby sprawdzić czy siłą jes zachowawcza należy obliczyć rotację siły
+```
+
+niech F będzie siłą zachowawczą
+$F \leftrightarrow E_p$
+
+$$
+dW = F * dr = F_s * ds = -dE_p \\
+\vec{F} = grad E_p
+F(\vec{r}) = - \frac{dE_p}{dr}
+$$
+
+```{important}
+$E_k + E_p = const$
+```
+
+```{note}
+**Energia oscylatora harmonicznego**
+
+$$
+E_k = \frac{mv^2}{2} = \frac{\frac{dx}{dt}^2 m}{2} \\
+E_k = \frac{m}{2} A^2 \omega^2 cos^2 \omega t \\
+\\
+E_p = \frac{kx^2}{2} = \frac{k}{2} A^2 cos^2 \omega t \\
+E_p + E_k = \frac{m \omega^2 A^2}{2}
+$$
 ```
 
 ### Siła oporu w ośrodku lepkim
@@ -843,7 +975,7 @@ F = \frac{d(mv)}{dt} \\
 m d(v) = F * dt \\
 \int (m_0 - dm)dv = \int F * dt \\
 
-v = - \frac{1}{\mu} ln(m_0 - \mu t}) * F + C \\
+v = - \frac{1}{\mu} ln(m_0 - \mu t) * F + C \\
 
 v = \frac{F}{\mu} ln \frac{m_0}{m_0 + \mu t} \\
 $$
@@ -866,7 +998,7 @@ F = \frac{d(mv)}{dt} \\
 m d(v) = F * dt \\
 \int (m_0 - dm)dv = \int F * dt \\
 
-v = - \frac{1}{\mu} ln(m_0 - \mu t}) * F + C \\
+v = - \frac{1}{\mu} ln(m_0 - \mu t) * F + C \\
 
 v = \frac{F}{\mu} ln \frac{m_0}{m_0 + \mu t} \\
 $$
@@ -952,8 +1084,8 @@ $$
 $$
 E_p = C + \frac{1}{2}k (x-x_0)^2
 $$
+
 ## Odniesienia
 
 - Przedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużny](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
 - [Sylabus Przedmiotu](https://sylabusy.agh.edu.pl/pl/document/7e60a851-0abc-44b6-9cdd-d04f9f50e420.pdf)
-
