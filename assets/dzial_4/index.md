@@ -758,7 +758,7 @@ $$
 
 ```{note}
 - siła styczna - $m * \frac{dv}{dt}$
-- siła normalna - $m * \frac{v^2}{\ro}$
+- siła normalna - $m * \frac{v^2}{\rho}$
 ```
 
 ### Moment Siły
@@ -899,7 +899,7 @@ $F_{op} = -6 \pi \eta R \vec{v}$
 $$
 v(t) = ? \\
 F_w = m * g - bv \\
-v_\infinitif = \frac{mg}{b} \\
+v_\infty= \frac{mg}{b} \\
 
 m * \frac{dv}{dt} + bv = mg \\
 \frac{dv}{dt} + \frac{bv}{m} = g \\
@@ -922,7 +922,7 @@ $$
 
 $$
 M = m_0 + \mu * t \\
-\mu = \frac{d \ui}{dt}
+\mu = \frac{d \mu}{dt}
 F = \frac{dp}{dt} \\
 F = \frac{dp}{dt} \\
 dp = (m + dm) * (v + dv) -mv \\
@@ -941,7 +941,7 @@ $$
 niech~v_0 = 0\\
 v(t) = ? \\
 m = m_0 + \mu * t \\
-\mu = \frac{d \ui}{dt}
+\mu = \frac{d \mu}{dt}
 F = \frac{dp}{dt} \\
 F = \frac{dp}{dt} \\
 dp = (m + dm) * (v + dv) -mv \\
@@ -1021,9 +1021,9 @@ $$
 E = \frac{m}{2}(\frac{dr}{dt})^2 + \frac{C}{r} +E_p \\ 
 $$
 
-### Ruch drgający
+## Ruch drgający
 
-#### Kinematyka prostego ruchu harmonicznego
+### Kinematyka prostego ruchu harmonicznego
 
 $$
 x(t) = A sin(\omega * t + \phi_0)
@@ -1032,7 +1032,7 @@ x(t) = A sin(\omega * t + \phi_0)
 \hat{A} = e^{i \phi}
 $$
 
-#### Wachadło matematyczne
+### Wachadło matematyczne
 
 ```{note}
 **Wachadłęm matematycznym** nazywamy punktową mase $m$ zawieszoną na nieważkiej, nierozciągliwej
@@ -1053,7 +1053,7 @@ Jeżeli~sin \alpha \neq \alpha \\
 T' = T'_ 0 \sqrt{1+\frac{\alpha_0}{16} + ...}
 $$
 
-#### Superpozycja drgań prostych
+### Superpozycja drgań prostych
 
 - dla $\phi = 0 \quad \alpha = (A_1 + A_2) cos(\omega t)$
 - dla $\phi = \pi \quad \alpha = |A_1 - A_2| cos(\omega t)$
@@ -1063,7 +1063,7 @@ $$
 \hat{x_1} + \hat{x_2} = e^{i \omega t}(\hat{A_1} + \hat{A_2} e^{i \phi}) \\
 $$
 
-##### $\omega_1 \neq \omega_2$
+#### $\omega_1 \neq \omega_2$
 
 Niech $\phi = 0$
 
@@ -1084,7 +1084,7 @@ $$
 E_p = C + \frac{1}{2}k (x-x_0)^2
 $$
 
-#### Drgania Harmoniczne tłumione
+### Drgania Harmoniczne tłumione
 
 $$
 \vec{F} = b \vec{v} \\
@@ -1131,7 +1131,7 @@ się drgania. Występuje pęzanie
 
 - tłumienie krytyczne $\omega_0 = \beta$
 
-#### Drgania wymuszone i rezonans
+### Drgania wymuszone i rezonans
 
 $$
 F_w(t) = F_0 * sin(\omega t)
@@ -1153,6 +1153,119 @@ tg \delta = - \frac{2 \beta \omega}{\omega_0^2 - \omega^2}
 $$
 
 <iframe src="https://www.desmos.com/calculator/7ta79ggit4" width="100%" style="min-height:200px"></iframe>
+
+### Analiza Furiera Ruchu Harmonicznego
+
+```{note}
+funkcja jest okresowa jeżeli $x(t+T) = x(t)$, wtedy $T$ nazywamy okresem.
+```
+
+$$
+niech~x(t) = C_1 cos(\omega t) + C_2 sin(\omega t)
+$$
+
+```{admonition} Twierdzenie FUriera
+Każda funkcja okresowa o okresie `T` może być przedstawiona jako 
+suma funkcji sinusoidalnych w następującej postaci:
+
+$$
+x(t) = a_0 + a_1 cos (\omega t) + a_2 cos (2 \omega t) + ... + a_n cos (n \omega t) + \\
++ b_1 sin (\omega t) + b_2 sin (2 \omega t) + ... + b_n sin( n \omega t)
+$$
+```
+
+```{tip}
+To ile wyrazów ww. ciągu należy użyć zależy od tego jak bardzo wykres danej funkcji
+różni się od sinusoidy
+```
+
+### Reprezentacja ruchu drgającego w przestrzeni fazowej
+
+```{admonition} Przestrzzeń Fazowa
+Przestrzeń zależności położeń i pędów (lub położeń i prędkości).
+Wymiar przestrzeni fazowej wynosi dla 3-wymiarowego ruchu `6n` dla n cząstek
+```
+
+Niech:
+
+ruch 1-wymiarowy,
+
+$$
+x = A cos \omega t \\
+v = A \omega sin \omega t
+\frac{x^2}{A^2} + \frac{v^2}{A^2 \omega^2} = 1
+$$
+
+<iframe src="https://www.desmos.com/calculator/uz2vput5xj" width="100%" style="min-height:200px"></iframe>
+
+_Wykres $V(x)$_
+
+```{tip}
+załóżmy wachadło matematyczne skłądająće się znieważkiego sztywnego pręta
+oraz masywnej kulki.
+
+$$
+E_p = mgh \\
+E_p = mg \left(L - L cos \alpha \right) \\
+$$
+
+Szukamy wykresu ruchu w przestrzenii fazowej
+
+dla dużych amplitud pręta elipsa opisująca drgania
+(patrz wykres powyżej) staje się coraz bardziej krzywą
+przypominającą "romb"
+
+:::{note}
+Punkt osobliwy - punkt w któ©ym zachowanie ukłądu jest nieokreślone -
+na przykłąd gdy nasz pręt jest skierowany pionowo do góry a jego prędkość jest zerowa 
+nie wiadomo w którą stronę rozpocznie się ruch
+:::
+
+```
+
+```{admonition} atraktor
+kształt do którego dążą wszystkie trajektorie przy $t \to \infty$
+```
+
+#### Tłumienie i wymuszenie
+
+- trajektorią ruchu harmonicznego oscylatora tłumionego jest spirala.
+-  dla ruchu wymuszonego atraktorem jest elipsa
+
+<details><summary>Dygresja</summary>
+
+Atraktorem trajektorii w dynamice jest elipsa, a w ewolucji krab
+
+<img src="https://monocerus.pl/7992-large_default/papo-56047-krab.jpg">
+
+</details>
+
+```{note}
+Problem 3 mas - rozważmy ruch jednego ciała w polu grawitacyjnym dwuch nieruchomych gwiazd...
+```
+
+### Chaos
+
+$$
+F_s = -kx
+F_w-bv
+$$
+
+- nieliniowość
+- czułość na warunki początkowe
+
+```{admonition} bifurkacja
+Dla pojedynczej nieliniowości występuje podwojenie okresu, czyli ciało
+powraca do tego samego punktu po przebyciu dwuch okresów.
+```
+
+```{important}
+Ukłąd opisany całkowicie deterministycznymi równaniami staje się **nieprzewidywalny**
+jeżeli istotne jest **niedokładne** określenie **warunków początkowych**.
+
+
+Zachowanie układu chaotycznego w czasie jest nieregularne i nieprzewidywalne.
+```
 
 ## Odniesienia
 
