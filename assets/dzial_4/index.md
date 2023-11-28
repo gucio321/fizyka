@@ -1267,6 +1267,85 @@ jeżeli istotne jest **niedokładne** określenie **warunków początkowych**.
 Zachowanie układu chaotycznego w czasie jest nieregularne i nieprzewidywalne.
 ```
 
+## Grawitacja
+
+### Prawa Kepplera
+
+```{admonition} I Prawo Kepplera
+Planety poruszają się po elipsach.
+```
+
+```{admonition} II Prawo Kepplera
+Wektor wodząćy planety zartacza równe pola powierzchni w równych przedziałach czasu
+```
+
+```{admonition} III Prawo Kepplera
+Kwadraty okresów obiegóœ planet są proporcjonalne do sześcianów i ch średnich odległości od Słońca.
+
+$$
+\bf{\frac{T_1^2}{T_2^2} = \frac{a_1^3}{a_2^3}} \Rightarrow \frac{T^2}{a^3} = const
+$$
+```
+
+### Dynamika planet według Newtona
+
+Rozważmy pojedynczy wycinek trajektorii planety.
+Po przypliżeniu fragmentu łuku do prostej:
+$$
+s = \frac{1}{2} R h \\
+\alpha = \frac{h}{r} \\
+\alpha = \omega * \Delta t \\
+L = mr^2 \omega \Delta t \\
+\vec{L} = const\\
+$$
+
+```{important}
+Siła odpowiadająca za ruch planety jest centralna
+```
+
+$$
+F(R) ~ \frac{1}{R^2} \\
+F(R) = G \frac{m M}{r^2} \\
+$$
+
+```{admonition} Masa Ziemii
+$$
+M_z = \frac{g R_z^2}{G}
+$$
+```
+
+### Oddziaływanie grawitacjyne
+
+Oddziaływanie grawitacyjne między dwoma ciałąmi jest opisane przez centralną
+siłę przyciągającą proporcjonalną do iloczynu ich mas i odwrotnie proporcjonalną do kwadratu odległości
+między nimi.
+
+```{tip}
+- natężenie pola grawitacyjnego oznaczamy jako $\vec{\gamma}$
+
+$$
+\vec{\gamma} = \frac{\vec{F}}{m} \quad \left[\gamma\right] = \frac{m}{s^2}
+$$
+```
+
+```{admonition} Zasada superpozycji pól
+Nateżenie pola grawitacyjnego wytworzonoego przez układ mas
+jest równe sumie wektorowej pól wytworzonych przez poszczególne składniki.
+```
+
+```{admonition} Potencjał
+$$
+\Phi = \frac{E_p}{m}
+$$
+```
+
+$$
+F(R) = -G \frac{Mm}{r^2}
+E_P = \int G \frac{Mm}{R^2} = G M m \frac{-1}{R} + C
+$$
+
+#### Energia Potencjalna
+
 ## Odniesienia
 
 - Przedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużny](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
