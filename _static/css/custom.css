@@ -48,6 +48,7 @@ div.sphinxsidebar a,
 a.reference,
 div.related a code.literal,
 a.headerlink,
+ul.search a,
 code.literal.xref {
 	color: #f49500;
 }
