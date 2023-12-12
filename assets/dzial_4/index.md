@@ -1346,6 +1346,346 @@ $$
 
 #### Energia Potencjalna
 
+### Ruch w centralnym polu grawitacyjnym
+
+Rozważamy dwie masy: Masę centralną (np. Słońce) oraz ciało w małej masie.
+
+Obiekt wpada w pole grawitacyjne M z prędkością $v_0$.
+
+#### Opis krzywych stożkowych w biegunowym układzie współrzędnych
+
+załużmy dodatkową prostą pionow→ą w układzie w odległlości `d` od bieguna (kierownica).
+
+rozważmy dwa parametry:
+- r - długość wektora
+- odległość punktu od kierownicy: $r - d cos \phi$
+
+zbiór wszystkich punktów równo odległych od bieguna i kierownicy tworzy parabolę.
+
+$$
+\frac{r}{d-r cos \phi} = 1
+$$
+
+Niech:
+
+$$
+\frac{r}{d-r cos \phi} = \epsilon = const \\
+r = \frac{\epsilon d}{1+ \epsilon cos \phi} \\
+niech~p = \epsilon d \\
+\bf{r = \frac{p}{1+\epsilon cos \phi}}
+$$
+
+```{note}
+$\epsilon nazywamy mimośrodem.
+
+:::{tip}
+wartość mimośrodu dla paraboli wynosi 1
+:::
+```
+
+```{note}
+- dla $\epsilon = 0$ równanie opisuje okrąg (nie ważne że w p jest epsilon)
+- dla $\epsilon \in (0,1)$ - elipsa
+- dla $epsilon = 1$ - parabola
+-- dla $\epsilon > 1$ - hiperbola
+```
+
+#### twierdzenie o krzywych stożkowych
+$$
+E_k = \frac{mv^2}{2} =  \\
+E_p = G \frac{mM}R \\
+\\
+E_C = \frac{m}{2} * \left(\frac{dr}{dt}\right)^2 + \frac{L^2}{2mr^2}-G\frac{Mm}{R} \\
+\frac{m}{2} * \left(\frac{dr}{dt}\right)^2 =-E_c -  \frac{L^2}{2mr^2}+G\frac{Mm}{R} \\
+\left(\frac{dr}{dt}\right)= \sqrt{\frac{2}{m}(E_c +G\frac{Mm}{R}) - \frac{L^2}{m^2r^2}} \\
+dt = \frac{dr}{\sqrt{\frac{2}{m}(E_c +G\frac{Mm}{R}) - \frac{L^2}{m^2r^2}}} \\
+\\
+\omega = \frac{d \phi}{dt} = \frac{L}{mr^2}
+dt = \frac{d \phi mr^2}{L}
+\\
+\frac{d \phi mr^2}{L} = \frac{dr}{\sqrt{\frac{2}{m}(E_c +G\frac{Mm}{R}) - \frac{L^2}{m^2r^2}}} \\
+d \phi = \frac{\frac{L}{mr^2} dr}{\sqrt{\frac{2}{m}\left(E+\frac{GMm}{r}\right)-\frac{L^2}{m^2r^2}}} \\
+\phi = arccos\left(\frac{\frac{L}{r} - G \frac{m^2 M}{L} }{\sqrt{2mE + G^2 \frac{m^4 M^2}{L^2}}}\right) + C \\
+cos \phi = \frac{\frac{L}{r} - G \frac{m^2 M}{L} }{\sqrt{2mE + G^2 \frac{m^4 M^2}{L^2}}} \\
+cos \phi = \frac{\frac{L^2}{G m^2 M } - 1}{\sqrt{\frac{2EL^2}{G^2 m^3 M^2} + 1}} \\
+ok~niech~cos \phi = \frac{\frac{p}{r}-1}{\epsilon} \\
+cos \phi = r = \frac{p}{1+\epsilon cos \phi} \\
+E=\frac{G^2 M^2 m^3}{2L^2} (\epsilon^2 -1) \\
+$$
+
+```{note}
+- dla energii najmniejszej ruch po okręgu
+- dla ujemnej po elipsie
+- dla równej 0 po paraboli
+- dla większej od 0 po hiperboli
+```
+
+```{tip}
+$$
+b = \frac{L}{\sqrt{2m|E|}} \\
+$$
+```
+
+### Oddziaływanie grawitacyjne mas kulistych
+
+#### Przykłady wstępne
+
+rozważmy pole grawitacyjne pręta.
+
+z zasady wuperpozycji
+
+rozważmy punkt na osi pręta
+
+$$
+d \gamma = - \frac{G dM}{x^2} \\
+\gamma = \int - \frac{G dM}{x^2}dx \\
+\\
+dM = \frac{M}{L}
+\\
+\gamma =-G \frac{M}{L} \int x^{-2} dx \\
+\\
+\gamma = G M * \frac{1}{(a)(a+L)}
+$$
+
+Z tego wynika ze w przypadku pręta nie można założyć że cała masa
+jest skupiona w środku pręta
+
+#### Pole powierzchni sfery
+
+podzielmy sferę na małe paski o kształcie pierścienia
+o powierzchni ds.
+
+$$
+ds = 2\pi R d \phi * R sin d\phi = R^2 d\phi sin d \phi \\
+P = \int_0^{\pi} 2 \pi R d \phi * R sin d\phi = R^2 d\phi sin d \phi d \phi \\
+P = R^2 2 \pi (1+1) = 4 pi R^2
+$$
+
+#### Objętość kuli
+
+dzielimy kulę na warstwy sferyczne.
+
+$$
+dV = 4 \pi r^2 * dr \\
+V = \int_0^R 4 \pi r^2 * dr \\
+V = \frac{4}{3} \pi R^3
+$$
+
+#### Pole grawitacyjne wytworzone przez sferę
+
+$$
+\frac{dE_P}{dr} = -F
+\frac{d\Phi}{dr} = \gamma
+$$
+
+kula o masie M i promieniu R
+
+$$
+d \Phi = -G \frac{dm}{a} \\
+\Phi = -G \frac{m}{a}\\
+$$
+
+a to odległość od punktów na pierścieniu
+
+- Wzór na potencjał od całęj sfery: $\Phi = -G * \frac{M}{r}$
+- Potencjał pola wewnątrz sfery wynosi $\Phi = -G \frac{M}{R} = const$
+- potencjał od kuli $\Phi = -G \frac{M}{r}$
+
+_R - promień sfery, r - odległość od środka sfery$
+
+### Podstawy eksploracji przestrzeni kosmicznej
+
+$$
+v = \sqrt{\frac{GM}{R_z+h}} \\
+T = \frac{2 \pi R_z}{v_I} \\
+T = \sqrt{\frac{4 \pi^2 R_z}{G M_z}}
+$$
+
+```{note}
+Okres przelotu z I Prędkością kosmiczną wokół ziemii jest równy okresowi
+przelotu przez tunel wywiercony przez środek ziemi.
+```
+
+#### Eksploracja układu słonecznego
+
+$$
+\frac{mv_{II}^2}{2} - \frac{GM_z}{R_z} \\
+v_{II} = \sqrt{\frac{2GM_z}{R_z}} = v_I \sqrt{2}
+$$
+
+## Dynamika Układu Punktów
+
+### Środek masy
+
+W układzie punktów znajduje się punkt reprezentujący układ mas okreśłony wektorem $\vec{r_{Cm}}
+
+$$
+r_{Cm} = \frac{m_1 \vec{r_1} + m_2 \vec{r_2} + ... + m_n \vec{r_n}}{m_1 + m_2 + ... + m_n} = \frac{1}{M} * \Sigma_{i = 0}^n m_i \vec{r_i}
+$$
+
+$$
+v_{Cm} = \frac{1}{M} * \Sigma_{i=0}^n p_i
+$$
+
+$$
+a_{Cm} = \frac{1}{M} \Sigma_{i=0}^n F_i
+$$
+
+```{tip}
+Środek masy ukłądu cząstek porusza się w taki sposób, jakby cała masa była skupiona w środku masy
+i jakby na niego działały wszystkie siły zewnętrzne.
+```
+
+```{tip}
+Względny ruch cząstek poddany działaniu tylko sił wewnętrznych jest równoważny ruchowi cząstki o masie zredukowanej poddanej
+działaniu siły równej wzajemnemu oddziaływaniu.
+```
+
+### Moment Pędu układu cząstek
+
+```{note}
+$L = m * \vec{r} \times \vec{v}$
+```
+
+$$
+L = \Sigma_{i=0}^n L_i
+$$
+
+```{note}
+szybkość zmian momentu siły dowolnego ukłądu cząsteg Jest róna sumie momentów sił zewnętrznych (względem tego samego punktu działających na ten układ.)
+```
+
+Gdy nie ma sił zewnętrznych lub ukłądu z zerowym zewnętrznymmomentem sił moment układu jest stały co do kierunku i wartości.
+
+$$
+\frac{dL}{dt} = 0
+$$
+
+#### Wewnętrzny i orbitalny moment pędu
+
+$L_w$ to wewnętrzny moment pędu - suma całkowitego momentu pędu względem środka masy. \
+Orbitalny moment pędu to pęd względem ukłądu laboratoryjnego
+
+$L = L_w + L_o$
+
+### Moment Pędu Bryły Sztywnej
+
+```{admonition} bryła sztywna
+ukłąd punktóœ gdzie $\vec{r} = const$
+
+:::{note}
+Typy ruchu:
+- postępowy = translacyjny = posuwisty $v = v_1 = v_2 = ... = v_n$
+- obrotowy = wirowy = rotacyjny $v_{cm} = 0 ~ \omega = const$
+:::
+```
+
+### Moment bezwładności
+
+Ruch obrotowy poszczególnych brył:
+- płaska płyta obraca się wokół osi przechodzącej przez środek masy i prostopadłej do płyty.
+
+$$
+\vec{L} = ? \\
+\vec{L_i} = r_i \times p_i \\
+\vec{L_i} = r_i \times m_i v_i \\
+\vec{L_i} = r_i \times m_i r_i \times \omega \\
+\vec{L} = \vec{r} \times m \times \vec{r} \times \vec{\omega} \\
+\vec{L} = \omega \Sigma m \vec{r^2}  \\
+\vec{L} = I \omega
+$$
+
+- Hantle obracająće się w stosunku do osi przechodzącej przez środek pręta gdy oś nie jest prostpoadła
+
+$$
+\vec{L_1} = r_1 \times m_1 \vec{v_1} \\
+\vec{L_2} = r_2 \times m_2 \vec{v_2} \\
+\vec{L} \nparallel \vec{\omega} \Rightarrow \vec{L} \neq I \omega
+$$
+
+```{admonition} Tensor
+Moment bezwłądności $i$ nazywamy tensorem.
+
+$\hat{I} \lor \mathbb{I}$ można zapisać w postaci macierzy
+$\begin{Bmatrix}
+I_{xx} && I_{xy} && I_{xz} \\
+I_{yx} && I_{yy} && I_{yz} \\
+I_{zx} && I_{zy} && I_{zz} \\
+\end{Bmatrix}$
+
+Ogólny wzór na moment pędu bryły sztywnej to $\vec{L} = \hat{I} \omega$
+```
+
+- dla bryły 3-wymiarowej
+r to odległość od osi obrotu
+$$
+I = \int dI = \int r^2 dm
+$$
+
+- dla pręta
+
+$$
+\frac{dr}{dm} = \frac{M}{L}
+I = \int r^2 \frac{M}{L} dr \\
+I = \frac{M}{L} \int_{\frac{-R}{2}}^{\frac{R}{2}} r^2 dr \\
+I = \frac{M}{L} \left[ \frac{1}{3} r^3 \right ]{\frac{-R}{2}}^{\frac{R}{2}}\\
+I = \frac{1}{12} mR^2 \\
+$$
+
+- walec
+
+$$
+I = \int dm x^2
+dm = \frac{M}{\pi R^2 L} 2 \pi x L dx \\
+I = \int 2 \frac{M}{R} x^3 dx \\
+I = 2 \frac{M}{R} \int x^3 dx \\
+I = 2 \frac{M}{R} \left[ x^3 \right]_ 0^{R} \\
+I = \frac{1}{2} MR^2 \\
+
+$$
+
+```{note}
+Każda bryła niezależnie od rozkłądu masy posiada 3 osie główne przecinająće się w środku masy.
+Osie główne zawsze są wobec siebie prostopadłe. Dla brył o symetrycznym rozkładzie masy
+osie główne powiązane są ze środkiem symetrii.
+
+Jeżeli bryła obraca się wzdłuż osi symetrii możemy traktować moment bezwłądności
+jako skalar.
+```
+### DYnamika ruchu obrotowego bryły względem osi głównej
+
+```{admonition} II zasada dynamiki dla ruchu obrotowego
+$$
+\frac{dL}{dt} = I \frac{\omega}{dt} \\
+M = I \epsilon
+$$
+```
+
+#### Staczanie walca z róœni pochyłej
+
+Gdy nie ma poślizgu:
+
+$$
+Ma = M g sin \alpha - T_s
+ I* \epsilon = \tau = T_s * R \\
+ a = \epsilon R \\
+ $$
+
+ ```{note}
+ założywszy dwa dowolne ruchy obrotowy i postępowy
+ $v_w = v + \omega r$
+
+dla warunku braku poślizgu punkt styczności musi mieć v = 0
+ ```
+
+ROzważmy przypadek, w którym występuje poślizg:
+
+$$
+Ma = M g sin \alpha - T_k
+I* \epsilon = \tau = T_k * R \\
+T_k = k * mg cos \alpha
+$$
+
 ## Odniesienia
 
 - Przedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużny](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
