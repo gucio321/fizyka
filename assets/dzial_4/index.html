@@ -1491,6 +1491,353 @@ E_P = \int G \frac{Mm}{R^2} = G M m \frac{-1}{R} + C
 <h4>Energia Potencjalna<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h4>
 </section>
 </section>
+<section id="ruch-w-centralnym-polu-grawitacyjnym">
+<h3>Ruch w centralnym polu grawitacyjnym<a class="headerlink" href="#ruch-w-centralnym-polu-grawitacyjnym" title="Link to this heading">¶</a></h3>
+<p>Rozważamy dwie masy: Masę centralną (np. Słońce) oraz ciało w małej masie.</p>
+<p>Obiekt wpada w pole grawitacyjne M z prędkością <span class="math notranslate nohighlight">\(v_0\)</span>.</p>
+<section id="opis-krzywych-stozkowych-w-biegunowym-ukladzie-wspolrzednych">
+<h4>Opis krzywych stożkowych w biegunowym układzie współrzędnych<a class="headerlink" href="#opis-krzywych-stozkowych-w-biegunowym-ukladzie-wspolrzednych" title="Link to this heading">¶</a></h4>
+<p>załużmy dodatkową prostą pionow→ą w układzie w odległlości <code class="docutils literal notranslate"><span class="pre">d</span></code> od bieguna (kierownica).</p>
+<p>rozważmy dwa parametry:</p>
+<ul class="simple">
+<li><p>r - długość wektora</p></li>
+<li><p>odległość punktu od kierownicy: <span class="math notranslate nohighlight">\(r - d cos \phi\)</span></p></li>
+</ul>
+<p>zbiór wszystkich punktów równo odległych od bieguna i kierownicy tworzy parabolę.</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{r}{d-r cos \phi} = 1
+\]</div>
+<p>Niech:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{r}{d-r cos \phi} = \epsilon = const \\
+r = \frac{\epsilon d}{1+ \epsilon cos \phi} \\
+niech~p = \epsilon d \\
+\bf{r = \frac{p}{1+\epsilon cos \phi}}
+\end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>$\epsilon nazywamy mimośrodem.</p>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>wartość mimośrodu dla paraboli wynosi 1</p>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<ul class="simple">
+<li><p>dla <span class="math notranslate nohighlight">\(\epsilon = 0\)</span> równanie opisuje okrąg (nie ważne że w p jest epsilon)</p></li>
+<li><p>dla <span class="math notranslate nohighlight">\(\epsilon \in (0,1)\)</span> - elipsa</p></li>
+<li><p>dla <span class="math notranslate nohighlight">\(epsilon = 1\)</span> - parabola
+– dla <span class="math notranslate nohighlight">\(\epsilon &gt; 1\)</span> - hiperbola</p></li>
+</ul>
+</div>
+</section>
+<section id="twierdzenie-o-krzywych-stozkowych">
+<h4>twierdzenie o krzywych stożkowych<a class="headerlink" href="#twierdzenie-o-krzywych-stozkowych" title="Link to this heading">¶</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E_k = \frac{mv^2}{2} =  \\
+E_p = G \frac{mM}R \\
+\\
+E_C = \frac{m}{2} * \left(\frac{dr}{dt}\right)^2 + \frac{L^2}{2mr^2}-G\frac{Mm}{R} \\
+\frac{m}{2} * \left(\frac{dr}{dt}\right)^2 =-E_c -  \frac{L^2}{2mr^2}+G\frac{Mm}{R} \\
+\left(\frac{dr}{dt}\right)= \sqrt{\frac{2}{m}(E_c +G\frac{Mm}{R}) - \frac{L^2}{m^2r^2}} \\
+dt = \frac{dr}{\sqrt{\frac{2}{m}(E_c +G\frac{Mm}{R}) - \frac{L^2}{m^2r^2}}} \\
+\\
+\omega = \frac{d \phi}{dt} = \frac{L}{mr^2}
+dt = \frac{d \phi mr^2}{L}
+\\
+\frac{d \phi mr^2}{L} = \frac{dr}{\sqrt{\frac{2}{m}(E_c +G\frac{Mm}{R}) - \frac{L^2}{m^2r^2}}} \\
+d \phi = \frac{\frac{L}{mr^2} dr}{\sqrt{\frac{2}{m}\left(E+\frac{GMm}{r}\right)-\frac{L^2}{m^2r^2}}} \\
+\phi = arccos\left(\frac{\frac{L}{r} - G \frac{m^2 M}{L} }{\sqrt{2mE + G^2 \frac{m^4 M^2}{L^2}}}\right) + C \\
+cos \phi = \frac{\frac{L}{r} - G \frac{m^2 M}{L} }{\sqrt{2mE + G^2 \frac{m^4 M^2}{L^2}}} \\
+cos \phi = \frac{\frac{L^2}{G m^2 M } - 1}{\sqrt{\frac{2EL^2}{G^2 m^3 M^2} + 1}} \\
+ok~niech~cos \phi = \frac{\frac{p}{r}-1}{\epsilon} \\
+cos \phi = r = \frac{p}{1+\epsilon cos \phi} \\
+E=\frac{G^2 M^2 m^3}{2L^2} (\epsilon^2 -1) \\
+\end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<ul class="simple">
+<li><p>dla energii najmniejszej ruch po okręgu</p></li>
+<li><p>dla ujemnej po elipsie</p></li>
+<li><p>dla równej 0 po paraboli</p></li>
+<li><p>dla większej od 0 po hiperboli</p></li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+b = \frac{L}{\sqrt{2m|E|}} \\
+\end{split}\]</div>
+</div>
+</section>
+</section>
+<section id="oddzialywanie-grawitacyjne-mas-kulistych">
+<h3>Oddziaływanie grawitacyjne mas kulistych<a class="headerlink" href="#oddzialywanie-grawitacyjne-mas-kulistych" title="Link to this heading">¶</a></h3>
+<section id="przyklady-wstepne">
+<h4>Przykłady wstępne<a class="headerlink" href="#przyklady-wstepne" title="Link to this heading">¶</a></h4>
+<p>rozważmy pole grawitacyjne pręta.</p>
+<p>z zasady wuperpozycji</p>
+<p>rozważmy punkt na osi pręta</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+d \gamma = - \frac{G dM}{x^2} \\
+\gamma = \int - \frac{G dM}{x^2}dx \\
+\\
+dM = \frac{M}{L}
+\\
+\gamma =-G \frac{M}{L} \int x^{-2} dx \\
+\\
+\gamma = G M * \frac{1}{(a)(a+L)}
+\end{split}\]</div>
+<p>Z tego wynika ze w przypadku pręta nie można założyć że cała masa
+jest skupiona w środku pręta</p>
+</section>
+<section id="pole-powierzchni-sfery">
+<h4>Pole powierzchni sfery<a class="headerlink" href="#pole-powierzchni-sfery" title="Link to this heading">¶</a></h4>
+<p>podzielmy sferę na małe paski o kształcie pierścienia
+o powierzchni ds.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+ds = 2\pi R d \phi * R sin d\phi = R^2 d\phi sin d \phi \\
+P = \int_0^{\pi} 2 \pi R d \phi * R sin d\phi = R^2 d\phi sin d \phi d \phi \\
+P = R^2 2 \pi (1+1) = 4 pi R^2
+\end{split}\]</div>
+</section>
+<section id="objetosc-kuli">
+<h4>Objętość kuli<a class="headerlink" href="#objetosc-kuli" title="Link to this heading">¶</a></h4>
+<p>dzielimy kulę na warstwy sferyczne.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+dV = 4 \pi r^2 * dr \\
+V = \int_0^R 4 \pi r^2 * dr \\
+V = \frac{4}{3} \pi R^3
+\end{split}\]</div>
+</section>
+<section id="pole-grawitacyjne-wytworzone-przez-sfere">
+<h4>Pole grawitacyjne wytworzone przez sferę<a class="headerlink" href="#pole-grawitacyjne-wytworzone-przez-sfere" title="Link to this heading">¶</a></h4>
+<div class="math notranslate nohighlight">
+\[
+\frac{dE_P}{dr} = -F
+\frac{d\Phi}{dr} = \gamma
+\]</div>
+<p>kula o masie M i promieniu R</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+d \Phi = -G \frac{dm}{a} \\
+\Phi = -G \frac{m}{a}\\
+\end{split}\]</div>
+<p>a to odległość od punktów na pierścieniu</p>
+<ul class="simple">
+<li><p>Wzór na potencjał od całęj sfery: <span class="math notranslate nohighlight">\(\Phi = -G * \frac{M}{r}\)</span></p></li>
+<li><p>Potencjał pola wewnątrz sfery wynosi <span class="math notranslate nohighlight">\(\Phi = -G \frac{M}{R} = const\)</span></p></li>
+<li><p>potencjał od kuli <span class="math notranslate nohighlight">\(\Phi = -G \frac{M}{r}\)</span></p></li>
+</ul>
+<p>_R - promień sfery, r - odległość od środka sfery$</p>
+</section>
+</section>
+<section id="podstawy-eksploracji-przestrzeni-kosmicznej">
+<h3>Podstawy eksploracji przestrzeni kosmicznej<a class="headerlink" href="#podstawy-eksploracji-przestrzeni-kosmicznej" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v = \sqrt{\frac{GM}{R_z+h}} \\
+T = \frac{2 \pi R_z}{v_I} \\
+T = \sqrt{\frac{4 \pi^2 R_z}{G M_z}}
+\end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Okres przelotu z I Prędkością kosmiczną wokół ziemii jest równy okresowi
+przelotu przez tunel wywiercony przez środek ziemi.</p>
+</div>
+<section id="eksploracja-ukladu-slonecznego">
+<h4>Eksploracja układu słonecznego<a class="headerlink" href="#eksploracja-ukladu-slonecznego" title="Link to this heading">¶</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{mv_{II}^2}{2} - \frac{GM_z}{R_z} \\
+v_{II} = \sqrt{\frac{2GM_z}{R_z}} = v_I \sqrt{2}
+\end{split}\]</div>
+</section>
+</section>
+</section>
+<section id="dynamika-ukladu-punktow">
+<h2>Dynamika Układu Punktów<a class="headerlink" href="#dynamika-ukladu-punktow" title="Link to this heading">¶</a></h2>
+<section id="srodek-masy">
+<h3>Środek masy<a class="headerlink" href="#srodek-masy" title="Link to this heading">¶</a></h3>
+<p>W układzie punktów znajduje się punkt reprezentujący układ mas okreśłony wektorem $\vec{r_{Cm}}</p>
+<div class="math notranslate nohighlight">
+\[
+r_{Cm} = \frac{m_1 \vec{r_1} + m_2 \vec{r_2} + ... + m_n \vec{r_n}}{m_1 + m_2 + ... + m_n} = \frac{1}{M} * \Sigma_{i = 0}^n m_i \vec{r_i}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+v_{Cm} = \frac{1}{M} * \Sigma_{i=0}^n p_i
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+a_{Cm} = \frac{1}{M} \Sigma_{i=0}^n F_i
+\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Środek masy ukłądu cząstek porusza się w taki sposób, jakby cała masa była skupiona w środku masy
+i jakby na niego działały wszystkie siły zewnętrzne.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Względny ruch cząstek poddany działaniu tylko sił wewnętrznych jest równoważny ruchowi cząstki o masie zredukowanej poddanej
+działaniu siły równej wzajemnemu oddziaływaniu.</p>
+</div>
+</section>
+<section id="moment-pedu-ukladu-czastek">
+<h3>Moment Pędu układu cząstek<a class="headerlink" href="#moment-pedu-ukladu-czastek" title="Link to this heading">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p><span class="math notranslate nohighlight">\(L = m * \vec{r} \times \vec{v}\)</span></p>
+</div>
+<div class="math notranslate nohighlight">
+\[
+L = \Sigma_{i=0}^n L_i
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>szybkość zmian momentu siły dowolnego ukłądu cząsteg Jest róna sumie momentów sił zewnętrznych (względem tego samego punktu działających na ten układ.)</p>
+</div>
+<p>Gdy nie ma sił zewnętrznych lub ukłądu z zerowym zewnętrznymmomentem sił moment układu jest stały co do kierunku i wartości.</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{dL}{dt} = 0
+\]</div>
+<section id="wewnetrzny-i-orbitalny-moment-pedu">
+<h4>Wewnętrzny i orbitalny moment pędu<a class="headerlink" href="#wewnetrzny-i-orbitalny-moment-pedu" title="Link to this heading">¶</a></h4>
+<p><span class="math notranslate nohighlight">\(L_w\)</span> to wewnętrzny moment pędu - suma całkowitego momentu pędu względem środka masy. <br />
+Orbitalny moment pędu to pęd względem ukłądu laboratoryjnego</p>
+<p><span class="math notranslate nohighlight">\(L = L_w + L_o\)</span></p>
+</section>
+</section>
+<section id="moment-pedu-bryly-sztywnej">
+<h3>Moment Pędu Bryły Sztywnej<a class="headerlink" href="#moment-pedu-bryly-sztywnej" title="Link to this heading">¶</a></h3>
+<div class="admonition-bryla-sztywna admonition">
+<p class="admonition-title">bryła sztywna</p>
+<p>ukłąd punktóœ gdzie <span class="math notranslate nohighlight">\(\vec{r} = const\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Typy ruchu:</p>
+<ul class="simple">
+<li><p>postępowy = translacyjny = posuwisty <span class="math notranslate nohighlight">\(v = v_1 = v_2 = ... = v_n\)</span></p></li>
+<li><p>obrotowy = wirowy = rotacyjny <span class="math notranslate nohighlight">\(v_{cm} = 0 ~ \omega = const\)</span></p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="moment-bezwladnosci">
+<h3>Moment bezwładności<a class="headerlink" href="#moment-bezwladnosci" title="Link to this heading">¶</a></h3>
+<p>Ruch obrotowy poszczególnych brył:</p>
+<ul class="simple">
+<li><p>płaska płyta obraca się wokół osi przechodzącej przez środek masy i prostopadłej do płyty.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{L} = ? \\
+\vec{L_i} = r_i \times p_i \\
+\vec{L_i} = r_i \times m_i v_i \\
+\vec{L_i} = r_i \times m_i r_i \times \omega \\
+\vec{L} = \vec{r} \times m \times \vec{r} \times \vec{\omega} \\
+\vec{L} = \omega \Sigma m \vec{r^2}  \\
+\vec{L} = I \omega
+\end{split}\]</div>
+<ul class="simple">
+<li><p>Hantle obracająće się w stosunku do osi przechodzącej przez środek pręta gdy oś nie jest prostpoadła</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{L_1} = r_1 \times m_1 \vec{v_1} \\
+\vec{L_2} = r_2 \times m_2 \vec{v_2} \\
+\vec{L} \nparallel \vec{\omega} \Rightarrow \vec{L} \neq I \omega
+\end{split}\]</div>
+<div class="admonition-tensor admonition">
+<p class="admonition-title">Tensor</p>
+<p>Moment bezwłądności <span class="math notranslate nohighlight">\(i\)</span> nazywamy tensorem.</p>
+<p><span class="math notranslate nohighlight">\(\hat{I} \lor \mathbb{I}\)</span> można zapisać w postaci macierzy
+<span class="math notranslate nohighlight">\(\begin{Bmatrix}
+I_{xx} &amp;&amp; I_{xy} &amp;&amp; I_{xz} \\
+I_{yx} &amp;&amp; I_{yy} &amp;&amp; I_{yz} \\
+I_{zx} &amp;&amp; I_{zy} &amp;&amp; I_{zz} \\
+\end{Bmatrix}\)</span></p>
+<p>Ogólny wzór na moment pędu bryły sztywnej to <span class="math notranslate nohighlight">\(\vec{L} = \hat{I} \omega\)</span></p>
+</div>
+<ul class="simple">
+<li><p>dla bryły 3-wymiarowej
+r to odległość od osi obrotu
+$<span class="math notranslate nohighlight">\(
+I = \int dI = \int r^2 dm
+\)</span>$</p></li>
+<li><p>dla pręta</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{dr}{dm} = \frac{M}{L}
+I = \int r^2 \frac{M}{L} dr \\
+I = \frac{M}{L} \int_{\frac{-R}{2}}^{\frac{R}{2}} r^2 dr \\
+I = \frac{M}{L} \left[ \frac{1}{3} r^3 \right ]{\frac{-R}{2}}^{\frac{R}{2}}\\
+I = \frac{1}{12} mR^2 \\
+\end{split}\]</div>
+<ul class="simple">
+<li><p>walec</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+I = \int dm x^2
+dm = \frac{M}{\pi R^2 L} 2 \pi x L dx \\
+I = \int 2 \frac{M}{R} x^3 dx \\
+I = 2 \frac{M}{R} \int x^3 dx \\
+I = 2 \frac{M}{R} \left[ x^3 \right]_ 0^{R} \\
+I = \frac{1}{2} MR^2 \\\end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Każda bryła niezależnie od rozkłądu masy posiada 3 osie główne przecinająće się w środku masy.
+Osie główne zawsze są wobec siebie prostopadłe. Dla brył o symetrycznym rozkładzie masy
+osie główne powiązane są ze środkiem symetrii.</p>
+<p>Jeżeli bryła obraca się wzdłuż osi symetrii możemy traktować moment bezwłądności
+jako skalar.</p>
+</div>
+</section>
+<section id="dynamika-ruchu-obrotowego-bryly-wzgledem-osi-glownej">
+<h3>DYnamika ruchu obrotowego bryły względem osi głównej<a class="headerlink" href="#dynamika-ruchu-obrotowego-bryly-wzgledem-osi-glownej" title="Link to this heading">¶</a></h3>
+<div class="admonition-ii-zasada-dynamiki-dla-ruchu-obrotowego admonition">
+<p class="admonition-title">II zasada dynamiki dla ruchu obrotowego</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{dL}{dt} = I \frac{\omega}{dt} \\
+M = I \epsilon
+\end{split}\]</div>
+</div>
+<section id="staczanie-walca-z-rooeni-pochylej">
+<h4>Staczanie walca z róœni pochyłej<a class="headerlink" href="#staczanie-walca-z-rooeni-pochylej" title="Link to this heading">¶</a></h4>
+<p>Gdy nie ma poślizgu:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Ma = M g sin \alpha - T_s
+ I* \epsilon = \tau = T_s * R \\
+ a = \epsilon R \\
+ \end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>założywszy dwa dowolne ruchy obrotowy i postępowy
+<span class="math notranslate nohighlight">\(v_w = v + \omega r\)</span></p>
+<p>dla warunku braku poślizgu punkt styczności musi mieć v = 0</p>
+</div>
+<p>ROzważmy przypadek, w którym występuje poślizg:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Ma = M g sin \alpha - T_k
+I* \epsilon = \tau = T_k * R \\
+T_k = k * mg cos \alpha
+\end{split}\]</div>
+</section>
+</section>
 </section>
 <section id="odniesienia">
 <h2>Odniesienia<a class="headerlink" href="#odniesienia" title="Link to this heading">¶</a></h2>
@@ -1613,6 +1960,36 @@ E_P = \int G \frac{Mm}{R^2} = G M m \frac{-1}{R} + C
 <li><a class="reference internal" href="#dynamika-planet-wedlug-newtona">Dynamika planet według Newtona</a></li>
 <li><a class="reference internal" href="#oddzialywanie-grawitacjyne">Oddziaływanie grawitacjyne</a><ul>
 <li><a class="reference internal" href="#id3">Energia Potencjalna</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ruch-w-centralnym-polu-grawitacyjnym">Ruch w centralnym polu grawitacyjnym</a><ul>
+<li><a class="reference internal" href="#opis-krzywych-stozkowych-w-biegunowym-ukladzie-wspolrzednych">Opis krzywych stożkowych w biegunowym układzie współrzędnych</a></li>
+<li><a class="reference internal" href="#twierdzenie-o-krzywych-stozkowych">twierdzenie o krzywych stożkowych</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#oddzialywanie-grawitacyjne-mas-kulistych">Oddziaływanie grawitacyjne mas kulistych</a><ul>
+<li><a class="reference internal" href="#przyklady-wstepne">Przykłady wstępne</a></li>
+<li><a class="reference internal" href="#pole-powierzchni-sfery">Pole powierzchni sfery</a></li>
+<li><a class="reference internal" href="#objetosc-kuli">Objętość kuli</a></li>
+<li><a class="reference internal" href="#pole-grawitacyjne-wytworzone-przez-sfere">Pole grawitacyjne wytworzone przez sferę</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#podstawy-eksploracji-przestrzeni-kosmicznej">Podstawy eksploracji przestrzeni kosmicznej</a><ul>
+<li><a class="reference internal" href="#eksploracja-ukladu-slonecznego">Eksploracja układu słonecznego</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dynamika-ukladu-punktow">Dynamika Układu Punktów</a><ul>
+<li><a class="reference internal" href="#srodek-masy">Środek masy</a></li>
+<li><a class="reference internal" href="#moment-pedu-ukladu-czastek">Moment Pędu układu cząstek</a><ul>
+<li><a class="reference internal" href="#wewnetrzny-i-orbitalny-moment-pedu">Wewnętrzny i orbitalny moment pędu</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#moment-pedu-bryly-sztywnej">Moment Pędu Bryły Sztywnej</a></li>
+<li><a class="reference internal" href="#moment-bezwladnosci">Moment bezwładności</a></li>
+<li><a class="reference internal" href="#dynamika-ruchu-obrotowego-bryly-wzgledem-osi-glownej">DYnamika ruchu obrotowego bryły względem osi głównej</a><ul>
+<li><a class="reference internal" href="#staczanie-walca-z-rooeni-pochylej">Staczanie walca z róœni pochyłej</a></li>
 </ul>
 </li>
 </ul>
