@@ -1734,6 +1734,13 @@ Orbitalny moment pędu to pęd względem ukłądu laboratoryjnego</p>
 </section>
 <section id="moment-bezwladnosci">
 <h3>Moment bezwładności<a class="headerlink" href="#moment-bezwladnosci" title="Link to this heading">¶</a></h3>
+<div class="admonition-moment-bezwladnosci admonition">
+<p class="admonition-title">Moment Bezwładności</p>
+<ul class="simple">
+<li><p>jest to wielkość tensorowa</p></li>
+<li><p>istnieją co najmniej 3 prostopadłe do siebie kierunki (osie główne), gdzie <span class="math notranslate nohighlight">\(\vec{L} \parallel \vec{\omega}\)</span>. Wtedy <span class="math notranslate nohighlight">\(I\)</span> jest skalarem</p></li>
+</ul>
+</div>
 <p>Ruch obrotowy poszczególnych brył:</p>
 <ul class="simple">
 <li><p>płaska płyta obraca się wokół osi przechodzącej przez środek masy i prostopadłej do płyty.</p></li>
@@ -1770,18 +1777,21 @@ I_{zx} &amp;&amp; I_{zy} &amp;&amp; I_{zz} \\
 </div>
 <ul class="simple">
 <li><p>dla bryły 3-wymiarowej
-r to odległość od osi obrotu
-$<span class="math notranslate nohighlight">\(
+r to odległość od osi obrotu</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
 I = \int dI = \int r^2 dm
-\)</span>$</p></li>
+\]</div>
+<ul class="simple">
 <li><p>dla pręta</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\frac{dr}{dm} = \frac{M}{L}
+\frac{dr}{dm} = \frac{M}{L} \\
 I = \int r^2 \frac{M}{L} dr \\
 I = \frac{M}{L} \int_{\frac{-R}{2}}^{\frac{R}{2}} r^2 dr \\
-I = \frac{M}{L} \left[ \frac{1}{3} r^3 \right ]{\frac{-R}{2}}^{\frac{R}{2}}\\
+I = \frac{M}{L} \left[ \frac{1}{3} r^3 \right ]_{\frac{-R}{2}}^{\frac{R}{2}}\\
 I = \frac{1}{12} mR^2 \\
 \end{split}\]</div>
 <ul class="simple">
@@ -1789,11 +1799,11 @@ I = \frac{1}{12} mR^2 \\
 </ul>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-I = \int dm x^2
+I = \int dm x^2 \\
 dm = \frac{M}{\pi R^2 L} 2 \pi x L dx \\
 I = \int 2 \frac{M}{R} x^3 dx \\
 I = 2 \frac{M}{R} \int x^3 dx \\
-I = 2 \frac{M}{R} \left[ x^3 \right]_ 0^{R} \\
+I = 2 \frac{M}{R} \left[ x^3 \right]_0^{R} \\
 I = \frac{1}{2} MR^2 \\\end{split}\]</div>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
