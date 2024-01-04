@@ -16,5 +16,15 @@ help:
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile
+%: modify-date Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+
+modify-date:
+	$(eval CURRENT_GIT_COMMIT_ID := $(shell git rev-parse HEAD))
+	$(eval CURRENT_GIT_COMMIT_NAME := $(shell  git log -1 --format=%s))
+	$(eval CURRENT_GIT_COMMIT_NAME_ESCAPED := $(shell  sed 's/[&/\]/\\&/g' <<< "$(CURRENT_GIT_COMMIT_NAME)" ))
+	echo $(CURRENT_GIT_COMMIT_NAME)
+	echo $(CURRENT_GIT_COMMIT_NAME_ESCAPED)
+	$(eval CURRENT_GIT_COMMIT_DATE := $(shell git log -1 --format=%ad))
+	echo "<a href="https:\/\/github.com\/gucio321\/fizyka\/commit\/$(CURRENT_GIT_COMMIT_ID)">$(CURRENT_GIT_COMMIT_DATE) ${CURRENT_GIT_COMMIT_NAME_ESCAPED} ($(CURRENT_GIT_COMMIT_ID))</a>" > _templates/modification.html
