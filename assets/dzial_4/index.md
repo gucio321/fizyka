@@ -1652,7 +1652,7 @@ osie główne powiązane są ze środkiem symetrii.
 Jeżeli bryła obraca się wzdłuż osi symetrii możemy traktować moment bezwłądności
 jako skalar.
 ```
-### DYnamika ruchu obrotowego bryły względem osi głównej
+### Dynamika ruchu obrotowego bryły względem osi głównej
 
 ```{admonition} II zasada dynamiki dla ruchu obrotowego
 $$
@@ -1678,12 +1678,114 @@ Ma = M g sin \alpha - T_s
 dla warunku braku poślizgu punkt styczności musi mieć v = 0
  ```
 
-ROzważmy przypadek, w którym występuje poślizg:
+Rozważmy przypadek, w którym występuje poślizg:
 
 $$
 Ma = M g sin \alpha - T_k
 I* \epsilon = \tau = T_k * R \\
 T_k = k * mg cos \alpha
+$$
+
+#### Twierdzenie Steinera
+
+Niech bryła obraca się względem osi, która nie przechodzi przez środek masy.
+:::{tip} przykłądowo pręt obracająćy się względem swojego końca
+:::
+
+$$
+I_d = I_0 + m d^2
+$$
+
+##### Wachadło Fizyczne
+
+$$
+I \frac{d^2 \phi}{dt^2} + M g d sin \phi = 0 \\
+niech~sin\phi \approx \phi \\
+T = 2 \pi \sqrt{\frac{I}{Mgd}}
+$$
+
+##### Wachadło Torsyjne
+
+```{seealso}
+Oscylator torsyjny
+```
+
+$$
+T = 2 \pi \sqrt{\frac{I}{k}}
+$$
+
+####  Energia kinetyczna bryły sztywnej
+
+Wokół osi w układzie inercjalnym.
+Każda cząstka bryły ma energię kinetyczną $\Rightarrow$ $E_k = \Sigma E_{K_i}$
+
+$$
+E_k = \frac{1}{2} \Sigma m_i \omega^2 r_i^2 \\
+E_k = \frac{1}{2} \omega^2 \Sigma m_i r_i^2 \\
+E_k = \frac{1}{2} \omega^2 I = \frac{I \omega^2}{2} \\
+$$
+
+#### Tarcie toczne
+
+tarcie toczne wynika z faktu, że siła reakcji na toczące się ciało pochodzi od odkształcenia
+podłoża. Gdy bryła się toczy, musi ona cały czas wtaczać się na "pochyłość wgniecenia".
+
+Moment siły tarcia oznaczamy jako $\tau$
+
+$$
+\tau = k * N \\
+$$
+
+#### Elipsoida bezwładności
+
+Rozważmy ruch prostopadłościanu o wyraźnie różnych wymiarach.
+
+Wyróżnijmy 3 główne momenty bezwładności względem osi głównych.
+
+```{admonition} Twierdzenie o elipsoidzie bezwładności
+Spośród 3 momentów głównych, jedenz nich jest największy spośród wszystkich
+momentów bezwładności w środku masy danej bryły
+```
+
+Elipsoidę bezwładności otrzymujemy zaznaczając na osiach związanych ze środkiem masy i osiami głóœnymi
+odległość $r_i = \frac{1}{I_i}$
+
+otrzymujemy $\frac{x^2}{R_x^2} + \frac{y^2}{R_Y^2} + \frac{z^2}{R_z^2} = 1 = x^2 I_x + y^2 I_y + z^2 I_z$
+
+#### Konsekwencje zasady zachowania momentu pędu
+
+rozważmy ruch bąka.
+
+Moment pędu leży na pionowej osi głównej.
+
+$$
+\vec{L} = \frac{d\tau}{dt} \\
+\vec{\tau} = M~g~b~sin~\phi \\
+\vec{L} \perp \vec{\tau}
+$$
+
+Moment siły $\tau$ wymusza zmainę momentu pędu (nie zmieniając prędkości kołowej).
+
+```{note}
+Częstość precesji
+
+$$
+\omega = \frac{d \theta}{dt} \\
+\frac{dL}{L sin \phi} * \frac{1}{dt} =\\
+= \frac{M~g~b sin\phi}{I \omega sin \phi} = \frac{M~g~b}{I~]\omega}
+$$
+
+```
+
+### Statyka Bryły Sztywnej
+
+Rozważmy sytuację drabiny opartej o ścianę. Tarcie drabiny o ścianę pomijamy.
+
+$$
+T=R_x\\
+Mg = R_y \\
+Mg \frac{L}{2} sin \left(\frac{\pi}{2}-\alpha\right) = R_y L sin\alpha \\
+\alpha_gr < ctg 2k
 $$
 
 ## Odniesienia
