@@ -1582,6 +1582,11 @@ Typy ruchu:
 
 ### Moment bezwładności
 
+```{admonition} Moment Bezwładności
+- jest to wielkość tensorowa
+- istnieją co najmniej 3 prostopadłe do siebie kierunki (osie główne), gdzie $\vec{L} \parallel \vec{\omega}$. Wtedy $I$ jest skalarem
+```
+
 Ruch obrotowy poszczególnych brył:
 - płaska płyta obraca się wokół osi przechodzącej przez środek masy i prostopadłej do płyty.
 
@@ -1618,6 +1623,7 @@ Ogólny wzór na moment pędu bryły sztywnej to $\vec{L} = \hat{I} \omega$
 
 - dla bryły 3-wymiarowej
 r to odległość od osi obrotu
+
 $$
 I = \int dI = \int r^2 dm
 $$
@@ -1625,21 +1631,21 @@ $$
 - dla pręta
 
 $$
-\frac{dr}{dm} = \frac{M}{L}
+\frac{dr}{dm} = \frac{M}{L} \\
 I = \int r^2 \frac{M}{L} dr \\
 I = \frac{M}{L} \int_{\frac{-R}{2}}^{\frac{R}{2}} r^2 dr \\
-I = \frac{M}{L} \left[ \frac{1}{3} r^3 \right ]{\frac{-R}{2}}^{\frac{R}{2}}\\
+I = \frac{M}{L} \left[ \frac{1}{3} r^3 \right ]_{\frac{-R}{2}}^{\frac{R}{2}}\\
 I = \frac{1}{12} mR^2 \\
 $$
 
 - walec
 
 $$
-I = \int dm x^2
+I = \int dm x^2 \\
 dm = \frac{M}{\pi R^2 L} 2 \pi x L dx \\
 I = \int 2 \frac{M}{R} x^3 dx \\
 I = 2 \frac{M}{R} \int x^3 dx \\
-I = 2 \frac{M}{R} \left[ x^3 \right]_ 0^{R} \\
+I = 2 \frac{M}{R} \left[ x^3 \right]_0^{R} \\
 I = \frac{1}{2} MR^2 \\
 
 $$
