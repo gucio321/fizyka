@@ -1815,7 +1815,7 @@ jako skalar.</p>
 </div>
 </section>
 <section id="dynamika-ruchu-obrotowego-bryly-wzgledem-osi-glownej">
-<h3>DYnamika ruchu obrotowego bryły względem osi głównej<a class="headerlink" href="#dynamika-ruchu-obrotowego-bryly-wzgledem-osi-glownej" title="Link to this heading">¶</a></h3>
+<h3>Dynamika ruchu obrotowego bryły względem osi głównej<a class="headerlink" href="#dynamika-ruchu-obrotowego-bryly-wzgledem-osi-glownej" title="Link to this heading">¶</a></h3>
 <div class="admonition-ii-zasada-dynamiki-dla-ruchu-obrotowego admonition">
 <p class="admonition-title">II zasada dynamiki dla ruchu obrotowego</p>
 <div class="math notranslate nohighlight">
@@ -1839,7 +1839,7 @@ Ma = M g sin \alpha - T_s
 <span class="math notranslate nohighlight">\(v_w = v + \omega r\)</span></p>
 <p>dla warunku braku poślizgu punkt styczności musi mieć v = 0</p>
 </div>
-<p>ROzważmy przypadek, w którym występuje poślizg:</p>
+<p>Rozważmy przypadek, w którym występuje poślizg:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 Ma = M g sin \alpha - T_k
@@ -1847,6 +1847,105 @@ I* \epsilon = \tau = T_k * R \\
 T_k = k * mg cos \alpha
 \end{split}\]</div>
 </section>
+<section id="twierdzenie-steinera">
+<h4>Twierdzenie Steinera<a class="headerlink" href="#twierdzenie-steinera" title="Link to this heading">¶</a></h4>
+<p>Niech bryła obraca się względem osi, która nie przechodzi przez środek masy.</p>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>przykłądowo pręt obracająćy się względem swojego końca</p>
+</div>
+<div class="math notranslate nohighlight">
+\[
+I_d = I_0 + m d^2
+\]</div>
+<section id="wachadlo-fizyczne">
+<h5>Wachadło Fizyczne<a class="headerlink" href="#wachadlo-fizyczne" title="Link to this heading">¶</a></h5>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+I \frac{d^2 \phi}{dt^2} + M g d sin \phi = 0 \\
+niech~sin\phi \approx \phi \\
+T = 2 \pi \sqrt{\frac{I}{Mgd}}
+\end{split}\]</div>
+</section>
+<section id="wachadlo-torsyjne">
+<h5>Wachadło Torsyjne<a class="headerlink" href="#wachadlo-torsyjne" title="Link to this heading">¶</a></h5>
+<div class="admonition seealso">
+<p class="admonition-title">Zobacz także</p>
+<p>Oscylator torsyjny</p>
+</div>
+<div class="math notranslate nohighlight">
+\[
+T = 2 \pi \sqrt{\frac{I}{k}}
+\]</div>
+</section>
+</section>
+<section id="energia-kinetyczna-bryly-sztywnej">
+<h4>Energia kinetyczna bryły sztywnej<a class="headerlink" href="#energia-kinetyczna-bryly-sztywnej" title="Link to this heading">¶</a></h4>
+<p>Wokół osi w układzie inercjalnym.
+Każda cząstka bryły ma energię kinetyczną <span class="math notranslate nohighlight">\(\Rightarrow\)</span> <span class="math notranslate nohighlight">\(E_k = \Sigma E_{K_i}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E_k = \frac{1}{2} \Sigma m_i \omega^2 r_i^2 \\
+E_k = \frac{1}{2} \omega^2 \Sigma m_i r_i^2 \\
+E_k = \frac{1}{2} \omega^2 I = \frac{I \omega^2}{2} \\
+\end{split}\]</div>
+</section>
+<section id="tarcie-toczne">
+<h4>Tarcie toczne<a class="headerlink" href="#tarcie-toczne" title="Link to this heading">¶</a></h4>
+<p>tarcie toczne wynika z faktu, że siła reakcji na toczące się ciało pochodzi od odkształcenia
+podłoża. Gdy bryła się toczy, musi ona cały czas wtaczać się na “pochyłość wgniecenia”.</p>
+<p>Moment siły tarcia oznaczamy jako <span class="math notranslate nohighlight">\(\tau\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\tau = k * N \\
+\end{split}\]</div>
+</section>
+<section id="elipsoida-bezwladnosci">
+<h4>Elipsoida bezwładności<a class="headerlink" href="#elipsoida-bezwladnosci" title="Link to this heading">¶</a></h4>
+<p>Rozważmy ruch prostopadłościanu o wyraźnie różnych wymiarach.</p>
+<p>Wyróżnijmy 3 główne momenty bezwładności względem osi głównych.</p>
+<div class="admonition-twierdzenie-o-elipsoidzie-bezwladnosci admonition">
+<p class="admonition-title">Twierdzenie o elipsoidzie bezwładności</p>
+<p>Spośród 3 momentów głównych, jedenz nich jest największy spośród wszystkich
+momentów bezwładności w środku masy danej bryły</p>
+</div>
+<p>Elipsoidę bezwładności otrzymujemy zaznaczając na osiach związanych ze środkiem masy i osiami głóœnymi
+odległość <span class="math notranslate nohighlight">\(r_i = \frac{1}{I_i}\)</span></p>
+<p>otrzymujemy <span class="math notranslate nohighlight">\(\frac{x^2}{R_x^2} + \frac{y^2}{R_Y^2} + \frac{z^2}{R_z^2} = 1 = x^2 I_x + y^2 I_y + z^2 I_z\)</span></p>
+</section>
+<section id="konsekwencje-zasady-zachowania-momentu-pedu">
+<h4>Konsekwencje zasady zachowania momentu pędu<a class="headerlink" href="#konsekwencje-zasady-zachowania-momentu-pedu" title="Link to this heading">¶</a></h4>
+<p>rozważmy ruch bąka.</p>
+<p>Moment pędu leży na pionowej osi głównej.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{L} = \frac{d\tau}{dt} \\
+\vec{\tau} = M~g~b~sin~\phi \\
+\vec{L} \perp \vec{\tau}
+\end{split}\]</div>
+<p>Moment siły <span class="math notranslate nohighlight">\(\tau\)</span> wymusza zmainę momentu pędu (nie zmieniając prędkości kołowej).</p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Częstość precesji</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\omega = \frac{d \theta}{dt} \\
+\frac{dL}{L sin \phi} * \frac{1}{dt} =\\
+= \frac{M~g~b sin\phi}{I \omega sin \phi} = \frac{M~g~b}{I~]\omega}
+\end{split}\]</div>
+</div>
+</section>
+</section>
+<section id="statyka-bryly-sztywnej">
+<h3>Statyka Bryły Sztywnej<a class="headerlink" href="#statyka-bryly-sztywnej" title="Link to this heading">¶</a></h3>
+<p>Rozważmy sytuację drabiny opartej o ścianę. Tarcie drabiny o ścianę pomijamy.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T=R_x\\
+Mg = R_y \\
+Mg \frac{L}{2} sin \left(\frac{\pi}{2}-\alpha\right) = R_y L sin\alpha \\
+\alpha_gr &lt; ctg 2k
+\end{split}\]</div>
 </section>
 </section>
 <section id="odniesienia">
@@ -1998,10 +2097,20 @@ T_k = k * mg cos \alpha
 </li>
 <li><a class="reference internal" href="#moment-pedu-bryly-sztywnej">Moment Pędu Bryły Sztywnej</a></li>
 <li><a class="reference internal" href="#moment-bezwladnosci">Moment bezwładności</a></li>
-<li><a class="reference internal" href="#dynamika-ruchu-obrotowego-bryly-wzgledem-osi-glownej">DYnamika ruchu obrotowego bryły względem osi głównej</a><ul>
+<li><a class="reference internal" href="#dynamika-ruchu-obrotowego-bryly-wzgledem-osi-glownej">Dynamika ruchu obrotowego bryły względem osi głównej</a><ul>
 <li><a class="reference internal" href="#staczanie-walca-z-rooeni-pochylej">Staczanie walca z róœni pochyłej</a></li>
+<li><a class="reference internal" href="#twierdzenie-steinera">Twierdzenie Steinera</a><ul>
+<li><a class="reference internal" href="#wachadlo-fizyczne">Wachadło Fizyczne</a></li>
+<li><a class="reference internal" href="#wachadlo-torsyjne">Wachadło Torsyjne</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#energia-kinetyczna-bryly-sztywnej">Energia kinetyczna bryły sztywnej</a></li>
+<li><a class="reference internal" href="#tarcie-toczne">Tarcie toczne</a></li>
+<li><a class="reference internal" href="#elipsoida-bezwladnosci">Elipsoida bezwładności</a></li>
+<li><a class="reference internal" href="#konsekwencje-zasady-zachowania-momentu-pedu">Konsekwencje zasady zachowania momentu pędu</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#statyka-bryly-sztywnej">Statyka Bryły Sztywnej</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#odniesienia">Odniesienia</a></li>
