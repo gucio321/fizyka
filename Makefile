@@ -23,7 +23,7 @@ help:
 modify-date:
 	$(eval CURRENT_GIT_COMMIT_ID := $(shell git rev-parse HEAD))
 	$(eval CURRENT_GIT_COMMIT_NAME := $(shell  git log -1 --format=%s))
-	$(eval CURRENT_GIT_COMMIT_NAME_ESCAPED := $(shell  sed 's/[&/\]/\\&/g' <<< "$(CURRENT_GIT_COMMIT_NAME)" ))
+	$(eval CURRENT_GIT_COMMIT_NAME_ESCAPED := $(shell echo "$(CURRENT_GIT_COMMIT_NAME)" |sed 's/[&/\]/\\&/g' ))
 	echo $(CURRENT_GIT_COMMIT_NAME)
 	echo $(CURRENT_GIT_COMMIT_NAME_ESCAPED)
 	$(eval CURRENT_GIT_COMMIT_DATE := $(shell git log -1 --format=%ad))
