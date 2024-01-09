@@ -1794,6 +1794,138 @@ Mg \frac{L}{2} sin \left(\frac{\pi}{2}-\alpha\right) = R_y L sin\alpha \\
 \alpha_gr < ctg 2k
 $$
 
+```{warning}
+# Egzamin z mechaniki
+- egzamin jest ustny
+- egzamin z "teorii"
+- 4 pytania
+- na stronie profesora są materiały z numerami działów
+- dla każdej grupy jeden dzień, 30 minut na osobę
+- 0 termin - 26.01
+- pokój 308 (główny budynek 3 piętro)
+```
+
+## Elementy Mechaniki Płynów
+
+```{note}
+w fizyce za płyn uznaje się zarówno ciecze jak i gazy
+
+- ciecz przyjmuje kształt naczynia
+- gaz róœnież, ale dodatkowo zajmuje całą dostępną przestrzeń
+```
+
+```{admonition} Gęstość
+oznaczana jako $\rho$ lub $d$
+
+$\rho = \frac{d}{V} = \left[\frac{kg}{m^3}\right]$
+```
+
+```{admonition} Ciśnienie
+- jest wartością skalarną
+- oznacza się jako $p$
+- $p = \frac{|\vec{F}|}{s}$
+- jeżeli przyjmiemy element skierowany powierzchni $\vec{dS}$ (normalny do fragmentu powierzchni)
+wtedy $\vec{dF} = p * \vec{dS}$
+- jednostką ciśnienia w układzie SI jest $p = \left[\frac{N}{m^2}\right] = \left[Pa\right]$
+```
+
+### Ciśnienie hydrostatyczne
+
+Niech:
+- wysokość słupa  h
+- pole podstawy S
+- ciężar = $F = mg$
+- masa = $m = \rho * V = \rho S h$
+- ciśnienie $p = \rho * s * h * g$
+
+```{important}
+w powyższym doświadczeniu również atmosfera wywiera ciśnienie na ciecz o wartości $p_0$
+
+p = p_0 + \rho * g * h$
+```
+
+### Hydrostatyka
+
+```{admonition} Prawo Pascala
+Ciśnienie zewnętrzne wywierane na zamknięty **płyn** jest przekezywane
+niezmienione na każdą część płynu i na ścianki naczynia.
+
+$$
+\frac{F_1}{_S_1} = \frac{F_2}{S_2} \\
+F_1 = F_2 \frac{S_1}{S_2}
+$$
+```
+
+```{admonition} Paradoks hydrostatyczny
+2 naczynia o identycznych kształtach zawierające identyczne płyny
+jedno w kształćie stożka, a drugie w kształcie odwróconego stożka.
+
+Na dno obu naczyń działa takie samo ciśnienie
+```
+
+```{admonition} Prawo archimedesa
+Na ciało zanużone w naczyniu działa siła wyporu.
+
+Niech:
+- $\rho_0$ to gęstość cieczy
+- $\rho_1$ to gęstość ciała
+- na górną powierzchnię działą siła $F_1$ a na dolną $F_2$
+- h to odległość od górnej powierzchni ciała do powierzchni cieczy
+
+$$
+F_w = F_2 - F_1
+F_w = S(P_2 - P_1)
+F_w = \rho * g * V
+$$
+
+Na każde ciało zanużone w płynie działą sila wyporu skierowana do góry
+i równa ciężarowi wypartej cieczy
+```
+
+#### Barometr Torrichellego
+
+$$
+\rho * g * h = p_0
+$$
+
+```{note}
+normalne ciśnienie wynosi około 760 mmHg
+```
+
+### Ogólny opis przepływu płynów
+
+```{seealso}
+równania Naviera-Stoksa
+```
+Podział przepływów:
+- laminarny (ustalony / stacjonarny). Jego charakterystyki nie zależą od czasu. lub
+turbulentny (nieustalony) - zmienia się w czasie
+- wirowe i bezwirowe
+- płynów ściśliwych i nieściśliwych
+- lepki lub nielepki
+
+#### Pojęcie strugi
+
+załużmy przepływ laminarny.
+**Struga** to pęk linii przepływu cząstek.
+
+Prawo ciągłości strugi
+
+$S * v = const$ gdzie $S$ jest polem przekroju przepływu.
+
+## Prawo Bernoilli'ego
+rozpatrujemy strugę z $S_1$ i $S_2$
+Przepływ nielepki, 
+
+$$
+W = F_1 * v_1 \Delta t - F_2 v_2 \Delta t \\
+W = \Delta v (p_1 - p_2) \\
+\\
+...
+\\
+P + \rho g h + \frac{\rho v^2}{2} = const
+$$
+
 ## Odniesienia
 
 - Przedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużny](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
