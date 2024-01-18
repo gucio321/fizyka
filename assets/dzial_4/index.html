@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=2c74f6a9" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=9343e14b" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
     
     <script src="../../_static/documentation_options.js?v=a28d12eb"></script>
@@ -2084,10 +2084,61 @@ Przepływ nielepki,</p>
 W = F_1 * v_1 \Delta t - F_2 v_2 \Delta t \\
 W = \Delta v (p_1 - p_2) \\
 \\
-...
 \\
 P + \rho g h + \frac{\rho v^2}{2} = const
 \end{split}\]</div>
+<p><strong>Z tego wynika, że im większa prędkość tym mniejsze ciśnienie.</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+```{admonition} Siła nośna działająca na skrzydło
+skrzydło jest płąskie od spodu i wybrzuszone od gó©y.
+Powietrze kumuluje się nad skrzydłem tworząc siłę nośną.
+</pre></div>
+</div>
+</section>
+<section id="wlasnosci-sprezyste-cial">
+<h2>Własności sprężyste ciał<a class="headerlink" href="#wlasnosci-sprezyste-cial" title="Link to this heading">¶</a></h2>
+<section id="prawo-hooka-dla-1-wymiarowego-rozciagania">
+<h3>Prawo Hooka dla 1-wymiarowego rozciągania<a class="headerlink" href="#prawo-hooka-dla-1-wymiarowego-rozciagania" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\Delta L = k * \frac{F * l}{S}
+\Delta l ~ F 
+\]</div>
+<p>po pozbyciu się F, ciało wraca do pierwotnego kształtu (pamięć kształtu).</p>
+<p>Niech <span class="math notranslate nohighlight">\(p\)</span> - naprężenie (wewnętrzne) (<span class="math notranslate nohighlight">\(\frac{F}{S} = P\)</span>)</p>
+<p><span class="math notranslate nohighlight">\(\frac{\Delta l}{l} = k * p\)</span> To tak zwane odkształcenie (wzglęðne).
+Oznaczane <span class="math notranslate nohighlight">\(\alpha \quad \left[\alpha\right] = 1\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\alpha = k * p
+p = \frac{1}{k} * \alpha
+\]</div>
+<p><span class="math notranslate nohighlight">\(\frac{1}{k} = E\)</span> to moduł Yanga.</p>
+</section>
+<section id="odksztalcenia-sprezyste">
+<h3>Odkształcenia sprężyste<a class="headerlink" href="#odksztalcenia-sprezyste" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>zcinanie:
+do przymocowanego do podłoża ciała przykładamy stycznie poziomo siłę F.
+<span class="math notranslate nohighlight">\(p = G * \alpha\)</span>, gdzie <span class="math notranslate nohighlight">\(G\)</span> to kąt przechylenia się ciałą.</p></li>
+<li><p>skręcanie:
+$\phi = \frac{2l}{\pi r^4} * \frac{\tau}{G}</p></li>
+<li><p>Ściskanie hydrostatyczne
+Ciało jest równomiernie ściskanie ze wszystkich stron. <span class="math notranslate nohighlight">\(p=-K \alpha\)</span>, <span class="math notranslate nohighlight">\(\alpha = \frac{\Delta V}{V}\)</span></p></li>
+<li><p>Ściskanie i rozciąganie
+$\frac{\Delta b}{b} = M \frac{\Delta l}{l}.
+M to współczynnik Puasona.</p></li>
+</ul>
+<p>Wszystkie te współczynniki są specyficzne dla każdego materiału.</p>
+</section>
+<section id="odksztalcanie-belek">
+<h3>Odkształcanie belek<a class="headerlink" href="#odksztalcanie-belek" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>ugięcie belki. (Moduł Yanga). <span class="math notranslate nohighlight">\(z(l) = \frac{F l^3}{SEI}\)</span> dla leżącej prostokąßnej belkii <span class="math notranslate nohighlight">\(I = \int_S y^2 dS = \frac{bd^3}{12}\)</span></p></li>
+<li><p>wyboczenie belki - Belka zastosowan ajako filar.
+Kształt wyboczonej belki to <span class="math notranslate nohighlight">\(y = k * sin( \frac{\pi x}{l})\)</span>. <span class="math notranslate nohighlight">\(F = \frac{\pi^2 E I }{L^2}\)</span></p></li>
+</ul>
+</section>
 </section>
 <section id="odniesienia">
 <h2>Odniesienia<a class="headerlink" href="#odniesienia" title="Link to this heading">¶</a></h2>
@@ -2267,6 +2318,12 @@ P + \rho g h + \frac{\rho v^2}{2} = const
 </ul>
 </li>
 <li><a class="reference internal" href="#prawo-bernoilliego">Prawo Bernoilli’ego</a></li>
+<li><a class="reference internal" href="#wlasnosci-sprezyste-cial">Własności sprężyste ciał</a><ul>
+<li><a class="reference internal" href="#prawo-hooka-dla-1-wymiarowego-rozciagania">Prawo Hooka dla 1-wymiarowego rozciągania</a></li>
+<li><a class="reference internal" href="#odksztalcenia-sprezyste">Odkształcenia sprężyste</a></li>
+<li><a class="reference internal" href="#odksztalcanie-belek">Odkształcanie belek</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#odniesienia">Odniesienia</a></li>
 </ul>
 </li>
@@ -2331,7 +2388,7 @@ P + \rho g h + \frac{\rho v^2}{2} = const
 © Copyright 2021, 2023, <a href="https://github.com/gucio321/">@gucio321</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/fizyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/fizyka/commit/df42bfafeb4427d4d1e3e5add44e866af5ceb6c9>Tue Jan 9 15:37:15 2024 +0100 update: hydrostatyka 1 (df42bfafeb4427d4d1e3e5add44e866af5ceb6c9)</a>
+<a href=https://github.com/gucio321/fizyka/commit/779a5a09b1a6969e8c038b30f6e4b2aa3aaca2cb>Thu Jan 18 15:11:23 2024 +0100 update notes (779a5a09b1a6969e8c038b30f6e4b2aa3aaca2cb)</a>
 </font>
 
   </body>
