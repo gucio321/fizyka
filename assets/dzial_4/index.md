@@ -1921,10 +1921,64 @@ $$
 W = F_1 * v_1 \Delta t - F_2 v_2 \Delta t \\
 W = \Delta v (p_1 - p_2) \\
 \\
-...
 \\
 P + \rho g h + \frac{\rho v^2}{2} = const
 $$
+
+**Z tego wynika, że im większa prędkość tym mniejsze ciśnienie.**
+```
+
+```{admonition} Siła nośna działająca na skrzydło
+skrzydło jest płąskie od spodu i wybrzuszone od gó©y.
+Powietrze kumuluje się nad skrzydłem tworząc siłę nośną.
+```
+## Własności sprężyste ciał
+
+### Prawo Hooka dla 1-wymiarowego rozciągania
+
+$$
+\Delta L = k * \frac{F * l}{S}
+\Delta l ~ F 
+$$
+ 
+ po pozbyciu się F, ciało wraca do pierwotnego kształtu (pamięć kształtu).
+
+ Niech $p$ - naprężenie (wewnętrzne) ($\frac{F}{S} = P$)
+
+$\frac{\Delta l}{l} = k * p$ To tak zwane odkształcenie (wzglęðne).
+Oznaczane $\alpha \quad \left[\alpha\right] = 1$
+
+$$
+\alpha = k * p
+p = \frac{1}{k} * \alpha
+$$
+
+$\frac{1}{k} = E$ to moduł Yanga.
+
+### Odkształcenia sprężyste
+
+- zcinanie:
+do przymocowanego do podłoża ciała przykładamy stycznie poziomo siłę F.
+$p = G * \alpha$, gdzie $G$ to kąt przechylenia się ciałą.
+
+- skręcanie:
+$\phi = \frac{2l}{\pi r^4} * \frac{\tau}{G}
+
+- Ściskanie hydrostatyczne
+Ciało jest równomiernie ściskanie ze wszystkich stron. $p=-K \alpha$, $\alpha = \frac{\Delta V}{V}$
+
+- Ściskanie i rozciąganie
+$\frac{\Delta b}{b} = M \frac{\Delta l}{l}.
+M to współczynnik Puasona.
+
+Wszystkie te współczynniki są specyficzne dla każdego materiału.
+
+### Odkształcanie belek
+
+- ugięcie belki. (Moduł Yanga). $z(l) = \frac{F l^3}{SEI}$ dla leżącej prostokąßnej belkii $I = \int_S y^2 dS = \frac{bd^3}{12}$
+
+- wyboczenie belki - Belka zastosowan ajako filar.
+Kształt wyboczonej belki to $y = k * sin( \frac{\pi x}{l})$. $F = \frac{\pi^2 E I }{L^2}$
 
 ## Odniesienia
 
