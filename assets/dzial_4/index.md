@@ -1851,7 +1851,7 @@ Ciśnienie zewnętrzne wywierane na zamknięty **płyn** jest przekezywane
 niezmienione na każdą część płynu i na ścianki naczynia.
 
 $$
-\frac{F_1}{_S_1} = \frac{F_2}{S_2} \\
+\frac{F_1}{S_1} = \frac{F_2}{S_2} \\
 F_1 = F_2 \frac{S_1}{S_2}
 $$
 ```
@@ -1922,11 +1922,11 @@ W = F_1 * v_1 \Delta t - F_2 v_2 \Delta t \\
 W = \Delta v (p_1 - p_2) \\
 \\
 \\
-P + \rho g h + \frac{\rho v^2}{2} = const
+P + \rho g h + \frac{\rho v^2}{2} = const \\
+\it{p * V + m * g * h + \frac{m v^2}{2} = const}
 $$
 
 **Z tego wynika, że im większa prędkość tym mniejsze ciśnienie.**
-```
 
 ```{admonition} Siła nośna działająca na skrzydło
 skrzydło jest płąskie od spodu i wybrzuszone od gó©y.
