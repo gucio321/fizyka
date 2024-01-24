@@ -57,7 +57,7 @@ Współrzędne w takim układzie określa następująca trójka uporządkowana:
 $(r, \theta, \phi)$
 ```
 
-### Matma
+### Podstawy Kinematyki
 
 #### Działania na wektorach
 
@@ -2034,3 +2034,4 @@ Po jeszcze większym zwiększeniu siły nastąpi zerwanie.
 
 - Przedmiot prowadzony przez [profesora dr. hab. inż. Wojciecha Łużny](https://skos.agh.edu.pl/osoba/wojciech-luzny-4050.html)
 - [Sylabus Przedmiotu](https://sylabusy.agh.edu.pl/pl/document/7e60a851-0abc-44b6-9cdd-d04f9f50e420.pdf)
+- [Program wykładów](http://website.fis.agh.edu.pl/kfms/wp-content/uploads/mechanika_zagadnienia1.pdf)
