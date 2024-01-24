@@ -1932,6 +1932,49 @@ $$
 skrzydło jest płąskie od spodu i wybrzuszone od gó©y.
 Powietrze kumuluje się nad skrzydłem tworząc siłę nośną.
 ```
+
+### Opis przepływu laminarnego cieczy przez rurę
+
+cząstecznki na samym ś©odku rury płyną najszybciej, natomiast
+przy ściankach w praktyce się nie poruszają.
+
+$v(r) = ?$
+
+$$
+\Delta p \pi r^2 = \eta 2 \pi r l \frac{dv}{dr} \\
+
+$$
+
+```{admonition} Prawo Hagena Poisseli
+Objętość cieczy jaka przepłynie przez rurę o promieniu R przy danej różnicy ciśnień i długośći.
+
+$$
+V = \frac{\pi * \Delta p * t}{8 \eta L} * R^4 \\
+$$
+```
+
+Siła oporu:
+
+$$
+K = C * S * \frac{\rho v^2}{2}
+$$
+
+### Podobieńśtwo hydrodynamiczne i liczba Raynoldsa
+
+Wokół ciał geometrycznie podobnych uzyskuje się podobny przepływ cieczy
+(linie prąðu są podobne) jeżeli **stosunek oporu ciśnienia do oporu
+tarcia jest stały**
+
+$$
+Re = \frac{K}{F} = C * \frac{d^2 \rho v^2}{\eta v d} = C \frac{d \rho v}{\eta} = const \\
+\left[Re\right] = 1
+$$
+
+```{tip}
+jeżeli dla przepływu cylindrycznego $Re < 2000$ przepływ jest laminarny, dla $Re>4000$ przepływ turbulentny
+```
+
+
 ## Własności sprężyste ciał
 
 ### Prawo Hooka dla 1-wymiarowego rozciągania
@@ -1979,6 +2022,13 @@ Wszystkie te współczynniki są specyficzne dla każdego materiału.
 
 - wyboczenie belki - Belka zastosowan ajako filar.
 Kształt wyboczonej belki to $y = k * sin( \frac{\pi x}{l})$. $F = \frac{\pi^2 E I }{L^2}$
+
+### Odkształcenie plastyczne i granica wytrzymałości (wytrzymałość na zerwanie)
+
+W pewnym momencie odkształćania sprężystego przechodzimy do fazy odkształceń plastycznych.
+Łączą się one z trwałym zmianem kształtu ciała po usunięciu naprężeń.
+
+Po jeszcze większym zwiększeniu siły nastąpi zerwanie.
 
 ## Odniesienia
 
