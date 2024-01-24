@@ -57,7 +57,7 @@ Współrzędne w takim układzie określa następująca trójka uporządkowana:
 $(r, \theta, \phi)$
 ```
 
-### Podstawy Kinematyki
+### Matma
 
 #### Działania na wektorach
 
@@ -184,7 +184,7 @@ S = \int_A^B f(x) dx \\
 $$
 
 <!-- 10.10.2023 -->
-## Mechanika
+## Podstawy Kinematyki
 
 ### Ruch punktu materialnego na płaszczyźnie
 
