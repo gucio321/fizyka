@@ -202,7 +202,7 @@ $v_{śr} = \frac{\Delta \vec{r}}{\Delta r}$
 
 ```{admonition} Prędkość chwilowa
 $$
-lim_{\Delta r \to 0} \frac{\Delta \vec{r}}{\Delta t} \\
+\lim_{\Delta r \to 0} \frac{\Delta \vec{r}}{\Delta t} \\
 \vec{V} = \frac{d \vec{r}}{d t} = \frac{d}{d t} (x * \hat{n_x} + y * \hat{n_y}) = \\
 = \frac{dx}{dt}*\hat{n_x} + \frac{dy}{dt}*\hat{n_y} = \\
 = v_x * \hat{n_x} + v_y * \hat{n_y} = \\
@@ -235,7 +235,7 @@ $$
 
 
 - ruch jest **prostoliniowy**, gdy kierunek prędkości jest stały
-- ruch jednostajny krzywoliniowy występuje, gdy $|\vec{r}| = const$
+- ruch jednostajny krzywoliniowy występuje, gdy $|\vec{v}| = const$
 ```
 
 #### Przyspieszenie
@@ -243,7 +243,7 @@ $$
 - określa szybkość zmiany prędkości
 
 ```{admonition} Przyspieszenie średnie i chwilowe
-Przyśpieszenie średnie definiujemy jako:
+Przyspieszenie średnie definiujemy jako:
 
 $$
 a_{śr} = \frac{\Delta \vec{v}}{\Delta t}
@@ -277,7 +277,7 @@ v_x = C_1 = v_0 cos \alpha \\
 -g t + C_2 = v_y \\
 dla~chwili~t_0:\\
 -g * 0 + C_2 = \vec{v} sin \alpha \\
-v_x = v_0 cos \alpha \\
+C_2 = v_0 sin \alpha \\
 v_y = -gt + v_0 sin \alpha \\
 $$
 
@@ -306,7 +306,7 @@ y = \frac{-gx^2}{2v_0^2cos^2\alpha} + x tg \alpha \\
 $$
 
 $$
-d = \frac{2v_0^2 sin\alpha*\cos \alpha}{g}
+d = \frac{2v_0 sin\alpha*\cos \alpha}{g} = \frac{v_0 * sin 2 \alpha}{g}
 $$
 
 #### Ruch łudki w poprzek rzeki (przykład 2)
