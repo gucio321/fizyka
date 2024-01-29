@@ -590,9 +590,9 @@ $$
 \vec{a} = \vec{a'} + 2 \vec{\omega} \times \vec{v'} + \vec{\omega} \times (\vec{\omega} \times \vec{r'}) \\
 \vec{a'} = \vec{a} - 2 \vec{\omega} \times \vec{v'} - \vec{\omega} \times (\vec{\omega} \times \vec{r'}) \\
 m \vec{a'} = m \vec{a} - 2m \vec{\omega} \times \vec{v'} - m \vec{\omega} \times (\vec{\omega} \times \vec{r'}) \\
-\vec{F'} = \vec{F} - \vec{F_c} - \vec{F_od} \\
+\vec{F'} = \vec{F} - \vec{F_c} - \vec{F_{od}} \\
 \vec{F_c} = -2m \vec{\omega} \times \vec{v} \\
-\vec{F_od} = -m \vec{\omega} \times (\vec{\omega} \times \vec{r'})
+\vec{F_{od}} = -m \vec{\omega} \times (\vec{\omega} \times \vec{r'})
 $$
 
 ```{admonition} Siła Coriolisa $\vec{F_c}$
