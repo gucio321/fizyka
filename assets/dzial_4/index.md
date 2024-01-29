@@ -600,11 +600,11 @@ $$
 - jest prostopadła do prędkości
 - powoduje zakrzywienie toru
 
-Tor spadającego ciała odchyli isę na wschód.
+Tor spadającego ciała odchyli się na wschód.
 ```
 
 ```{tip}
-Ciało w rzucie poziomym npl. $\vec{v'}$ na zachód, ziła corriolisa
+Ciało w rzucie poziomym npl. $\vec{v'}$ na zachód, Siła Corriolisa
 odchyli ciało na północ
 ```
 
@@ -624,7 +624,7 @@ Przy rozwiązywaniu zadań należy pamiętać o kilku istotnych elementech, m.in
 - Jeśli konieczne - poszukać dodatkowych równań (np. związki sił)
 ```
 
-#### maszyna Atwoda
+#### maszyna Atwooda
 
 ```{note}
 Na bezwładnym bloczku na nieważkiej nici zawieszono dwie masy: $m_1$ i $m_2$
@@ -650,7 +650,7 @@ $$
 
 ```{admonition} Siła tarcia
 Tarcie występuje gdy jedno ciało porusza się względem drugiego oraz
-występuje siła dociskające je do siebie.
+występuje siła dociskająca je do siebie.
 
 - tarcie **kintetyczne** ma miejsce gdy jedno ciało przesuwa się o powierzchni drugiego
 ```
@@ -676,7 +676,7 @@ równoważy siłę zsuwającą
 #### Ciało na równi pochyłej
 
 $$
-a = g * (sin \alpha - k cos \alpha) \Leftrightarrow k cos \alpha > sin \alpha \\
+a = g * (sin~\alpha - k * cos~\alpha) \Leftrightarrow k * cos~\alpha > sin~\alpha \\
 $$
 
 ```{tip}
@@ -685,7 +685,7 @@ kąt graniczny przejścia tarcia kinetycznego na statyczne gdy $tg \alpha = k$
 
 #### Ruch pod wpływem siły sprężystej
 
-```{admonition} Prawo hooka
+```{admonition} Prawo Hooke'a
 $F = -kx$
 ```
 
@@ -1978,7 +1978,7 @@ jeżeli dla przepływu cylindrycznego $Re < 2000$ przepływ jest laminarny, dla 
 
 ## Własności sprężyste ciał
 
-### Prawo Hooka dla 1-wymiarowego rozciągania
+### Prawo Hooke'a dla 1-wymiarowego rozciągania
 
 $$
 \Delta L = k * \frac{F * l}{S}
