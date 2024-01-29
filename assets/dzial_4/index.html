@@ -431,12 +431,12 @@ d = \frac{2v_0 sin\alpha*\cos \alpha}{g} = \frac{v_0 * sin 2 \alpha}{g}
 <div class="admonition-zalorzenia admonition">
 <p class="admonition-title">Załorzenia</p>
 <ul class="simple">
-<li><p>prękdość rzeki na środku jest największa (przy przegu prędkość wynosi 0)
-Profil prędkości sinusoidalny. (x = cos(\frac{\pi y}{L}))</p></li>
+<li><p>prękdość rzeki na środku jest największa (przy brzegu prędkość wynosi 0)
+Profil prędkości sinusoidalny. (<span class="math notranslate nohighlight">\(x = cos(\frac{\pi y}{L})\)</span>)</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\vec{r} = [0,0]
+\vec{r} = \left[0,0\right] \\
 v_x = v_0 * sin \alpha~v_0 cos\alpha* t \\
 v_y = v_0 cos \alpha
 \end{split}\]</div>
@@ -444,6 +444,7 @@ v_y = v_0 cos \alpha
 <div class="math notranslate nohighlight">
 \[\begin{split}
 x(t) &amp;= \int v_x dt \\
+x(t) &amp;= \int v_0 * sin(\alpha) dt \\
 x(t) &amp;= v_0 \frac{L}{\pi~v_1}*cos(\frac{\pi~v_1}{L})*t + C\\
 C &amp;= v_0 \frac{L}{\pi v_1} \\
 x(t) &amp;= - v_0 \frac{L}{\pi~v_1}*cos(\frac{\pi~v_1}{L})*t + v_0\frac{L}{\pi~v_1}\\
@@ -489,7 +490,7 @@ dla~t_0 \\
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \vec{r'} = \vec{r} - \vec{R} \\
-x' = r_X - v_u t
+x' = r_x - v_u t
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[
@@ -514,13 +515,13 @@ siebie ruch jednostajny prostoliniowy</p>
 <div class="admonition tip">
 <p class="admonition-title">Wskazówka</p>
 <p><span class="math notranslate nohighlight">\(\vec{\omega}\)</span> jest prostopadły do wektora prędkości i promienia wodzącego
-(prostopadły do płaszczyzny na któ©ej odbywa sie ruch)</p>
+(prostopadły do płaszczyzny na której odbywa sie ruch)</p>
 </div>
 <p>Przyspieszenie kątowe <span class="math notranslate nohighlight">\(\epsilon = \frac{d \omega}{dt}\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \vec{a} &amp;= \frac{d\vec{v}}{dt} \\
-\vec{a} &amp;= \frac{d(\omega \times \vec{r})}{dt} \\
+\vec{a} &amp;= \frac{d(\vec{\omega} \times \vec{r})}{dt} \\
 \times~\text{traktujemy jak zwykłe mnożenie i liczymy pochodną}\\
 \vec{a} &amp;= \frac{d \vec{\omega}}{dt} \times \vec{r} + \frac{d\vec{r}}{dt} \times \vec{\omega} \\
 \vec{a} &amp;= \vec{\epsilon} \times \vec{r} + \vec{\omega} \times \vec{v} \\
@@ -530,7 +531,7 @@ siebie ruch jednostajny prostoliniowy</p>
 <h3>Względność ruchu po okręgu<a class="headerlink" href="#wzglednosc-ruchu-po-okregu" title="Link to this heading">¶</a></h3>
 <p>Niech <span class="math notranslate nohighlight">\(S'\)</span> będzie układem inercjalnym względem <span class="math notranslate nohighlight">\(S\)</span>.
 Niech <span class="math notranslate nohighlight">\(z = z'\)</span> i niech <span class="math notranslate nohighlight">\(\vec{\omega}_{S'} \parallel z \parallel z'\)</span></p>
-<p>Dla <span class="math notranslate nohighlight">\(t = t' = 0~x = x' \land y = y'\)</span></p>
+<p>Dla <span class="math notranslate nohighlight">\(t = t' = 0 \quad x = x' \land y = y'\)</span></p>
 <section id="bf-vec-v-leftrightarrow-vec-v">
 <h4><span class="math notranslate nohighlight">\(\bf{\vec{v} \leftrightarrow \vec{v'}}\)</span><a class="headerlink" href="#bf-vec-v-leftrightarrow-vec-v" title="Link to this heading">¶</a></h4>
 <div class="math notranslate nohighlight">
@@ -544,7 +545,7 @@ dla~\vec{v'} \neq 0 &amp;\qquad \vec{v} = \vec{\omega}\times \vec{r} + \vec{v'} 
 \hat{n_r} &amp;= cos \phi \hat{n_x} + sin \phi \hat{n_y} \\
 \hat{n_\phi} &amp;= -sin \phi \hat{n_x} + cos \phi \hat{n_y} \\
 \\
-\vec{v} &amp;= \frac{d}{dt} (r \hat{n}) \\
+\vec{v} &amp;= \frac{d}{dt} (r \hat{n_r}) \\
 \vec{v} &amp;= \frac{dr}{dt} \hat{n_r} + \frac{d\hat{n_r}}{dt} r \\
 \vec{v} &amp;= \frac{dr}{dt} \hat{n_r} + r \frac{d}{dt}\left(cos \phi \hat{n_x} + sin \phi \hat{n_y} \right) \\
 \vec{v} &amp;= \frac{dr}{dt} \hat{n_r} + r \left(\frac{d\phi}{dt} (-sin \phi) \hat{n_x} + \frac{d\phi}{dt} cos \phi \hat{n_y} \right) \\
@@ -1357,7 +1358,7 @@ E_p = mg \left(L - L cos \alpha \right) \\
 przypominającą “romb”</p>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>Punkt osobliwy - punkt w któ©ym zachowanie ukłądu jest nieokreślone -
+<p>Punkt osobliwy - punkt w którym zachowanie ukłądu jest nieokreślone -
 na przykłąd gdy nasz pręt jest skierowany pionowo do góry a jego prędkość jest zerowa
 nie wiadomo w którą stronę rozpocznie się ruch</p>
 </div>
@@ -2091,12 +2092,12 @@ P + \rho g h + \frac{\rho v^2}{2} = const \\
 <p><strong>Z tego wynika, że im większa prędkość tym mniejsze ciśnienie.</strong></p>
 <div class="admonition-sila-nosna-dzialajaca-na-skrzydlo admonition">
 <p class="admonition-title">Siła nośna działająca na skrzydło</p>
-<p>skrzydło jest płąskie od spodu i wybrzuszone od gó©y.
+<p>skrzydło jest płąskie od spodu i wybrzuszone od góry.
 Powietrze kumuluje się nad skrzydłem tworząc siłę nośną.</p>
 </div>
 <section id="opis-przeplywu-laminarnego-cieczy-przez-rure">
 <h3>Opis przepływu laminarnego cieczy przez rurę<a class="headerlink" href="#opis-przeplywu-laminarnego-cieczy-przez-rure" title="Link to this heading">¶</a></h3>
-<p>cząstecznki na samym ś©odku rury płyną najszybciej, natomiast
+<p>cząstecznki na samym środku rury płyną najszybciej, natomiast
 przy ściankach w praktyce się nie poruszają.</p>
 <p><span class="math notranslate nohighlight">\(v(r) = ?\)</span></p>
 <div class="math notranslate nohighlight">
@@ -2437,7 +2438,7 @@ Kształt wyboczonej belki to <span class="math notranslate nohighlight">\(y = k 
 © Copyright 2021, 2023, <a href="https://github.com/gucio321/">@gucio321</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/fizyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/fizyka/commit/14718639deff926073b18e8c461143e24d9cf8cb>Wed Jan 24 20:21:47 2024 +0100 fix chapter names (14718639deff926073b18e8c461143e24d9cf8cb)</a>
+<a href=https://github.com/gucio321/fizyka/commit/73222be1151c18916687e4fcca1fcf8808ddaa30>Mon Jan 29 12:51:56 2024 +0100 dział 4: fix some strange bugs and clearify some aspets (73222be1151c18916687e4fcca1fcf8808ddaa30)</a>
 </font>
 
   </body>
