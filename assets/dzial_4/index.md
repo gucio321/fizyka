@@ -604,7 +604,7 @@ Tor spadającego ciała odchyli się na wschód.
 ```
 
 ```{tip}
-Ciało w rzucie poziomym npl. $\vec{v'}$ na zachód, Siła Corriolisa
+Ciało w rzucie poziomym npl. $\vec{v'}$ na zachód, Siła Coriolisa
 odchyli ciało na północ
 ```
 
@@ -616,7 +616,7 @@ Coriolisa
 ### Zastosowania praw dynamiki
 
 ```{important}
-Przy rozwiązywaniu zadań należy pamiętać o kilku istotnych elementech, m.in:
+Przy rozwiązywaniu zadań należy pamiętać o kilku istotnych elementach, m.in:
 - Duży rysunek
 - Oznaczenie wszystkich istotnych sił
 - Wypisanie równań dynamiki (należy uwzględnić tyle równań, ile jest ciał w układzie)
@@ -695,7 +695,6 @@ $$
 F = -kx \\
 am = -kx \\
 \frac{d^2 x}{dt^2} m = -k x \\
-ma + kx = 0 \\
 m \frac{d^2x}{dt^2} + kx = 0 \\
 \bf{\frac{d^2x}{dt^2} + \frac{k}{m}x = 0} \\
 niech \frac{k}{m} = \omega^2 \\
