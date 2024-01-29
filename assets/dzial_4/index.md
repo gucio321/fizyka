@@ -312,11 +312,11 @@ $$
 #### Ruch łudki w poprzek rzeki (przykład 2)
 
 ```{admonition} Załorzenia
-- prękdość rzeki na środku jest największa (przy przegu prędkość wynosi 0)
-Profil prędkości sinusoidalny. (x = cos(\frac{\pi y}{L}))
+- prękdość rzeki na środku jest największa (przy brzegu prędkość wynosi 0)
+Profil prędkości sinusoidalny. ($x = cos(\frac{\pi y}{L})$)
 
 $$
-\vec{r} = [0,0]
+\vec{r} = \left[0,0\right] \\
 v_x = v_0 * sin \alpha~v_0 cos\alpha* t \\
 v_y = v_0 cos \alpha
 $$
@@ -324,6 +324,7 @@ $$
 
 $$
 x(t) &= \int v_x dt \\
+x(t) &= \int v_0 * sin(\alpha) dt \\
 x(t) &= v_0 \frac{L}{\pi~v_1}*cos(\frac{\pi~v_1}{L})*t + C\\
 C &= v_0 \frac{L}{\pi v_1} \\
 x(t) &= - v_0 \frac{L}{\pi~v_1}*cos(\frac{\pi~v_1}{L})*t + v_0\frac{L}{\pi~v_1}\\
@@ -370,7 +371,7 @@ niech $R_x = R \land R_y = 0 \land R_z = 0$
 
 $$
 \vec{r'} = \vec{r} - \vec{R} \\
-x' = r_X - v_u t
+x' = r_x - v_u t
 $$
 
 $$
@@ -393,14 +394,14 @@ $$
 
 ```{tip}
 $\vec{\omega}$ jest prostopadły do wektora prędkości i promienia wodzącego
-(prostopadły do płaszczyzny na któ©ej odbywa sie ruch)
+(prostopadły do płaszczyzny na której odbywa sie ruch)
 ```
 
 Przyspieszenie kątowe $\epsilon = \frac{d \omega}{dt}$
 
 $$
 \vec{a} &= \frac{d\vec{v}}{dt} \\
-\vec{a} &= \frac{d(\omega \times \vec{r})}{dt} \\
+\vec{a} &= \frac{d(\vec{\omega} \times \vec{r})}{dt} \\
 \times~\text{traktujemy jak zwykłe mnożenie i liczymy pochodną}\\
 \vec{a} &= \frac{d \vec{\omega}}{dt} \times \vec{r} + \frac{d\vec{r}}{dt} \times \vec{\omega} \\
 \vec{a} &= \vec{\epsilon} \times \vec{r} + \vec{\omega} \times \vec{v} \\
@@ -411,7 +412,7 @@ $$
 Niech $S'$ będzie układem inercjalnym względem $S$.
 Niech $z = z'$ i niech $\vec{\omega}_{S'} \parallel z \parallel z'$
 
-Dla $t = t' = 0~x = x' \land y = y'$
+Dla $t = t' = 0 \quad x = x' \land y = y'$
 
 #### $\bf{\vec{v} \leftrightarrow \vec{v'}}$
 
@@ -426,7 +427,7 @@ $$
 \hat{n_r} &= cos \phi \hat{n_x} + sin \phi \hat{n_y} \\
 \hat{n_\phi} &= -sin \phi \hat{n_x} + cos \phi \hat{n_y} \\
 \\
-\vec{v} &= \frac{d}{dt} (r \hat{n}) \\
+\vec{v} &= \frac{d}{dt} (r \hat{n_r}) \\
 \vec{v} &= \frac{dr}{dt} \hat{n_r} + \frac{d\hat{n_r}}{dt} r \\
 \vec{v} &= \frac{dr}{dt} \hat{n_r} + r \frac{d}{dt}\left(cos \phi \hat{n_x} + sin \phi \hat{n_y} \right) \\
 \vec{v} &= \frac{dr}{dt} \hat{n_r} + r \left(\frac{d\phi}{dt} (-sin \phi) \hat{n_x} + \frac{d\phi}{dt} cos \phi \hat{n_y} \right) \\
@@ -1216,7 +1217,7 @@ dla dużych amplitud pręta elipsa opisująca drgania
 przypominającą "romb"
 
 :::{note}
-Punkt osobliwy - punkt w któ©ym zachowanie ukłądu jest nieokreślone -
+Punkt osobliwy - punkt w którym zachowanie ukłądu jest nieokreślone -
 na przykłąd gdy nasz pręt jest skierowany pionowo do góry a jego prędkość jest zerowa 
 nie wiadomo w którą stronę rozpocznie się ruch
 :::
@@ -1929,13 +1930,13 @@ $$
 **Z tego wynika, że im większa prędkość tym mniejsze ciśnienie.**
 
 ```{admonition} Siła nośna działająca na skrzydło
-skrzydło jest płąskie od spodu i wybrzuszone od gó©y.
+skrzydło jest płąskie od spodu i wybrzuszone od góry.
 Powietrze kumuluje się nad skrzydłem tworząc siłę nośną.
 ```
 
 ### Opis przepływu laminarnego cieczy przez rurę
 
-cząstecznki na samym ś©odku rury płyną najszybciej, natomiast
+cząstecznki na samym środku rury płyną najszybciej, natomiast
 przy ściankach w praktyce się nie poruszają.
 
 $v(r) = ?$
