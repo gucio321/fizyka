@@ -783,7 +783,7 @@ a = g * \frac{m_1 - m_2}{m_1+m_2}
 <p>Tarcie występuje gdy jedno ciało porusza się względem drugiego oraz
 występuje siła dociskająca je do siebie.</p>
 <ul class="simple">
-<li><p>tarcie <strong>kintetyczne</strong> ma miejsce gdy jedno ciało przesuwa się o powierzchni drugiego</p></li>
+<li><p>tarcie <strong>kinetyczne</strong> ma miejsce gdy jedno ciało przesuwa się o powierzchni drugiego</p></li>
 </ul>
 </div>
 <div class="math notranslate nohighlight">
@@ -923,7 +923,7 @@ v_k = v_p ln \frac{m_p}{m_k}
 \end{split}\]</div>
 <div class="admonition tip">
 <p class="admonition-title">Wskazówka</p>
-<p>DLa ruchu punktu materialnego na płaszczyźnie: <span class="math notranslate nohighlight">\(\vec{L} = \omega m r^2\)</span></p>
+<p>Dla ruchu punktu materialnego na płaszczyźnie: <span class="math notranslate nohighlight">\(L = \omega m r^2\)</span></p>
 </div>
 </section>
 <section id="sila-centralna">
@@ -954,7 +954,7 @@ W_{AB} = \int_A^B F * r \\
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \int_0^{x_0} kx dx = k \int_0^{x_0} x dx = \\
-= k \left[\frac{1}{2} x \right]_0^{x_0} = \\
+= k \left[\frac{1}{2} x^2 \right]_0^{x_0} = \\
 \\ = k \left(\frac{x_0^2}{2} - \frac{0^2}{2}\right) = \\
 = \frac{1}{2} k x_0^2
 \end{split}\]</div>
@@ -964,7 +964,7 @@ W_{AB} = \int_A^B F * r \\
 <h3>Moc<a class="headerlink" href="#moc" title="Link to this heading">¶</a></h3>
 <div class="math notranslate nohighlight">
 \[
-P = \frac{dW}{dt} = \frac{\vec{F} * d\vec{r}}{dt} = \vec{F} * \vec{V}
+P = \frac{dW}{dt} = \frac{\vec{F} * d\vec{r}}{dt} = \vec{F} * \vec{v}
 \]</div>
 </section>
 <section id="energia">
@@ -1001,7 +1001,7 @@ niech F = const\\
 <div class="math notranslate nohighlight">
 \[\begin{split}
 dW = F * dr = F_s * ds = -dE_p \\
-\vec{F} = grad E_p
+\vec{F} = grad E_p \\
 F(\vec{r}) = - \frac{dE_p}{dr}
 \end{split}\]</div>
 <div class="admonition important">
@@ -1030,7 +1030,7 @@ F_{op} = -K \eta \vec{v}
 \end{split}\]</div>
 <p>gdzie:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(eta\)</span> - współczynnik lepkości</p></li>
+<li><p><span class="math notranslate nohighlight">\(\eta\)</span> - współczynnik lepkości</p></li>
 <li><p>K - współczynnik oporu</p></li>
 </ul>
 <div class="admonition tip">
@@ -1071,11 +1071,11 @@ v(t) = \frac{mg}{b} \left(1-e^{-\frac{m}{b}t}\right)
 <div class="math notranslate nohighlight">
 \[\begin{split}
 M = m_0 + \mu * t \\
-\mu = \frac{d \mu}{dt}
-F = \frac{dp}{dt} \\
+\mu = \frac{d m}{dt} \\
 F = \frac{dp}{dt} \\
 dp = (m + dm) * (v + dv) -mv \\
 dp = dm * v + m * dv + dm * dv \\
+dm * dv \to 0 \\
 dp = dm * v + m * dv \\
 dp = d(mv) \\
 F = 0 \Rightarrow d(mv) = 0 \Rightarrow mv = const \\
@@ -1091,8 +1091,7 @@ v = \frac{m_0 v_0}{\mu * t} \\
 niech~v_0 = 0\\
 v(t) = ? \\
 m = m_0 + \mu * t \\
-\mu = \frac{d \mu}{dt}
-F = \frac{dp}{dt} \\
+\mu = \frac{d \mu}{dt} \\
 F = \frac{dp}{dt} \\
 dp = (m + dm) * (v + dv) -mv \\
 dp = dm * v + m * dv + dm * dv \\
@@ -1115,11 +1114,11 @@ v = \frac{F * t}{m_0 + \mu t} \\
 niech~F = const \\
 v(t) = ? \\
 m = m_0 - \mu * t \\\end{split}\\\begin{split}F = \frac{dp}{dt} \\
-F = \frac{dp}{dt} \\
-dp = ((m + dm) * (v + dv) + (-dm) * v) - mv \\
+\text{Masa którą tracimy również ma prędkość v, z tąd należy uwzględnić jej pęd}\\
+dp = ((m - dm) * (v + dv) + dm * v) - mv \\
 dp = m * dv \\\end{split}\\\begin{split}F = \frac{dp}{dt} \\
-F = \frac{d(mv)}{dt} \\
-m d(v) = F * dt \\
+F = \frac{m * d(v)}{dt} \\
+m * dv = F * dt \\
 \int (m_0 - dm)dv = \int F * dt \\\end{split}\\\begin{split}v = - \frac{1}{\mu} ln(m_0 - \mu t) * F + C \\\end{split}\\\begin{split}v = \frac{F}{\mu} ln \frac{m_0}{m_0 + \mu t} \\
 \end{split}\end{aligned}\end{align} \]</div>
 </section>
@@ -1144,12 +1143,12 @@ m d(v) = F * dt \\
 <h4>Energia w płaskim ruchu krzywoliniowym<a class="headerlink" href="#energia-w-plaskim-ruchu-krzywoliniowym" title="Link to this heading">¶</a></h4>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-E = \frac{mv^2}{2} + E_p
+E = \frac{mv^2}{2} + E_p \\
 E = \frac{m}{2}((\frac{dr}{dt})^2 + (\frac{d \phi}{dt})^2 * r^2) +E_p \\
-\vec{L} = m r^2 * \vec{omega} \\
-E = \frac{m}{2}((\frac{dr}{dt})^2 + \omega^2 * r^2) +E_p \\ 
-E = \frac{m}{2}((\frac{dr}{dt})^2 + (\frac{L}{mr})^2) +E_p \\ 
-E = \frac{m}{2}(\frac{dr}{dt})^2 + \frac{L^2}{2mr^2} +E_p \\ 
+\vec{L} = m r^2 * \vec{\omega} \\
+E = \frac{m}{2}\left(\left(\frac{dr}{dt}\right)^2 + \omega^2 * r^2\right) +E_p \\ 
+E = \frac{m}{2}\left(\left(\frac{dr}{dt}\right)^2 + (\frac{L}{mr})^2\right) +E_p \\ 
+E = \frac{m}{2}\left(\frac{dr}{dt}\right)^2 + \frac{L^2}{2mr^2} +E_p \\ 
 \end{split}\]</div>
 <p>niech siła będzie centralna</p>
 <div class="math notranslate nohighlight">
@@ -1166,7 +1165,7 @@ E = \frac{m}{2}(\frac{dr}{dt})^2 + \frac{C}{r} +E_p \\
 <h3>Kinematyka prostego ruchu harmonicznego<a class="headerlink" href="#kinematyka-prostego-ruchu-harmonicznego" title="Link to this heading">¶</a></h3>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-x(t) = A sin(\omega * t + \phi_0)
+x(t) = A sin(\omega * t + \phi_0) \\
 \omega = \frac{2 \pi}{T} \\
 \hat{x} = \hat{A} e^{i * \omega t} \\
 \hat{A} = e^{i \phi}
@@ -1209,11 +1208,14 @@ T' = T'_ 0 \sqrt{1+\frac{\alpha_0}{16} + ...}
 <h4><span class="math notranslate nohighlight">\(\omega_1 \neq \omega_2\)</span><a class="headerlink" href="#omega-1-neq-omega-2" title="Link to this heading">¶</a></h4>
 <p>Niech <span class="math notranslate nohighlight">\(\phi = 0\)</span></p>
 <ul class="simple">
-<li><p>Niech <span class="math notranslate nohighlight">\(A_1 = A_2\)</span>
-$<span class="math notranslate nohighlight">\(
+<li><p>Niech <span class="math notranslate nohighlight">\(A_1 = A_2\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
 x_1 + x_2 = A cos \omega_1 t + A cos \omega_2 t
 x = 2A_1 cos \frac{\omega_1 t - \omega_2 t}{2} * cos \frac{\omega_1 t + \omega_2 t}{2}
-\)</span>$</p></li>
+\]</div>
+<ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(x_1 \perp x_2\)</span></p></li>
 </ul>
 <div class="math notranslate nohighlight">
@@ -1280,7 +1282,7 @@ się drgania. Występuje pęzanie</p>
 <h3>Drgania wymuszone i rezonans<a class="headerlink" href="#drgania-wymuszone-i-rezonans" title="Link to this heading">¶</a></h3>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-F_w(t) = F_0 * sin(\omega t)
+F_w(t) = F_0 * sin(\omega t) \\
 am = -kx - bv + F_w \\
 \frac{d^2x}{dt^2} + 2\beta \frac{dx}{dt} + \omega_0^2 x = \frac{F_0}{m} sin(\omega t) \\
 x(t) = A sin(\omega t + \delta) \\
@@ -1310,7 +1312,7 @@ tg \delta = - \frac{2 \beta \omega}{\omega_0^2 - \omega^2}
 niech~x(t) = C_1 cos(\omega t) + C_2 sin(\omega t)
 \]</div>
 <div class="admonition-twierdzenie-furiera admonition">
-<p class="admonition-title">Twierdzenie FUriera</p>
+<p class="admonition-title">Twierdzenie Furiera</p>
 <p>Każda funkcja okresowa o okresie <code class="docutils literal notranslate"><span class="pre">T</span></code> może być przedstawiona jako
 suma funkcji sinusoidalnych w następującej postaci:</p>
 <div class="math notranslate nohighlight">
@@ -1337,14 +1339,14 @@ Wymiar przestrzeni fazowej wynosi dla 3-wymiarowego ruchu <code class="docutils 
 <div class="math notranslate nohighlight">
 \[\begin{split}
 x = A cos \omega t \\
-v = A \omega sin \omega t
+v = A \omega sin \omega t \\
 \frac{x^2}{A^2} + \frac{v^2}{A^2 \omega^2} = 1
 \end{split}\]</div>
 <iframe src="https://www.desmos.com/calculator/uz2vput5xj" width="100%" style="min-height:200px"></iframe>
 <p><em>Wykres <span class="math notranslate nohighlight">\(V(x)\)</span></em></p>
 <div class="admonition tip">
 <p class="admonition-title">Wskazówka</p>
-<p>załóżmy wachadło matematyczne skłądająće się znieważkiego sztywnego pręta
+<p>załóżmy wachadło matematyczne skłądająće się z nieważkiego sztywnego pręta
 oraz masywnej kulki.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1385,10 +1387,10 @@ nie wiadomo w którą stronę rozpocznie się ruch</p>
 <section id="chaos">
 <h3>Chaos<a class="headerlink" href="#chaos" title="Link to this heading">¶</a></h3>
 <div class="math notranslate nohighlight">
-\[
-F_s = -kx
+\[\begin{split}
+F_s = -kx \\
 F_w-bv
-\]</div>
+\end{split}\]</div>
 <ul class="simple">
 <li><p>nieliniowość</p></li>
 <li><p>czułość na warunki początkowe</p></li>
@@ -1430,21 +1432,22 @@ jeżeli istotne jest <strong>niedokładne</strong> określenie <strong>warunków
 <section id="dynamika-planet-wedlug-newtona">
 <h3>Dynamika planet według Newtona<a class="headerlink" href="#dynamika-planet-wedlug-newtona" title="Link to this heading">¶</a></h3>
 <p>Rozważmy pojedynczy wycinek trajektorii planety.
-Po przypliżeniu fragmentu łuku do prostej:
-$<span class="math notranslate nohighlight">\(
+Po przypliżeniu fragmentu łuku do prostej:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 s = \frac{1}{2} R h \\
 \alpha = \frac{h}{r} \\
 \alpha = \omega * \Delta t \\
 L = mr^2 \omega \Delta t \\
 \vec{L} = const\\
-\)</span>$</p>
+\end{split}\]</div>
 <div class="admonition important">
 <p class="admonition-title">Ważne</p>
 <p>Siła odpowiadająca za ruch planety jest centralna</p>
 </div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-F(R) ~ \frac{1}{R^2} \\
+F(R) \sim \frac{1}{R^2} \\
 F(R) = G \frac{m M}{r^2} \\
 \end{split}\]</div>
 <div class="admonition-masa-ziemii admonition">
@@ -1483,10 +1486,10 @@ jest równe sumie wektorowej pól wytworzonych przez poszczególne składniki.</
 \]</div>
 </div>
 <div class="math notranslate nohighlight">
-\[
-F(R) = -G \frac{Mm}{r^2}
+\[\begin{split}
+F(R) = -G \frac{Mm}{r^2} \\
 E_P = \int G \frac{Mm}{R^2} = G M m \frac{-1}{R} + C
-\]</div>
+\end{split}\]</div>
 <section id="id2">
 <h4>Energia Potencjalna<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h4>
 </section>
@@ -1497,11 +1500,11 @@ E_P = \int G \frac{Mm}{R^2} = G M m \frac{-1}{R} + C
 <p>Obiekt wpada w pole grawitacyjne M z prędkością <span class="math notranslate nohighlight">\(v_0\)</span>.</p>
 <section id="opis-krzywych-stozkowych-w-biegunowym-ukladzie-wspolrzednych">
 <h4>Opis krzywych stożkowych w biegunowym układzie współrzędnych<a class="headerlink" href="#opis-krzywych-stozkowych-w-biegunowym-ukladzie-wspolrzednych" title="Link to this heading">¶</a></h4>
-<p>załużmy dodatkową prostą pionow→ą w układzie w odległlości <code class="docutils literal notranslate"><span class="pre">d</span></code> od bieguna (kierownica).</p>
+<p>załużmy dodatkową prostą pionową w układzie w odległlości <code class="docutils literal notranslate"><span class="pre">d</span></code> od bieguna (kierownica).</p>
 <p>rozważmy dwa parametry:</p>
 <ul class="simple">
 <li><p>r - długość wektora</p></li>
-<li><p>odległość punktu od kierownicy: <span class="math notranslate nohighlight">\(r - d cos \phi\)</span></p></li>
+<li><p>odległość punktu od kierownicy: <span class="math notranslate nohighlight">\(r - d * cos \phi\)</span></p></li>
 </ul>
 <p>zbiór wszystkich punktów równo odległych od bieguna i kierownicy tworzy parabolę.</p>
 <div class="math notranslate nohighlight">
@@ -1518,7 +1521,7 @@ niech~p = \epsilon d \\
 \end{split}\]</div>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>$\epsilon nazywamy mimośrodem.</p>
+<p><span class="math notranslate nohighlight">\(\epsilon\)</span> nazywamy mimośrodem.</p>
 <div class="admonition tip">
 <p class="admonition-title">Wskazówka</p>
 <p>wartość mimośrodu dla paraboli wynosi 1</p>
@@ -2437,7 +2440,7 @@ Kształt wyboczonej belki to <span class="math notranslate nohighlight">\(y = k 
 © Copyright 2021, 2023, <a href="https://github.com/gucio321/">@gucio321</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/fizyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/fizyka/commit/65f0879d24187a309559ef066cedab0dd6801509>Mon Jan 29 14:48:29 2024 +0100 fix typos (65f0879d24187a309559ef066cedab0dd6801509)</a>
+<a href=https://github.com/gucio321/fizyka/commit/2e7f10cf2a17c42465b961f813408f5afdbc5a91>Wed Jan 31 22:54:44 2024 +0100 add missing characters (2e7f10cf2a17c42465b961f813408f5afdbc5a91)</a>
 </font>
 
   </body>
