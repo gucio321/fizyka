@@ -652,7 +652,7 @@ $$
 Tarcie występuje gdy jedno ciało porusza się względem drugiego oraz
 występuje siła dociskająca je do siebie.
 
-- tarcie **kintetyczne** ma miejsce gdy jedno ciało przesuwa się o powierzchni drugiego
+- tarcie **kinetyczne** ma miejsce gdy jedno ciało przesuwa się o powierzchni drugiego
 ```
 
 $$
@@ -783,7 +783,7 @@ $$
 $$
 
 ```{tip}
-DLa ruchu punktu materialnego na płaszczyźnie: $\vec{L} = \omega m r^2$
+Dla ruchu punktu materialnego na płaszczyźnie: $L = \omega m r^2$
 ```
 
 ### Siła Centralna
@@ -810,7 +810,7 @@ $$
 
 $$
 \int_0^{x_0} kx dx = k \int_0^{x_0} x dx = \\
-= k \left[\frac{1}{2} x \right]_0^{x_0} = \\
+= k \left[\frac{1}{2} x^2 \right]_0^{x_0} = \\
 \\ = k \left(\frac{x_0^2}{2} - \frac{0^2}{2}\right) = \\
 = \frac{1}{2} k x_0^2
 $$
@@ -819,7 +819,7 @@ $$
 ### Moc
 
 $$
-P = \frac{dW}{dt} = \frac{\vec{F} * d\vec{r}}{dt} = \vec{F} * \vec{V}
+P = \frac{dW}{dt} = \frac{\vec{F} * d\vec{r}}{dt} = \vec{F} * \vec{v}
 $$
 
 ### Energia
@@ -855,7 +855,7 @@ $F \leftrightarrow E_p$
 
 $$
 dW = F * dr = F_s * ds = -dE_p \\
-\vec{F} = grad E_p
+\vec{F} = grad E_p \\
 F(\vec{r}) = - \frac{dE_p}{dr}
 $$
 
@@ -883,7 +883,7 @@ F_{op} = -K \eta \vec{v}
 $$
 
 gdzie:
-- $eta$ - współczynnik lepkości
+- $\eta$ - współczynnik lepkości
 - K - współczynnik oporu
 
 ```{tip}
@@ -922,11 +922,11 @@ $$
 
 $$
 M = m_0 + \mu * t \\
-\mu = \frac{d \mu}{dt}
-F = \frac{dp}{dt} \\
+\mu = \frac{d m}{dt} \\
 F = \frac{dp}{dt} \\
 dp = (m + dm) * (v + dv) -mv \\
 dp = dm * v + m * dv + dm * dv \\
+dm * dv \to 0 \\
 dp = dm * v + m * dv \\
 dp = d(mv) \\
 F = 0 \Rightarrow d(mv) = 0 \Rightarrow mv = const \\
@@ -941,8 +941,7 @@ $$
 niech~v_0 = 0\\
 v(t) = ? \\
 m = m_0 + \mu * t \\
-\mu = \frac{d \mu}{dt}
-F = \frac{dp}{dt} \\
+\mu = \frac{d \mu}{dt} \\
 F = \frac{dp}{dt} \\
 dp = (m + dm) * (v + dv) -mv \\
 dp = dm * v + m * dv + dm * dv \\
@@ -966,13 +965,13 @@ v(t) = ? \\
 m = m_0 - \mu * t \\
 
 F = \frac{dp}{dt} \\
-F = \frac{dp}{dt} \\
-dp = ((m + dm) * (v + dv) + (-dm) * v) - mv \\
+\text{Masa którą tracimy również ma prędkość v, z tąd należy uwzględnić jej pęd}\\
+dp = ((m - dm) * (v + dv) + dm * v) - mv \\
 dp = m * dv \\
 
 F = \frac{dp}{dt} \\
-F = \frac{d(mv)}{dt} \\
-m d(v) = F * dt \\
+F = \frac{m * d(v)}{dt} \\
+m * dv = F * dt \\
 \int (m_0 - dm)dv = \int F * dt \\
 
 v = - \frac{1}{\mu} ln(m_0 - \mu t) * F + C \\
@@ -1006,12 +1005,12 @@ $$
 #### Energia w płaskim ruchu krzywoliniowym
 
 $$
-E = \frac{mv^2}{2} + E_p
+E = \frac{mv^2}{2} + E_p \\
 E = \frac{m}{2}((\frac{dr}{dt})^2 + (\frac{d \phi}{dt})^2 * r^2) +E_p \\
-\vec{L} = m r^2 * \vec{omega} \\
-E = \frac{m}{2}((\frac{dr}{dt})^2 + \omega^2 * r^2) +E_p \\ 
-E = \frac{m}{2}((\frac{dr}{dt})^2 + (\frac{L}{mr})^2) +E_p \\ 
-E = \frac{m}{2}(\frac{dr}{dt})^2 + \frac{L^2}{2mr^2} +E_p \\ 
+\vec{L} = m r^2 * \vec{\omega} \\
+E = \frac{m}{2}\left(\left(\frac{dr}{dt}\right)^2 + \omega^2 * r^2\right) +E_p \\ 
+E = \frac{m}{2}\left(\left(\frac{dr}{dt}\right)^2 + (\frac{L}{mr})^2\right) +E_p \\ 
+E = \frac{m}{2}\left(\frac{dr}{dt}\right)^2 + \frac{L^2}{2mr^2} +E_p \\ 
 $$
 
 niech siła będzie centralna
@@ -1026,7 +1025,7 @@ $$
 ### Kinematyka prostego ruchu harmonicznego
 
 $$
-x(t) = A sin(\omega * t + \phi_0)
+x(t) = A sin(\omega * t + \phi_0) \\
 \omega = \frac{2 \pi}{T} \\
 \hat{x} = \hat{A} e^{i * \omega t} \\
 \hat{A} = e^{i \phi}
@@ -1068,6 +1067,7 @@ $$
 Niech $\phi = 0$
 
 - Niech $A_1 = A_2$
+
 $$
 x_1 + x_2 = A cos \omega_1 t + A cos \omega_2 t
 x = 2A_1 cos \frac{\omega_1 t - \omega_2 t}{2} * cos \frac{\omega_1 t + \omega_2 t}{2}
@@ -1134,7 +1134,7 @@ się drgania. Występuje pęzanie
 ### Drgania wymuszone i rezonans
 
 $$
-F_w(t) = F_0 * sin(\omega t)
+F_w(t) = F_0 * sin(\omega t) \\
 am = -kx - bv + F_w \\
 \frac{d^2x}{dt^2} + 2\beta \frac{dx}{dt} + \omega_0^2 x = \frac{F_0}{m} sin(\omega t) \\
 x(t) = A sin(\omega t + \delta) \\
@@ -1164,7 +1164,7 @@ $$
 niech~x(t) = C_1 cos(\omega t) + C_2 sin(\omega t)
 $$
 
-```{admonition} Twierdzenie FUriera
+```{admonition} Twierdzenie Furiera
 Każda funkcja okresowa o okresie `T` może być przedstawiona jako 
 suma funkcji sinusoidalnych w następującej postaci:
 
@@ -1192,7 +1192,7 @@ ruch 1-wymiarowy,
 
 $$
 x = A cos \omega t \\
-v = A \omega sin \omega t
+v = A \omega sin \omega t \\
 \frac{x^2}{A^2} + \frac{v^2}{A^2 \omega^2} = 1
 $$
 
@@ -1201,7 +1201,7 @@ $$
 _Wykres $V(x)$_
 
 ```{tip}
-załóżmy wachadło matematyczne skłądająće się znieważkiego sztywnego pręta
+załóżmy wachadło matematyczne skłądająće się z nieważkiego sztywnego pręta
 oraz masywnej kulki.
 
 $$
@@ -1247,7 +1247,7 @@ Problem 3 mas - rozważmy ruch jednego ciała w polu grawitacyjnym dwuch nieruch
 ### Chaos
 
 $$
-F_s = -kx
+F_s = -kx \\
 F_w-bv
 $$
 
@@ -1291,6 +1291,7 @@ $$
 
 Rozważmy pojedynczy wycinek trajektorii planety.
 Po przypliżeniu fragmentu łuku do prostej:
+
 $$
 s = \frac{1}{2} R h \\
 \alpha = \frac{h}{r} \\
@@ -1304,7 +1305,7 @@ Siła odpowiadająca za ruch planety jest centralna
 ```
 
 $$
-F(R) ~ \frac{1}{R^2} \\
+F(R) \sim \frac{1}{R^2} \\
 F(R) = G \frac{m M}{r^2} \\
 $$
 
@@ -1340,7 +1341,7 @@ $$
 ```
 
 $$
-F(R) = -G \frac{Mm}{r^2}
+F(R) = -G \frac{Mm}{r^2} \\
 E_P = \int G \frac{Mm}{R^2} = G M m \frac{-1}{R} + C
 $$
 
@@ -1354,11 +1355,11 @@ Obiekt wpada w pole grawitacyjne M z prędkością $v_0$.
 
 #### Opis krzywych stożkowych w biegunowym układzie współrzędnych
 
-załużmy dodatkową prostą pionow→ą w układzie w odległlości `d` od bieguna (kierownica).
+załużmy dodatkową prostą pionową w układzie w odległlości `d` od bieguna (kierownica).
 
 rozważmy dwa parametry:
 - r - długość wektora
-- odległość punktu od kierownicy: $r - d cos \phi$
+- odległość punktu od kierownicy: $r - d * cos \phi$
 
 zbiór wszystkich punktów równo odległych od bieguna i kierownicy tworzy parabolę.
 
@@ -1376,7 +1377,7 @@ niech~p = \epsilon d \\
 $$
 
 ```{note}
-$\epsilon nazywamy mimośrodem.
+$\epsilon$ nazywamy mimośrodem.
 
 :::{tip}
 wartość mimośrodu dla paraboli wynosi 1
