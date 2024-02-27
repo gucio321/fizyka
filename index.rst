@@ -1,10 +1,5 @@
-.. .. attention::
-   Z powodu niskiego zainteresowania niniejszą dokumentacją, a także
-   braku czasu na jej dalszy rozwój, redakcja niniejszej strony ogłasza
-   zaprzestanie jej aktualizacji.
-
-   Zainteresowanych dalszym rozwojem serwisu proszę o kontakt za pośrednictwem
-   GitHub Issues na stronie https://github.com/gucio321/fizyka
+.. attention::
+   Kontynuacja niniejszych notatek można znaleźć na https://github.com/gucio321/matematyka
    
    Dziękuje za korzystanie!
    gucio321 <gucio321@protonmail.com> - naczelny redaktor "Zadania z Fizyki - Dokumentacja"
